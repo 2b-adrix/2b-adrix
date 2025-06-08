@@ -1,4 +1,4 @@
-(https://github.com/2b-adrix/2b-adrix/blob/main/picture.png)
+<img src = "https://github.com/2b-adrix/2b-adrix/blob/main/picture.png"/>
 ### A passionate Android Developer & Cyber Security Enthused, India
 
 ---
