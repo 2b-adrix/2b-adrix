@@ -33,11 +33,6 @@
 <a href="https://www.leetcode.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="2b_adrix" height="30" width="40" /></a>
 </p>
 
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" alt="Firebase" width="36" height="36" />
-</p>
-
----
-
 ## 📊 GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=itsyourap&show_icons=true&theme=dark&bg_color=000000&text_color=ffffff&icon_color=ffffff&hide_border=true&title_color=ffffff&card_width=420" alt="GitHub Stats" />
