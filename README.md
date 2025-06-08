@@ -37,26 +37,9 @@
 
 ---
 
-## 🛠️ Tech Stack
-<p align="left">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" alt="Java" width="36" height="36" />&ensp;
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kotlin-colored.svg" alt="Kotlin" width="36" height="36" />&ensp;
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" alt="Python" width="36" height="36" />&ensp;
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" alt="MySQL" width="36" height="36" />&ensp;
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" alt="MongoDB" width="36" height="36" />&ensp;
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" alt="Docker" width="36" height="36" />&ensp;
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" alt="Firebase" width="36" height="36" />
-</p>
 
 ---
 
-## 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=itsyourap&show_icons=true&theme=dark&bg_color=000000&text_color=ffffff&icon_color=ffffff&hide_border=true&title_color=ffffff&card_width=420" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=itsyourap&theme=dark&background=000000&hide_border=true" alt="GitHub Streak" />
-</p>
-
----
 
 ## 🔗 Connect with Me
 <p align="left">
