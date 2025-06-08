@@ -20,8 +20,11 @@
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" alt="Java" width="36" height="36" />&ensp;
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kotlin-colored.svg" alt="Kotlin" width="36" height="36" />&ensp;
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" alt="Python" width="36" height="36" />&ensp;
-# Hi 👋, I’m **Aditya Mishra**
-### A passionate Android Developer & Cyber Security Enthused, India
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" alt="Firebase" width="36" height="36"/>&ensp;
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" alt="MongoDB" width="36" height="36" />&ensp;
+
+    
+
 
 [![Profile Views](https://komarev.com/ghpvc/?username=itsyourap&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/itsyourap)
 
