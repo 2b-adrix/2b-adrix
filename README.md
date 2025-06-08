@@ -33,7 +33,8 @@
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&theme=dark&bg_color=000000&text_color=ffffff&icon_color=ffffff&hide_border=true&title_color=ffffff" alt="GitHub Stats" />
+  <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true&custom_title=My%20GitHub%20Stats&card_width=420px" alt="itsyourap's GitHub stats" /></a>
+
   <img width="51%" src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&theme=dark&background=000000&hide_border=true" alt="GitHub Streak"/>
 </p>
 
