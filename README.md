@@ -8,11 +8,11 @@
 
 ## 🔭 About Me
 
-- 🎓 Currently a 2nd Year B.Tech CSE student with 2+ years of coding experience
-- 💻 Building Android apps with a passion for privacy and security
-- 🌱 Constantly learning new technologies and improving my skills
-- ⚡ I love to code, learn, laugh, and collaborate
-- 📫 Reach me: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+- 🎓 2nd Year B.Tech CSE student with 2+ years of coding experience  
+- 📱 Building Android apps with a focus on privacy and performance  
+- 🌱 Lifelong learner exploring cybersecurity and backend systems  
+- 🤝 Always open to collaboration, feedback, and fun challenges  
+- 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
 
 ---
 
@@ -33,15 +33,23 @@
 <a href="https://www.leetcode.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="2b_adrix" height="30" width="40" /></a>
 <a href="https://fb.com/https://www.facebook.com/me/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/me/" height="30" width="40" /></a>
 </p>
+ 
+---
 
 ## 📊 GitHub Stats
+
 <p align="center">
-   <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=000&hide_border=true&show_icons=true&custom_title=My%20GitHub%20Stats&card_width=420px" alt="itsyourap's GitHub stats" /></a>
-   <a href="#"><img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&stroke=ffffff&background=000&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true&card_width=420px" /></a>
-   <a href="#"><img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=github-compact&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true" /></a>
+  <a href="#">
+    <img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&title_color=00FF7F&text_color=ffffff&icon_color=00FF7F&bg_color=000000&hide_border=true&custom_title=My%20GitHub%20Stats&card_width=420px" alt="2b-adrix's GitHub stats" />
+  </a>
+  <a href="#">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&stroke=ffffff&background=000000&ring=00FF7F&fire=00FF7F&currStreakNum=ffffff&currStreakLabel=00FF7F&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true&card_width=420px" />
+  </a>
+  <a href="#">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=react-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&line=00FF7F&point=00FF7F" />
+  </a>
 </p>
-<br />
 
-
+---
 
 [![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
