@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Aditya Mishra</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">Android developer || MU'28|| Computer Science Engineering </h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat" alt="2b-adrix" /> </p>
 
