@@ -1,5 +1,9 @@
 <img src = "https://github.com/2b-adrix/2b-adrix/blob/main/picture.png"/>
-Android Developer | Cybersecurity Enthusiast | Building secure and scalable mobile solutions
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Developer+%7C+Cybersecurity+Enthusiast;Building+secure+and+scalable+mobile+solutions" alt="Typing animation showing Android Developer & Cybersecurity Enthusiast"/>
+</p>
+
 ---
 
 ## 🔭 About Me
