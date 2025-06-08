@@ -28,6 +28,7 @@
 <a href="https://linkedin.com/in/2b-adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="2b-adrix" height="30" width="40" /></a>
 <a href="https://instagram.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="2b_adrix" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="2b_adrix" height="30" width="40" /></a>
+<a href="https://fb.com/https://www.facebook.com/me/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/me/" height="30" width="40" /></a>
 </p>
 
 ## 📊 GitHub Stats
