@@ -1,8 +1,6 @@
 # Hi 👋, I’m **Aditya Mishra**
 ### A passionate Android Developer & Cyber Security Enthused, India
 
-[![Profile Views](https://komarev.com/ghpvc/?username=itsyourap&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/itsyourap)
-
 ---
 
 ## 🔭 About Me
@@ -23,11 +21,6 @@
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" alt="Firebase" width="36" height="36"/>&ensp;
       <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" alt="MongoDB" width="36" height="36" />&ensp;
 
-    
-
-
-[![Profile Views](https://komarev.com/ghpvc/?username=itsyourap&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/itsyourap)
-
 ## 🔗 Connect with Me
 <p align="left">
 <a href="https://twitter.com/@adityamishrasu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@adityamishrasu1" height="30" width="40" /></a>
@@ -41,3 +34,5 @@
   <img src="https://github-readme-stats.vercel.app/api?username=itsyourap&show_icons=true&theme=dark&bg_color=000000&text_color=ffffff&icon_color=ffffff&hide_border=true&title_color=ffffff&card_width=420" alt="GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=itsyourap&theme=dark&background=000000&hide_border=true" alt="GitHub Streak" />
 </p>
+
+[![Profile Views](https://komarev.com/ghpvc/?username=itsyourap&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/itsyourap)
