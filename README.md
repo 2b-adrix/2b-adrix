@@ -5,7 +5,7 @@ Android Developer | Cybersecurity Enthusiast | Building secure and scalable mobi
 ## 🔭 About Me
 
 - 🎓 Currently a 2nd Year B.Tech CSE student with 2+ years of coding experience
-- 💻 Building Android application
+- 💻 Building Android apps with a passion for privacy and security
 - 🌱 Constantly learning new technologies and improving my skills
 - ⚡ I love to code, learn, laugh, and collaborate
 - 📫 Reach me: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
