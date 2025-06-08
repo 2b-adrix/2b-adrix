@@ -25,22 +25,6 @@
 
 [![Profile Views](https://komarev.com/ghpvc/?username=itsyourap&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/itsyourap)
 
----
-
-## 🔭 About Me
-
-- 🎓 Currently a 2nd Year B.Tech CSE student with 2+ years of coding experience
-- 💻 Building Android application
-- 🌱 Constantly learning new technologies and improving my skills
-- ⚡ I love to code, learn, laugh, and collaborate
-- 📫 Reach me: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
-
----
-
-
----
-
-
 ## 🔗 Connect with Me
 <p align="left">
   <a href="https://linkedin.com/in/itsyourap" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>&ensp;
