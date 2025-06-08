@@ -32,7 +32,7 @@
 ## 📊 GitHub Stats
 <p align="center">
   <img width="45%" src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&theme=dark&bg_color=000000&text_color=ffffff&icon_color=ffffff&hide_border=true&title_color=ffffff" alt="GitHub Stats" />
-  <img width="55%" src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&theme=dark&background=000000&hide_border=true" alt="GitHub Streak"/>
+  <img width="50%" src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&theme=dark&background=000000&hide_border=true" alt="GitHub Streak"/>
 </p>
 
 
