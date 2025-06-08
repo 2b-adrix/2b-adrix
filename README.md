@@ -45,6 +45,11 @@
   <a href="#">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&stroke=ffffff&background=000000&ring=00FF7F&fire=00FF7F&currStreakNum=ffffff&currStreakLabel=00FF7F&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true&card_width=420px" />
   </a>
+
+  ---
+
+## Contribution Graph
+  
   <a href="#">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=react-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&line=00FF7F&point=00FF7F" />
   </a>
