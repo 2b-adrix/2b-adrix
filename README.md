@@ -56,13 +56,6 @@
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/AYUSHMANGH/AYUSHMANGH/output/pacman-contribution-graph.svg">
 </picture>
 
-
-![Lines of Code chart](https://raw.githubusercontent.com/2b-adrix/i2b-adrix/main/assets/bar_graph.png)
- Last Updated on 07/06/2025 18:59:58 UTC
-<br />
-
-
-
 <br>
 <br>
 
