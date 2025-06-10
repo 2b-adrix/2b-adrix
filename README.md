@@ -49,7 +49,7 @@
 <a href="#"><img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=github-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&bg_color=000000&color=00FF7F&line=00FF7F&point=ffffff" /></a>
 </p>
 
-
+## Pac-Man Contribution Graph
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AYUSHMANGH/AYUSHMANGH/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AYUSHMANGH/AYUSHMANGH/output/pacman-contribution-graph.svg">
