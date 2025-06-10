@@ -57,6 +57,12 @@
 </picture>
 
 
+![Lines of Code chart](https://raw.githubusercontent.com/2b-adrix/i2b-adrix/main/assets/bar_graph.png)
+ Last Updated on 07/06/2025 18:59:58 UTC
+<br />
+
+
+
 <br>
 <br>
 
