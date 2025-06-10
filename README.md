@@ -40,7 +40,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&title_color=00FF7F&text_color=ffffff&icon_color=00FF7F&bg_color=000000&hide_border=true&custom_title=My%20GitHub%20Stats&card_width=420px" alt="2b-adrix's GitHub stats"\n />
+    <img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&title_color=00FF7F&text_color=ffffff&icon_color=00FF7F&bg_color=000000&hide_border=true&custom_title=My%20GitHub%20Stats&card_width=420px" alt="2b-adrix's GitHub stats"/>
   </a>
   <a href="#">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&stroke=ffffff&background=000000&ring=00FF7F&fire=00FF7F&currStreakNum=ffffff&currStreakLabel=00FF7F&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true&card_width=420px" />
