@@ -1,6 +1,6 @@
 <img src = "https://github.com/2b-adrix/2b-adrix/blob/main/banner4.png"/>
 <div align="center">
-  <img src="https://github.com/2b-adrix/2b-adrix/blob/main/WhatsApp%20Video%202025-06-12%20at%2009.59.39_56ca81a7.mp4" alt="Banner animation of robotic and tech visuals" style="width:100%; max-width:700px;" />
+  <img src="https://github.com/2b-adrix/2b-adrix/blob/main/WhatsApp%20Video%202025-06-12%20at%2009.59.39_56ca81a7.mp4" style="width:100%; max-width:700px;" />
 </div>
 
 <p align="center">
