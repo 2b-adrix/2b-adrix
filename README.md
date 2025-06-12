@@ -65,7 +65,6 @@
 
 
 <div align="center">
-  <a href="https://wakatime.com/@ranitmanik"><img height="20" padding-left=20 src="https://wakatime.com/badge/user/6c66cc47-ce26-48cc-a555-22494865c546.svg" alt=""/></a>
   <a href="https://github.com/antonkomarev/github-profile-views-counter"><img height="20" src="https://komarev.com/ghpvc/?username=RanitManik&color=blue" alt=""/></a>
   <a href="https://github.com/Platane/snk">
     <picture>
