@@ -68,7 +68,7 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/RanitManik/ranitmanik/blob/output/github-snake-dark.svg" />
       <source media="(prefers-color-scheme: light)" srcset="https://github.com/RanitManik/ranitmanik/blob/output/github-snake.svg" />
-      <img width="804px" alt="github-snake" src="https://github.com/RanitManik/ranitmanik/blob/output/github-snake-bright.svg" />
+      <img width="804px" alt="github-snake" src="https://github.com/RanitManik/ranitmanik/blob/output/github-snake-dark.svg" />
     </picture>
   </a>
 </div>
