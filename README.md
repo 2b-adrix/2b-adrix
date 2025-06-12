@@ -1,5 +1,7 @@
 <img src = "https://github.com/2b-adrix/2b-adrix/blob/main/banner4.png"/>
-
+<div align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHAyampzYWFjemEwdGRmbGJudmNodTJrNzVwMHRyNndqZTEzNW4zMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4sCZhKykg1z2/giphy.gif" alt="Banner animation of robotic and tech visuals" style="width:100%; max-width:700px;" />
+</div>
 
 <img align="right" alt="Coding" width ="500px" height= '300' src = "https://github.com/2b-adrix/2b-adrix/blob/main/WhatsApp%20Video%202025-06-12%20at%2009.59.39_56ca81a7.mp4" >
 
