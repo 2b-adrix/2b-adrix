@@ -1,9 +1,7 @@
 <img src = "https://github.com/2b-adrix/2b-adrix/blob/main/banner4.png"/>
 <div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHAyampzYWFjemEwdGRmbGJudmNodTJrNzVwMHRyNndqZTEzNW4zMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4sCZhKykg1z2/giphy.gif" alt="Banner animation of robotic and tech visuals" style="width:100%; max-width:700px;" />
+  <img src="https://github.com/2b-adrix/2b-adrix/blob/main/WhatsApp%20Video%202025-06-12%20at%2009.59.39_56ca81a7.mp4" alt="Banner animation of robotic and tech visuals" style="width:100%; max-width:700px;" />
 </div>
-
-<img align="right" alt="Coding" width ="500px" height= '300' src = "https://github.com/2b-adrix/2b-adrix/blob/main/WhatsApp%20Video%202025-06-12%20at%2009.59.39_56ca81a7.mp4" >
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Developer+%7C+Cybersecurity+Enthusiast;Building+secure+and+scalable+mobile+solutions" alt="Typing animation showing Android Developer & Cybersecurity Enthusiast"/>
