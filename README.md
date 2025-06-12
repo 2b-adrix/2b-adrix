@@ -65,7 +65,6 @@
 
 
 <div align="center">
-  <a href="https://github.com/antonkomarev/github-profile-views-counter"><img height="20" src="https://komarev.com/ghpvc/?username=RanitManik&color=blue" alt=""/></a>
   <a href="https://github.com/Platane/snk">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/RanitManik/ranitmanik/blob/output/github-snake-dark.svg" />
