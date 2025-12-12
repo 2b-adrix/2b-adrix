@@ -9,10 +9,10 @@
 ## 🔭 About Me
 
 - 🎓 2nd Year B.Tech CSE student with 2+ years of
-- coding experience  
-- 📱 Building Android apps with a focus on privacy and performance 
-- 🌱 Lifelong learner exploring cybersecurity and backend systems  
-- 🤝 Always open to collaboration, feedback, and fun challenges
+- coding experience.  
+- 📱 Building Android apps with a focus on privacy and performance.
+- 🌱 Lifelong learner exploring cybersecurity and backend systems.  
+- 🤝 Always open to collaboration, feedback, and fun challenges.
 - 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
 
 ---
