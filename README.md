@@ -39,10 +39,20 @@
 
 ## 📊 GitHub Stats:
 <p align="center">
-   <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&title_color=00FF7F&text_color=ffffff&icon_color=00FF7F&bg_color=000000&hide_border=true&custom_title=My%20GitHub%20Stats&card_width=420px"  /></a>
-   <a href="#"><img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&stroke=ffffff&background=000000&ring=00FF7F&fire=00FF7F&currStreakNum=ffffff&currStreakLabel=00FF7F&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true&card_width=420px" 
-    /></a>
+  <img src="https://dealer-github-readme.vercel.app/api?username=Dealer-09&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
 </p>
+
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com/?user=Dealer-09&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&cache_seconds=1800"
+    alt="GitHub Streak"
+  />
+</p>
+
+<p align="center">
+  <img src="https://dealer-github-readme.vercel.app/api/top-langs/?username=Dealer-09&layout=compact&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" alt="Top Languages" />
+</p>
+
 
 ---
 
