@@ -50,7 +50,7 @@
 </p>
 
 <p align="center">
-  <img src="https://dealer-github-readme.vercel.app/api/top-langs/?username=2b-adrix&layout=compact&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" alt="Top Languages" />
+  <img src="https://dealer-github-readme.vercel.app/api/top-langs/?username=2b-adrix&&theme=github-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&bg_color=000000&color=00FF7F&line=00FF7F&point=ffffff" />
 </p>
 
 
