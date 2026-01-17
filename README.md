@@ -41,7 +41,6 @@
 <p align="center">
   <img src="https://dealer-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
 </p>
-<br>
 <p align="center">
   <img
     src="https://streak-stats.demolab.com/?user=2b-adrix&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&cache_seconds=1800"
@@ -72,9 +71,9 @@
 <div align="center">
   <a href="https://github.com/Platane/snk">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dealer-09/Dealer-09/output/github-snake-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dealer-09/Dealer-09/output/github-snake.svg" />
-      <img width="100%" alt="GitHub Snake Contribution Animation" src="https://raw.githubusercontent.com/Dealer-09/Dealer-09/output/github-snake-dark.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake.svg" />
+      <img width="100%" alt="GitHub Snake Contribution Animation" src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" />
     </picture>
   </a>
 </div>
