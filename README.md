@@ -39,7 +39,7 @@
 
 ## 📊 GitHub Stats:
 <p align="center">
-  <img src="https://aditya-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
+  <img src="https://dealer-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
 </p>
 
 <p align="center">
