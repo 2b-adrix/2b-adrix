@@ -71,9 +71,9 @@
 <div align="center">
   <a href="https://github.com/Platane/snk">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake.svg" />
-      <img width="100%" alt="GitHub Snake Contribution Animation" src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg](https://github.com/2b-adrix/2b-adrix/blob/main/github-user-contribution.svg.url)" />
+      <source media="(prefers-color-scheme: light)" srcset="[https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake.svg](https://github.com/2b-adrix/2b-adrix/blob/main/github-user-contribution.svg.url)" />
+      <img width="100%" alt="GitHub Snake Contribution Animation" src="[https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg](https://github.com/2b-adrix/2b-adrix/blob/main/github-user-contribution.svg.url)" />
     </picture>
   </a>
 </div>
