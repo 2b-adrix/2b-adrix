@@ -70,15 +70,15 @@
 </p>
 
  
-## 📊 GitHub Stats:
+## 📊 Contribution Stats
+
 <p align="center">
-  <img src="https://dealer-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"/>
 </p>
+
 <p align="center">
- <img
-    src="https://streak-stats.demolab.com/?user=2b-adrix&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&cache_seconds=1800"
-    alt="GitHub Streak"
-  />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=2b-adrix&theme=github_dark"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=2b-adrix&theme=github_dark"/>
 </p>
 
 ---
