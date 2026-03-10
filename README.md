@@ -62,8 +62,7 @@
 </p>
 
 
-<br>
-## 👾 Pac-Man Contribution Graph
+## 🐍 Snake Eating My Contributions
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg"/>
