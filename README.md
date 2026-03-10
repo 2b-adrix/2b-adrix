@@ -104,7 +104,7 @@
 
 ---
 
-## Contribution Graph
+## 📈 Contribution Graph
 <p align="center">
 <a href="#"><img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=github-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&bg_color=000000&color=00FF7F&line=00FF7F&point=ffffff" /></a>
 </p>
