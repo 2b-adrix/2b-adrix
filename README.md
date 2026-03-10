@@ -1,39 +1,36 @@
-<img src="https://github.com/2b-adrix/2b-adrix/blob/main/uuu.png"/>
-
 <h1 align="center">Hi 👋, I'm Aditya Mishra</h1>
 
 <p align="center">
-Android Developer • Cybersecurity Enthusiast • Open Source Learner
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=900&lines=Android+Developer;Cybersecurity+Enthusiast;Building+Secure+Mobile+Apps;Always+Learning+New+Tech" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=00FF7F&center=true&width=900&lines=Android+Developer;Cybersecurity+Enthusiast;Open+Source+Learner;Building+Secure+Applications"/>
 </p>
 
 ---
 
 # 👨‍💻 About Me
 
-🎓 2nd Year **B.Tech CSE Student**
+🚀 Passionate **Android Developer**
 
-💻 **2+ years coding experience**
+🔐 Exploring **Cybersecurity & Ethical Hacking**
 
-📱 Passionate about **Android development**
+🎓 **B.Tech CSE Student**
 
-🔐 Interested in **Cybersecurity & System Security**
+💻 **2+ Years Coding Experience**
 
-🌱 Currently learning **Backend + Security Tools**
+🌱 Currently learning
 
-📫 **Email:**  
-vadityamishra777@gmail.com
+- Android Security
+- Backend Development
+- Linux Systems
+
+📫 Contact: **vadityamishra777@gmail.com**
 
 ---
 
-# 🧠 Tech Stack
+# ⚡ Tech Arsenal
 
-<p>
+<p align="center">
 
-<img src="https://skillicons.dev/icons?i=java,kotlin,python,firebase,mongodb,linux,git,github,androidstudio" />
+<img src="https://skillicons.dev/icons?i=java,kotlin,python,firebase,mongodb,linux,git,github,androidstudio,vscode"/>
 
 </p>
 
@@ -42,38 +39,44 @@ vadityamishra777@gmail.com
 # 🚀 Featured Projects
 
 ### 🔐 Secure Notes App
-Encrypted Android notes application.
+Android application for storing encrypted notes.
 
-Tech: Kotlin, AES Encryption, Room Database
+Tech  
+Kotlin • AES Encryption • Room DB
 
 Features
+
 - End-to-end encrypted notes
-- Offline secure storage
-- Fast Room database
+- Offline storage
+- Fast local database
 
 ---
 
 ### 💬 Firebase Chat App
-Real-time chat application.
+Real-time messaging application.
 
-Tech: Kotlin, Firebase, Firestore
+Tech  
+Kotlin • Firebase • Firestore
 
 Features
+
 - Google authentication
-- Live messaging
+- Real-time messaging
 - Media sharing
 
 ---
 
 ### 🌐 Network Scanner
-Python tool for scanning local networks.
+Python-based network scanner.
 
-Tech: Python, Socket Programming
+Tech  
+Python • Socket Programming
 
 Features
-- Device discovery
-- Port scanning
-- Fast local network scan
+
+- Detect devices on network
+- Scan open ports
+- Fast scanning
 
 ---
 
@@ -81,9 +84,9 @@ Features
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&theme=tokyonight"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=2b-adrix&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=2b-adrix&layout=compact&theme=tokyonight"/>
 
 </p>
 
@@ -93,23 +96,25 @@ Features
 
 <p align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&theme=tokyonight&hide_border=true"/>
+<img src="https://streak-stats.demolab.com?user=2b-adrix&theme=tokyonight"/>
 
 </p>
 
 ---
 
-# 📈 Contribution Graph
+# 📈 Contribution Activity
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=tokyo-night&hide_border=true"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=tokyo-night"/>
+
 </p>
 
 ---
 
 # 🌐 Connect With Me
 
-<p>
+<p align="center">
 
 <a href="https://linkedin.com/in/2b-adrix">LinkedIn</a> •
 <a href="https://twitter.com/adityamishrasu1">Twitter</a> •
@@ -122,11 +127,15 @@ Features
 
 # 👀 Profile Views
 
+<p align="center">
+
 <img src="https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20Views&color=00ff7f&style=flat"/>
+
+</p>
 
 ---
 
-# 💡 Developer Philosophy
+# 💡 Dev Quote
 
-> "Security is not a feature.  
-> It is the foundation of every system."
+> “Security is not a feature.  
+> It is the foundation of every system.”
