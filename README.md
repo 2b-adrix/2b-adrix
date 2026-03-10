@@ -67,7 +67,27 @@
 <a href="https://fb.com/https://www.facebook.com/me/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/me/" height="30" width="40" /></a>
 </p>
  
+## 🚀 Featured Projects
+
+### 🔐 Secure Notes App
+Privacy-focused Android notes application with encryption.
+
+**Tech:** Kotlin • Room Database • AES Encryption
+
+- End-to-end encrypted notes  
+- Offline secure storage  
+- Biometric authentication
+
 ---
+
+### 💬 Firebase Chat App
+Real-time messaging Android application.
+
+**Tech:** Kotlin • Firebase • Firestore
+
+- Live messaging
+- Image sharing
+- Firebase Authentication
 
 ## 📊 GitHub Stats:
 <p align="center">
