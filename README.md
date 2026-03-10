@@ -32,13 +32,12 @@
 
 ## 📚 Android Technologies
 
-Jetpack Compose
-MVVM Architecture
-Room Database
-REST APIs
-Firebase Authentication
-Material Design
-Secure Android Storage
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Android-green)
+![MVVM](https://img.shields.io/badge/MVVM-Architecture-blue)
+![Room](https://img.shields.io/badge/Room-Database-orange)
+![REST API](https://img.shields.io/badge/REST-API-red)
+![Firebase Auth](https://img.shields.io/badge/Firebase-Auth-yellow)
+
 ## 🔗 Connect with Me
 <p align="left">
 <a href="https://twitter.com/@adityamishrasu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@adityamishrasu1" height="30" width="40" /></a>
