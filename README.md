@@ -1,83 +1,132 @@
-<img src = "https://github.com/2b-adrix/2b-adrix/blob/main/uuu.png"/>
+<img src="https://github.com/2b-adrix/2b-adrix/blob/main/uuu.png"/>
+
+<h1 align="center">Hi 👋, I'm Aditya Mishra</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Developer+%7C+Cybersecurity+Enthusiast;Building+secure+and+scalable+mobile+solutions" alt="Typing animation showing Android Developer & Cybersecurity Enthusiast"/>
+Android Developer • Cybersecurity Enthusiast • Open Source Learner
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=900&lines=Android+Developer;Cybersecurity+Enthusiast;Building+Secure+Mobile+Apps;Always+Learning+New+Tech" />
 </p>
 
 ---
 
-## 🔭 About Me
+# 👨‍💻 About Me
 
-- 🎓 2nd Year B.Tech CSE student with 2+ years of
-- coding experience.  
-- 📱 Building Android apps with a focus on privacy and performance.
-- 🌱 Lifelong learner exploring cybersecurity and backend systems.  
-- 🤝 Always open to collaboration, feedback, and fun challenges
-- 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+🎓 2nd Year **B.Tech CSE Student**
+
+💻 **2+ years coding experience**
+
+📱 Passionate about **Android development**
+
+🔐 Interested in **Cybersecurity & System Security**
+
+🌱 Currently learning **Backend + Security Tools**
+
+📫 **Email:**  
+vadityamishra777@gmail.com
 
 ---
 
 # 🧠 Tech Stack
 
-<p align="left">
+<p>
 
-<img src="https://skillicons.dev/icons?i=java,kotlin,python,firebase,mongodb,linux,git,github"/>
+<img src="https://skillicons.dev/icons?i=java,kotlin,python,firebase,mongodb,linux,git,github,androidstudio" />
 
-</p>
-
-
-
-## 🔗 Connect with Me
-<p align="left">
-<a href="https://twitter.com/@adityamishrasu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@adityamishrasu1" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/2b-adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="2b-adrix" height="30" width="40" /></a>
-<a href="https://instagram.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="2b_adrix" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="2b_adrix" height="30" width="40" /></a>
-<a href="https://fb.com/https://www.facebook.com/me/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/me/" height="30" width="40" /></a>
-</p>
- 
----
-
-## 📊 GitHub Stats:
-<p align="center">
-  <img src="https://dealer-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
-</p>
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com/?user=2b-adrix&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&cache_seconds=1800"
-    alt="GitHub Streak"
-  />
 </p>
 
 ---
 
-## Contribution Graph
+# 🚀 Featured Projects
+
+### 🔐 Secure Notes App
+Encrypted Android notes application.
+
+Tech: Kotlin, AES Encryption, Room Database
+
+Features
+- End-to-end encrypted notes
+- Offline secure storage
+- Fast Room database
+
+---
+
+### 💬 Firebase Chat App
+Real-time chat application.
+
+Tech: Kotlin, Firebase, Firestore
+
+Features
+- Google authentication
+- Live messaging
+- Media sharing
+
+---
+
+### 🌐 Network Scanner
+Python tool for scanning local networks.
+
+Tech: Python, Socket Programming
+
+Features
+- Device discovery
+- Port scanning
+- Fast local network scan
+
+---
+
+# 📊 GitHub Stats
+
 <p align="center">
-<a href="#"><img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=github-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&bg_color=000000&color=00FF7F&line=00FF7F&point=ffffff" /></a>
+
+<img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=2b-adrix&layout=compact&theme=tokyonight&hide_border=true"/>
+
 </p>
 
-## Pac-Man Contribution Graph
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AYUSHMANGH/AYUSHMANGH/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AYUSHMANGH/AYUSHMANGH/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/AYUSHMANGH/AYUSHMANGH/output/pacman-contribution-graph.svg">
-</picture>
+---
 
-<br>
-<br>
-
-## 🐍 Snake Contribution Graph
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
-</p>
-## ⚡ Developer Activity
+# 🔥 GitHub Streak
 
 <p align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&theme=tokyonight&hide_border=true"/>
 
 </p>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
+---
 
+# 📈 Contribution Graph
+
+<p align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=tokyo-night&hide_border=true"/>
+</p>
+
+---
+
+# 🌐 Connect With Me
+
+<p>
+
+<a href="https://linkedin.com/in/2b-adrix">LinkedIn</a> •
+<a href="https://twitter.com/adityamishrasu1">Twitter</a> •
+<a href="https://instagram.com/2b_adrix">Instagram</a> •
+<a href="https://leetcode.com/2b_adrix">LeetCode</a>
+
+</p>
+
+---
+
+# 👀 Profile Views
+
+<img src="https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20Views&color=00ff7f&style=flat"/>
+
+---
+
+# 💡 Developer Philosophy
+
+> "Security is not a feature.  
+> It is the foundation of every system."
