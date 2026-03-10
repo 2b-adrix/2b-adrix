@@ -18,7 +18,7 @@
 
 ## 🛠 Tech Stack
 
-<img align="right" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif"  width="590" height="600"/>
+<img align="right" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif"  width="590" height="550"/>
 
 ### 📱 Mobile Development
 <p align="left">
