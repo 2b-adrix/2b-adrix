@@ -65,18 +65,11 @@
 <br>
 <br>
 
+## 🐍 Snake Contribution Graph
 
-## Snake-Game Contribution Graph 
-
-<div align="center">
-  <a href="https://github.com/Platane/snk">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg](https://github.com/2b-adrix/2b-adrix/blob/main/github-user-contribution.svg.url)" />
-      <source media="(prefers-color-scheme: light)" srcset="[https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake.svg](https://github.com/2b-adrix/2b-adrix/blob/main/github-user-contribution.svg.url)" />
-      <img width="100%" alt="GitHub Snake Contribution Animation" src="[https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg](https://github.com/2b-adrix/2b-adrix/blob/main/github-user-contribution.svg.url)" />
-    </picture>
-  </a>
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
+</p>
 
 
 [![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
