@@ -73,9 +73,8 @@
 ## 📊 GitHub Stats:
 <p align="center">
   <img src="https://dealer-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
-</p>
-<p align="center">
-  <img
+</p><p align="center">
+ <img
     src="https://streak-stats.demolab.com/?user=2b-adrix&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&cache_seconds=1800"
     alt="GitHub Streak"
   />
