@@ -18,7 +18,7 @@
 
 ## 🛠 Tech Stack
 
-<img align="right" src="https://i.gifer.com/ZKZg.gif"  width="590" height="690"/>
+<img align="right" src="https://i.gifer.com/3d3d.gif"  width="590" height="690"/>
 
 ### 📱 Mobile Development
 <p align="left">
