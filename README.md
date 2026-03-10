@@ -86,7 +86,7 @@
 ## 🏆 GitHub Achievements
 
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=2b-adrix&theme=onedark&row=1&column=6"/>
+<img src="https://github-profile-trophy.vercel.app/?username=2b-adrix&theme=dracula"/>
 </p>
  
 ## 📊 Contribution History
