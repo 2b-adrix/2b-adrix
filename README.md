@@ -83,10 +83,10 @@
   />
 </p>
 
-## 🏆 GitHub Achievements
+## 📊 Developer Dashboard
 
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=2b-adrix&theme=dracula"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"/>
 </p>
  
 ## 📊 Contribution History
