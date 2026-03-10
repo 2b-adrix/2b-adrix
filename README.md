@@ -71,7 +71,7 @@
 
  
 ## 📊 GitHub Stats:
-<p align="center">
+<p align="left">
   <img src="https://dealer-github-readme.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
 </p>
 <p>
