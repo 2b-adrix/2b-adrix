@@ -23,7 +23,7 @@
 ## 🛠 Tech Stack
 
 <img align="right" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="280"/>
-### 📱 Mobile Development
+## 📱 Mobile Development
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/>
