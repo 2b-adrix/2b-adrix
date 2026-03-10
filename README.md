@@ -28,6 +28,17 @@
 <p align="left"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/> </p>
 🐧 Systems & Tools
 <p align="left"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40"/> </p>
+<br>
+
+## 📚 Android Technologies
+
+Jetpack Compose
+MVVM Architecture
+Room Database
+REST APIs
+Firebase Authentication
+Material Design
+Secure Android Storage
 ## 🔗 Connect with Me
 <p align="left">
 <a href="https://twitter.com/@adityamishrasu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@adityamishrasu1" height="30" width="40" /></a>
