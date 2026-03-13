@@ -12,6 +12,8 @@
 - 📱 Building Android apps with a focus on privacy and performance.
 - 🤝 Always open to collaboration, feedback, and fun challenges
 - 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+
+ <img src="https://cdn.simpleicons.org/android/3DDC84" width="100" height="100" alt="Android Logo" />
 ## 🌱 Currently Learning
 
 - Android Security
@@ -21,7 +23,7 @@
 ---
 
 ## 🛠 Tech Stack
-<img src="https://cdn.simpleicons.org/android/3DDC84" width="100" height="100" alt="Android Logo" />
+
 ## 📱 Android 
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
