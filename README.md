@@ -21,7 +21,10 @@
 
 ## 🛠 Tech Stack
 
-<img src="https://www.vectorlogo.zone/logos/android/android-ar21.svg" width="200" height="80" />
+<p align="center">
+  <img src="https://www.vectorlogo.zone/logos/android/android-official.svg" width="150" alt="Android Logo" />
+</p>
+
 
 
 ## 📱 Android 
