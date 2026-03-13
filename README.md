@@ -21,7 +21,7 @@
 
 ## 🛠 Tech Stack
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6bm9yeXF6bm9yeXF6bm9yeXF6bm9yeXF6bm9yeXF6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26DMX0p9S1S7h6U2A/giphy.gif" width="100" />
+<img src="new.svg" width="100" />
 
 
 
