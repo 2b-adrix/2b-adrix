@@ -21,7 +21,6 @@
 
 ## 🛠 Tech Stack
 
-<img src="new.svg" width="100" />
 
 
 
@@ -29,7 +28,7 @@
 ## 📱 Android 
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
-<img align="right" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="280" />
+<img align="right" src="new.svg" width="280" />
   
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" width="40"/>
