@@ -21,9 +21,8 @@
 
 ## 🛠 Tech Stack
 
-<p align="center">
-  <img src="https://www.vectorlogo.zone/logos/android/android-official.svg" width="150" alt="Android Logo" />
-</p>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6bm9yeXF6bm9yeXF6bm9yeXF6bm9yeXF6bm9yeXF6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26DMX0p9S1S7h6U2A/giphy.gif" width="100" />
+
 
 
 
