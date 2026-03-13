@@ -21,6 +21,8 @@
 
 ## 🛠 Tech Stack
 
+<img src="https://www.vectorlogo.zone/logos/android/android-official.svg" width="100" height="100" />
+
 ## 📱 Android 
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
