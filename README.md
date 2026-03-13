@@ -21,9 +21,7 @@
 ---
 
 ## 🛠 Tech Stack
-
-
-
+<img src="https://cdn.simpleicons.org/android/3DDC84" width="100" height="100" alt="Android Logo" />
 ## 📱 Android 
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
