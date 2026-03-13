@@ -22,7 +22,7 @@
 
 ## 🛠 Tech Stack
 
-<img align="right" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="280" padding="30"/>
+<img align="right" src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="280" padding="300"/>
 
 ## 📱 Android 
 <p align="left">
