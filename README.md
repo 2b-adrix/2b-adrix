@@ -13,7 +13,6 @@
 - 🤝 Always open to collaboration, feedback, and fun challenges
 - 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
 ## 🌱 Currently Learning
-<img src="https://cdn.simpleicons.org/android/3DDC84" width="100" height="100" alt="Android Logo" />
 - Android Security
 - Jetpack Compose
 - Backend APIs
