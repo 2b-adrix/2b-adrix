@@ -1,7 +1,7 @@
 
 <img src = "https://github.com/2b-adrix/2b-adrix/blob/main/1774850926972.png " width="1000"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=0891B2&center=true&vCenter=true&width=680&lines=Android+Engineer+%7C+Android+Devloper+(https://raw.githubusercontent.com);Kotlin+%7C+Jetpack-Compose+%7C+Cloud-Native+Enthusiast+%F0%9F%9A%80;Building+Scalable+Application+Since+2024+%F0%9F%9B%A0%EF%B8%8F;Based+in+Jharsuguda+Odisha%2C+India+%F0%9F%87%AE%F0%9F%87%B3)](https://github.com/2b-adrix)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=0891B2&center=true&vCenter=true&width=680&lines=Android+Engineer+%7C+Android+Devloper+;Kotlin+%7C+Jetpack-Compose+%7C+Cloud-Native+Enthusiast+%F0%9F%9A%80;Building+Scalable+Application+Since+2024+%F0%9F%9B%A0%EF%B8%8F;Based+in+Jharsuguda+Odisha%2C+India+%F0%9F%87%AE%F0%9F%87%B3)](https://github.com/2b-adrix)
 
 [![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
 
