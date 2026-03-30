@@ -1,6 +1,8 @@
 
 <img src = "https://github.com/2b-adrix/2b-adrix/blob/main/1774850926972.png " width="1000"/>
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=0891B2&center=true&vCenter=true&width=680&lines=DevOps+Engineer+%40+ProjectX.Cloud+%E2%98%81%EF%B8%8F;Full-Stack+Developer+%7C+Cloud-Native+Enthusiast+%F0%9F%9A%80;Building+Resilient+Systems+Since+2022+%F0%9F%9B%A0%EF%B8%8F;Based+in+West+Bengal%2C+India+%F0%9F%87%AE%F0%9F%87%B3)](https://github.com/2b-adrix)
+
 <p align="center">
   <font src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Developer+%7C+Cybersecurity+Enthusiast;Building+secure+and+scalable+mobile+solutions" alt="Typing animation showing Android Developer & Cybersecurity Enthusiast"/>
 </p>
