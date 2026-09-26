@@ -103,6 +103,13 @@
 <a href="#"><img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=github-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&bg_color=000000&color=00FF7F&line=00FF7F&point=ffffff" /></a>
 </p>
 
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/2b-adrix/2b-adrix/main/assets/bar_graph.png)
+
+
+ Last Updated on 25/09/2026 22:05:55 UTC
+
 ## 🐍 Snake Eating My Contributions
 
 <p align="center">
