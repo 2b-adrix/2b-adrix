@@ -3,6 +3,10 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=0891B2&center=true&vCenter=true&width=680&lines=Android+Engineer+%7C+Android+Devloper+%7C+Kotlin+%7C+Jetpack-Compose+%7C+Cloud-Native+Enthusiast+%F0%9F%9A%80;Building+Scalable+Application+Since+2024+%F0%9F%9B%A0%EF%B8%8F;Based+in+Jharsuguda+Odisha%2C+India+%F0%9F%87%AE%F0%9F%87%B3)](https://github.com/2b-adrix)
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=850&height=55&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose+%F0%9F%9A%80;Building+Scalable+Native+Android+Applications+%F0%9F%9B%A0%EF%B8%8F;Cloud-Native+Development+%7C+Spring+Boot+%7C+MongoDB+%E2%98%81%EF%B8%8F;Engineering+Products%2C+Not+Just+Projects+%F0%9F%94%A5" alt="Android Engineer | Kotlin | Jetpack Compose" />
+</p>
+
 [![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
 
 <p align="center">
