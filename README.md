@@ -1,128 +1,113 @@
-<div align="center">
 
-<!-- Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0891B2&height=190&section=header&text=Adrix&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Android%20Engineer%20%7C%20Kotlin%20%7C%20Jetpack%20Compose&descAlignY=58&descSize=18" />
-
-<!-- Typing Animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=23&duration=2800&pause=800&color=0891B2&center=true&vCenter=true&width=800&lines=Hey+There!+I'm+Adrix+👋;Android+Engineer+%7C+Kotlin+Developer+🚀;Jetpack+Compose+%7C+Cloud-Native+Enthusiast+☁️;Building+Scalable+Applications+Since+2024+🛠️;Based+in+Jharsuguda%2C+Odisha%2C+India+🇮🇳)](https://github.com/2b-adrix)
-
-<br/>
-
-<!-- Counter Badges -->
-![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS)
-[![GitHub Followers](https://img.shields.io/github/followers/2b-adrix?color=0891b2&style=for-the-badge&logo=github&label=FOLLOWERS)](https://github.com/2b-adrix?tab=followers)
-[![GitHub Stars](https://img.shields.io/github/stars/2b-adrix?color=0891b2&style=for-the-badge&logo=github&label=STARS)](https://github.com/2b-adrix)
-
-</div>
-
----
-
-## 🧑‍💻 About Me
-
-```kotlin
-data class AndroidEngineer(
-    val name: String = "Adrix",
-    val title: String = "Android Engineer & Cloud-Native Enthusiast",
-    val baseLocation: String = "Jharsuguda, Odisha, India 🇮🇳",
-    val primaryStack: List<String> = listOf("Kotlin", "Jetpack Compose", "Coroutines", "Flow", "Koin/Hilt"),
-    val activeSince: Int = 2024,
-    val architecture: List<String> = listOf("Clean Architecture", "MVI", "MVVM"),
-    val currentGoals: String = "Building high-performance, reactive, scalable Android systems",
-    val availableForHiring: Boolean = true
-)
-```
-
----
-
-## 🛠️ Tech Stack & Ecosystem
-
-<div align="center">
-
-### 📱 Android & Core Languages
-<p>
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img src = "https://github.com/2b-adrix/2b-adrix/blob/main/1774850926972.png " width="1000"/>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=850&height=55&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose+%F0%9F%9A%80;Building+Scalable+Native+Android+Applications+%F0%9F%9B%A0%EF%B8%8F;Cloud-Native+Development+%7C+Spring+Boot+%7C+MongoDB+%E2%98%81%EF%B8%8F;Engineering+Products%2C+Not+Just+Projects+%F0%9F%94%A5" alt="Android Engineer | Kotlin | Jetpack Compose" />
 </p>
 
-### 🏗️ Architecture & Storage
-<p>
-  <img src="https://img.shields.io/badge/Clean_Architecture-0891B2?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/MVVM-0891B2?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/MVI-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/Room_DB-3DDC84?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/DataStore-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+[![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
+
+<p align="center">
+  <font src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Developer+%7C+Cybersecurity+Enthusiast;Building+secure+and+scalable+mobile+solutions" alt="Typing animation showing Android Developer & Cybersecurity Enthusiast"/>
 </p>
 
-### ☁️ Networking & Cloud-Native
-<p>
-  <img src="https://img.shields.io/badge/Retrofit-48B983?style=for-the-badge&logo=square&logoColor=white" />
-  <img src="https://img.shields.io/badge/OkHttp-008080?style=for-the-badge&logo=square&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
-  <img src="https://img.shields.io/badge/REST_APIs-FF6B6B?style=for-the-badge&logo=fastapi&logoColor=white" />
+---
+
+## 🔭 About Me
+
+- 🎓 3rd Year B.Tech CSE student with 3+ years of coding experience.  
+- 📱 Building Android apps with a focus on privacy and performance.
+- 🤝 Always open to collaboration, feedback, and fun challenges
+- 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+## 🌱 Currently Learning
+- Android Security
+- Jetpack Compose
+- Backend APIs
+- System Design
+---
+
+## 🛠 Tech Stack
+## 📱 Android 
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
+  <img align="right" src="new.svg" width="280" height ="200" />
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" width="40"/>
 </p>
 
-### 🧰 Development Tools & CI/CD
-<p>
-  <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+### 🌐 Web Development
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
 </p>
 
-</div>
+### ⚙ Backend & Cloud
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="40"/>
+<img src="https://avatars.githubusercontent.com/u/54469796?s=200&v=4" width="40"/>
+</p>
+
+### 🐧 Systems & Tools
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40"/>
+</p>
+
+## 📚 Android Technologies
+
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Android-green)
+![MVVM](https://img.shields.io/badge/MVVM-Architecture-blue)
+![Room](https://img.shields.io/badge/Room-Database-orange)
+![REST API](https://img.shields.io/badge/REST-API-red)
+![Firebase Auth](https://img.shields.io/badge/Firebase-Auth-yellow)
+
+## 🔗 Connect with Me
+<p align="left">
+<a href="https://twitter.com/@adityamishrasu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@adityamishrasu1" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/2b-adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="2b-adrix" height="30" width="40" /></a>
+<a href="https://instagram.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="2b_adrix" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="2b_adrix" height="30" width="40" /></a>
+<a href="https://fb.com/https://www.facebook.com/me/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/me/" height="30" width="40" /></a>
+<a href="mailto:vadityamishra777@gmail.com">
+<img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" height="30" width="40"/></a>
+</p>
+
+## 📊 GitHub Stats:
+
+<img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=86400" />
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" />
+</p>
+
+## 📊 Developer Dashboard
+
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"/>
+</p>
+ 
+## 💻 Development Metrics
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=2b-adrix&theme=github_dark"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=2b-adrix&theme=github_dark"/>
+</p>
 
 ---
 
-## 📊 Real-Time GitHub Analytics
+## 📈 Contribution Graph
+<p align="center">
+<a href="#"><img src="https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&theme=github-dark&custom_title=My%20GitHub%20Contribution%20Graph&radius=16&hide_border=true&area=true&bg_color=000000&color=00FF7F&line=00FF7F&point=ffffff" /></a>
+</p>
 
-<div align="center">
+## 🐍 Snake Eating My Contributions
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0891B2&icon_color=0891B2&text_color=E2E8F0&count_private=true" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=2b-adrix&theme=tokyonight&hide_border=true&background=0D1117&ring=0891B2&fire=0891B2&currStreakLabel=0891B2" />
+<p align="center">
+<img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg"/>
+</p>
 
-<br/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=2b-adrix&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0891B2&text_color=E2E8F0&layout=compact&langs_count=6" />
 
-</div>
-
----
-
-## 📈 Activity Graph
-
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=2b-adrix&bg_color=0D1117&color=0891B2&line=0891B2&point=38BDF8&area=true&hide_border=true)](https://github.com/2b-adrix)
-
-</div>
-
----
-
-## 🎯 Current Status
-
-- 🔭 **Working on:** Scalable, reactive Android applications using Kotlin & Compose
-- 📚 **Deep-diving into:** Kotlin Multiplatform (KMP) & Cloud-Native Backends
-- 💬 **Ask me about:** Android Dev, Jetpack Compose, Kotlin, State Management, Architecture
-- 📍 **Based in:** Jharsuguda, Odisha, India 🇮🇳
-
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/2b-adrix)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
-
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0891B2&height=100&section=footer" />
-
-</div>
-```
