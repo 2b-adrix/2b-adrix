@@ -105,11 +105,10 @@
 
 **Timeline**
 
-![Lines of Code chart](https://raw.githubusercontent.com/2b-adrix/2b-adrix/main/assets/bar_graph.png)
+![Lines of Code chart](https://raw.githubusercontent.com/itsyourap/itsyourap/main/assets/bar_graph.png)
 
 
  Last Updated on 25/09/2026 22:05:55 UTC
-
 ## 🐍 Snake Eating My Contributions
 
 <p align="center">
