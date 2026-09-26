@@ -1,27 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono\&weight=600\&size=22\&duration=2800\&pause=900\&color=0891B2\&center=true\&vCenter=true\&width=900\&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose+%F0%9F%9A%80;Building+Scalable+Native+Android+Applications+Since+2024+%F0%9F%9B%A0%EF%B8%8F;Spring+Boot+%7C+REST+APIs+%7C+MongoDB+%7C+Firebase+%E2%98%81%EF%B8%8F;Engineering+Products%2C+Not+Just+Projects+%F0%9F%94%A5)](https://github.com/2b-adrix)
-
-<img src="https://github.com/2b-adrix/2b-adrix/blob/main/1774850926972.png" width="1000" alt="Aditya Mishra GitHub Banner"/>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=900&height=55&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose+%F0%9F%9A%80;Native+Android+Development+%7C+Modern+Architecture+%F0%9F%9B%A0%EF%B8%8F;Spring+Boot+%7C+REST+APIs+%7C+MongoDB+%7C+Firebase+%E2%98%81%EF%B8%8F;Building+Real-World+Products+%7C+Learning+%7C+Shipping+%F0%9F%94%A5" alt="Typing animation"/>
-</p>
-
-[![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix\&label=Profile%20views\&color=0e75b6\&style=flat)](https://github.com/2b-adrix)
-
-<p align="center">
-  <a href="https://github.com/2b-adrix">
-    <img src="https://img.shields.io/github/followers/2b-adrix?label=Followers&style=flat" alt="GitHub Followers"/>
-  </a>
-  <a href="https://github.com/2b-adrix?tab=repositories">
-    <img src="https://img.shields.io/github/stars/2b-adrix?label=Stars&style=flat" alt="GitHub Stars"/>
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose;Building+secure+and+scalable+mobile+solutions;Exploring+Backend+Engineering+with+Spring+Boot" alt="Typing animation showing Android Engineer and Backend Engineering"/>
-</p>
-
----
+<img src = "https://github.com/2b-adrix/2b-adrix/blob/main/1774850926972.png " width="1000"/> <p align="center"> <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=850&height=55&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose+%F0%9F%9A%80;Building+Scalable+Native+Android+Applications+%F0%9F%9B%A0%EF%B8%8F;Cloud-Native+Development+%7C+Spring+Boot+%7C+MongoDB+%E2%98%81%EF%B8%8F;Engineering+Products%2C+Not+Just+Projects+%F0%9F%94%A5" alt="Android Engineer | Kotlin | Jetpack Compose" /> </p>
 
 ## 🔭 About Me
 
