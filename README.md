@@ -11,12 +11,19 @@
 
 ---
 
-## 🔭 About Me
+## 👨‍💻 About Me
 
-- 🎓 3rd Year B.Tech CSE student with 3+ years of coding experience.  
-- 📱 Building Android apps with a focus on privacy and performance.
-- 🤝 Always open to collaboration, feedback, and fun challenges
-- 📫 Reach me at: [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reliable, scalable native Android applications.
+
+- 🎓 B.Tech in Computer Science and Engineering — Mewar University.
+- 📱 Focused on **Android development with Kotlin and Jetpack Compose**.
+- 🧱 Interested in clean architecture, app security, performance, and backend engineering.
+- ☁️ Exploring backend development with Spring Boot, REST APIs, and databases.
+- 🤝 Open to meaningful collaborations, feedback, and engineering challenges.
+- 📫 **Email:** [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+- 🌐 **Portfolio:** [adrix.vercel.app](https://adrix.vercel.app)
+- 💼 **LinkedIn:** [linkedin.com/in/2b-adrix](https://www.linkedin.com/in/2b-adrix)
+
 ## 🌱 Currently Learning
 - Android Security
 - Jetpack Compose
