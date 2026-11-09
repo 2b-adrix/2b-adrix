@@ -110,10 +110,14 @@
 ## 📊 GitHub Statistics
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&hide_border=true&theme=github_dark&title_color=00e7ff&icon_color=00e7ff" alt="GitHub statistics" />
-  <img height="180" src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" alt="GitHub contribution streak" />
-</p>
+  <img height="180"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
+    alt="GitHub Statistics" />
 
+  <img height="180"
+    src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
+    alt="GitHub Contribution Streak" />
+</p>
 ## 📈 Developer Dashboard
 
 <p align="center">
