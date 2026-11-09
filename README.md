@@ -129,14 +129,6 @@
 
 ---
 
-## 📈 Contribution Graph
-
-<p align="center">
-  <a href="https://github.com/2b-adrix">
-    <img src="https://ghchart.rshah.org/0891b2/2b-adrix" alt="GitHub contribution graph for 2b-adrix" width="100%" />
-  </a>
-</p>
-
 ## 🐍 Snake Eating My Contributions
 
 <p align="center">
