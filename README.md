@@ -76,11 +76,37 @@
 <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" height="30" width="40"/></a>
 </p>
 
-## 📊 GitHub Stats:
+## 📊 GitHub Statistics
 
-<img src="https://github-readme-stats.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=86400" />
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
+        alt="GitHub Statistics"
+        width="100%"
+      />
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
+        alt="GitHub Contribution Streak"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📈 Developer Dashboard
+
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&background=000000&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" />
+  <img
+    width="95%"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"
+    alt="GitHub profile summary"
+  />
 </p>
 
 ## 📊 Developer Dashboard
