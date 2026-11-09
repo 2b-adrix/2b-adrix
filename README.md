@@ -109,14 +109,35 @@
 
 ## 📊 GitHub Statistics
 
-<p align="center">
-  <img height="180"
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
-    alt="GitHub Statistics" />
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
+        alt="GitHub Statistics"
+        width="100%"
+      />
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
+        alt="GitHub Contribution Streak"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
 
-  <img height="180"
-    src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
-    alt="GitHub Contribution Streak" />
+---
+
+## 📈 Developer Dashboard
+
+<p align="center">
+  <img
+    width="95%"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"
+    alt="GitHub profile summary"
+  />
 </p>
 ## 📈 Developer Dashboard
 
