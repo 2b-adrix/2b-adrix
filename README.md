@@ -86,49 +86,28 @@ I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reli
 <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" height="30" width="40"/></a>
 </p>
 
-### `$ gh stats --user 2b-adrix`
+## 📊 GitHub Statistics
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/stats.svg"
-    width="49%"
-    alt="GitHub Account Statistics"
-  />
-  <img
-    src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/streak.svg"
-    width="49%"
-    alt="GitHub Contribution Streak"
-  />
-</p>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
+        alt="GitHub Statistics"
+        width="100%"
+      />
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
+        alt="GitHub Contribution Streak"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/languages.svg"
-    width="49%"
-    alt="Programming Languages"
-  />
-  <img
-    src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/commit-clock.svg"
-    width="49%"
-    alt="Commit Activity by Hour"
-  />
-</p>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/contributions.svg"
-    width="98.5%"
-    alt="Contribution Activity — Last 90 Days"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/milestones.svg"
-    width="98.5%"
-    alt="GitHub Account Milestones"
-  />
-</p>
 
 
 ## 📈 Developer Dashboard
