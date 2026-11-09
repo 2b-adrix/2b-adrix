@@ -1,0 +1,87 @@
+name: Update Profile Dashboard
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "profile_dashboard.py"
+      - ".github/workflows/update-profile-dashboard.yml"
+
+# Shared with snake.yml so both workflows update the output branch sequentially.
+concurrency:
+  group: output-branch-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: Generate and publish profile cards
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_USER: 2b-adrix
+      GH_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+      OUTPUT_DIR: out
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Generate SVG cards and refresh activity
+        run: |
+          python3 --version
+          python3 -m py_compile profile_dashboard.py
+          python3 profile_dashboard.py
+
+      - name: Publish dashboard cards without deleting the Snake files
+        env:
+          PUSH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          test -d "$OUTPUT_DIR"
+          test -n "$(find "$OUTPUT_DIR" -maxdepth 1 -name '*.svg' -print -quit)"
+
+          remote="https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          target="$RUNNER_TEMP/output-branch"
+
+          if git ls-remote --exit-code --heads "$remote" output >/dev/null 2>&1; then
+            git clone --depth 1 --branch output "$remote" "$target"
+          else
+            mkdir -p "$target"
+            git -C "$target" init -b output
+            git -C "$target" remote add origin "$remote"
+          fi
+
+          cp "$OUTPUT_DIR"/*.svg "$target"/
+          cd "$target"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.svg streak.svg languages.svg commit-clock.svg contributions.svg trophies.svg
+
+          if git diff --cached --quiet; then
+            echo "Dashboard cards have not changed."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh profile dashboard cards"
+          git push origin HEAD:output
+
+      - name: Commit README if recent public activity changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README activity is unchanged."
+            exit 0
+          fi
+          git commit -m "chore(readme): refresh recent GitHub activity"
+          git push origin HEAD:main
