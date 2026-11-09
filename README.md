@@ -33,46 +33,55 @@ I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reli
 - Improving system design, testing, debugging, and engineering documentation.
 
 
-## 🛠 Tech Stack
-## 📱 Android 
-<p align="left">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
-  <img align="right" src="new.svg" width="280" height ="200" />
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" width="40"/>
+## 🛠️ Technology Stack
+
+### 📱 Android Development
+
+<p>
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" />
 </p>
 
-### 🌐 Web Development
-<p align="left">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
+### 🧩 Android Libraries & Architecture
+
+<p>
+  <img src="https://img.shields.io/badge/MVVM-Architecture-2962FF?style=flat" alt="MVVM" />
+  <img src="https://img.shields.io/badge/Clean-Architecture-0A7EA4?style=flat" alt="Clean Architecture" />
+  <img src="https://img.shields.io/badge/Coroutines-Kotlin-7F52FF?style=flat" alt="Kotlin Coroutines" />
+  <img src="https://img.shields.io/badge/Flow-Kotlin-7F52FF?style=flat" alt="Kotlin Flow" />
+  <img src="https://img.shields.io/badge/Room-Database-FB8C00?style=flat" alt="Room" />
+  <img src="https://img.shields.io/badge/Retrofit-REST%20Client-009688?style=flat" alt="Retrofit" />
+  <img src="https://img.shields.io/badge/Hilt-Dependency%20Injection-4285F4?style=flat" alt="Hilt" />
+  <img src="https://img.shields.io/badge/Material%203-UI-6750A4?style=flat" alt="Material 3" />
 </p>
 
-### ⚙ Backend & Cloud
-<p align="left">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="40"/>
-<img src="https://avatars.githubusercontent.com/u/54469796?s=200&v=4" width="40"/>
+### ⚙️ Backend, Cloud & Databases
+
+<p>
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
 </p>
 
-### 🐧 Systems & Tools
-<p align="left">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40"/>
+### 🌐 Web & Developer Tools
+
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="38" height="38" alt="HTML5" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="38" height="38" alt="CSS3" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="38" height="38" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="38" height="38" alt="Git" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="38" height="38" alt="GitHub" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="38" height="38" alt="Linux" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" width="38" height="38" alt="Android Studio" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="38" height="38" alt="VS Code" />
 </p>
 
-## 📚 Android Technologies
-
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Android-green)
-![MVVM](https://img.shields.io/badge/MVVM-Architecture-blue)
-![Room](https://img.shields.io/badge/Room-Database-orange)
-![REST API](https://img.shields.io/badge/REST-API-red)
-![Firebase Auth](https://img.shields.io/badge/Firebase-Auth-yellow)
 
 ## 🔗 Connect with Me
 <p align="left">
