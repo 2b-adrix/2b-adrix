@@ -1,13 +1,14 @@
-<div align="center"><a href="https://github.com/2b-adrix"><img src="./assets/static/header.svg" width="100%" alt="GitHub dashboard — @2b-adrix" /></a>
-
-<a href="https://adrix.vercel.app"><img src="./assets/static/badges/portfolio.svg" alt="Portfolio" /></a>
-<a href="mailto:vadityamishra777@gmail.com"><img src="./assets/static/badges/email.svg" alt="Email" /></a>
-<a href="https://www.linkedin.com/in/2b-adrix"><img src="./assets/static/badges/linkedin.svg" alt="LinkedIn" /></a>
-<a href="https://x.com/adityamishrasu1"><img src="./assets/static/badges/x.svg" alt="X / Twitter" /></a>
-<a href="https://www.leetcode.com/2b_adrix"><img src="./assets/static/badges/leetcode.svg" alt="LeetCode" /></a>
-
-
-<img src="https://komarev.com/ghpvc/?username=2b-adrix&style=pixel&color=0891b2" alt="Profile views" />
+<div align="center">
+  <a href="https://github.com/2b-adrix">
+    <img src="./header.svg" width="100%" alt="GitHub dashboard — @2b-adrix" />
+  </a>
+  <br /><br />
+  <a href="https://adrix.vercel.app">Portfolio</a> ·
+  <a href="mailto:vadityamishra777@gmail.com">Email</a> ·
+  <a href="https://www.linkedin.com/in/2b-adrix">LinkedIn</a> ·
+  <a href="https://x.com/adityamishrasu1">X / Twitter</a> ·
+  <a href="https://www.leetcode.com/2b_adrix">LeetCode</a> ·
+  <a href="https://instagram.com/2b_adrix">Instagram</a>
 </div>$ cat ~/account.yaml
 apiVersion: github.profile/v1
 kind: AccountDashboard
@@ -32,7 +33,7 @@ spec:
     - contributions
     - milestones
 $ ls ~/toolkit
-<img src="./assets/static/toolkit.svg" width="100%" alt="Account technology index: Android, Kotlin, Java, Jetpack Compose, Spring Boot, Node.js, MongoDB, Firebase, Supabase, GitHub Actions and Linux" />$ ls ~/repositories --featured
+<img src="./toolkit.svg" width="100%" alt="Account technology index: Android, Kotlin, Java, Jetpack Compose, Spring Boot, Node.js, MongoDB, Firebase, Supabase, GitHub Actions and Linux" />$ ls ~/repositories --featured
 Repository	Description	Links
 ArogyaGrid	Public-health supply-chain project focused on hospital inventory visibility and medicine redistribution.	App / main repo · Backend
 SentinalX	Android cybersecurity project exploring installed-app checks and website defacement detection.	Repository
@@ -58,15 +59,16 @@ $ gh stats --user 2b-adrix
 </p>$ tail -n 8 ~/activity.log
 <!--START_SECTION:activity-->
 When		What
-Waiting	◌	Recent public GitHub activity will be added automatically after the dashboard workflow runs.
+Waiting	◌	Run the dashboard workflow to load recent public GitHub activity here.
 
 
 <!--END_SECTION:activity--><details>
-<summary><b><code>$ cat ~/.links</code></b></summary>
-<br /><a href="https://instagram.com/2b_adrix"><img src="./assets/static/badges/instagram.svg" alt="Instagram" /></a>
-<a href="https://www.leetcode.com/2b_adrix"><img src="./assets/static/badges/leetcode.svg" alt="LeetCode" /></a>
-<a href="https://adrix.vercel.app"><img src="./assets/static/badges/portfolio.svg" alt="Portfolio" /></a>
-<a href="mailto:vadityamishra777@gmail.com"><img src="./assets/static/badges/email.svg" alt="Email" /></a>
+<summary><b><code>$ cat ~/.links</code></b></summary>- Portfolio
+- LinkedIn
+- LeetCode
+- Instagram
+- X / Twitter
+- Email
 </details><div align="center">
-  <sub>Dashboard data is generated from GitHub's API and published by GitHub Actions.</sub>
+  <sub>Dashboard cards are generated from GitHub's API and published by GitHub Actions.</sub>
 </div>
