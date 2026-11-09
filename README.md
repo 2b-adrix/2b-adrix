@@ -90,13 +90,9 @@ I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reli
 
 <table>
   <tr>
-    <td width="50%" align="center">
-      <img
-        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
-        alt="GitHub Statistics"
-        width="100%"
-      />
-    </td>
+    <p align="center">
+  <img src="https://github-readme-stats-dealer.vercel.app/api?username=2b-adrix&show_icons=true&count_private=true&hide_border=true&bg_color=000000&title_color=00e7ff&text_color=ffffff&icon_color=00e7ff&cache_seconds=1800" />
+</p>
     <td width="50%" align="center">
       <img
         src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
