@@ -1,12 +1,4 @@
-#!/usr/bin/env python3
-"""Build self-hosted GitHub profile cards and refresh the README activity table.
 
-Dependencies: Python standard library only.
-Environment:
-  GH_USER       GitHub login (defaults to 2b-adrix)
-  GH_TOKEN      GitHub token for REST + GraphQL access
-  OUTPUT_DIR    SVG output directory (defaults to ./out)
-"""
 from __future__ import annotations
 
 import json
