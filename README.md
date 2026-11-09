@@ -1,6 +1,4 @@
-from pathlib import Path
 
-readme = r'''<!-- Profile banner -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/main/1774850926972.png" width="100%" alt="Aditya Mishra — Android Engineer" />
 </p>
@@ -144,8 +142,4 @@ readme = r'''<!-- Profile banner -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" alt="Animated snake travelling across my GitHub contribution calendar" width="100%" />
 </p>
-'''
 
-path = Path("/mnt/data/README-fixed.md")
-path.write_text(readme, encoding="utf-8")
-print(f"Created {path} ({len(readme):,} characters, {len(readme.splitlines())} lines)")
