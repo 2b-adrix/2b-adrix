@@ -24,12 +24,14 @@ I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reli
 - 🌐 **Portfolio:** [adrix.vercel.app](https://adrix.vercel.app)
 - 💼 **LinkedIn:** [linkedin.com/in/2b-adrix](https://www.linkedin.com/in/2b-adrix)
 
-## 🌱 Currently Learning
-- Android Security
-- Jetpack Compose
-- Backend APIs
-- System Design
----
+## 🎯 Current Focus
+
+- Deepening my understanding of Kotlin, Jetpack Compose, and Android architecture.
+- Building maintainable Android applications with clear separation of concerns.
+- Learning backend API development with Spring Boot.
+- Practising Data Structures and Algorithms in Java.
+- Improving system design, testing, debugging, and engineering documentation.
+
 
 ## 🛠 Tech Stack
 ## 📱 Android 
