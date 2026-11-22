@@ -108,6 +108,7 @@ I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reli
 </table>
 
 
+![](https://github-readme-stats.shion.dev/api?username=2b-adrix&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 
 
 ## 📈 Developer Dashboard
