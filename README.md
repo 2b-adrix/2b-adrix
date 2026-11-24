@@ -21,7 +21,7 @@ I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reli
 - ☁️ Exploring backend development with Spring Boot, REST APIs, and databases.
 - 🤝 Open to meaningful collaborations, feedback, and engineering challenges.
 - 📫 **Email:** [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
-- 🌐 **Portfolio:** [adrix.vercel.app](https://adrix.vercel.app)
+- 🌐 **Portfolio:** [adrix.vercel.app](https://adrix.is-a.dev)
 - 💼 **LinkedIn:** [linkedin.com/in/2b-adrix](https://www.linkedin.com/in/2b-adrix)
 
 ## 🎯 Current Focus
