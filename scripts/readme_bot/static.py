@@ -1,4 +1,4 @@
-"""Static artwork: Android Pixel-frame hero, 2x2 Bento toolkit, project cards, pill badges & footer."""
+"""Static artwork: polished Pixel-frame hero, 2x2 Bento toolkit, project cards, pill badges & footer."""
 
 from __future__ import annotations
 
@@ -15,7 +15,13 @@ HANDLE = "@2b-adrix"
 ROLE = "Android & Backend Engineer"
 SUB = "B.Tech CSE · Mewar University '28 · Alpha-coders"
 MOTTO = "Engineering products, not just projects."
-CHIPS = ["Kotlin", "Jetpack Compose", "Spring Boot", "Firebase", "Clean Arch"]
+CHIPS = [
+    ("Kotlin", T["kotlin"]),
+    ("Jetpack Compose", T["mint"]),
+    ("Spring Boot", T["sky"]),
+    ("Firebase", T["gold"]),
+    ("Clean Arch", T["coral"]),
+]
 
 TOOLKIT_GRID = [
     (
@@ -28,7 +34,7 @@ TOOLKIT_GRID = [
         "02 // ANDROID & UI",
         T["mint"],
         ["AndroidStudio-Dark", "Gradle-Dark", "Firebase-Dark", "SQLite"],
-        ["Jetpack Compose", "MVVM", "Room", "CameraX"],
+        ["Jetpack Compose", "MVVM", "Room", "TFLite"],
     ),
     (
         "03 // BACKEND & APIS",
@@ -40,7 +46,7 @@ TOOLKIT_GRID = [
         "04 // SYSTEMS & TOOLS",
         T["coral"],
         ["Linux-Dark", "Git", "Github-Dark", "GithubActions-Dark", "VSCode-Dark"],
-        ["App Security", "DSA"],
+        ["SQLCipher", "DSA"],
     ),
 ]
 
@@ -174,7 +180,7 @@ def _icon_uri(name: str) -> str:
 
 def badge_svg(label: str, accent: str, icon_svg: str) -> str:
     text_len = len(label) * 7.6
-    w = round(text_len + 46)
+    w = round(text_len + 48)
     h = 30
     icon_b64 = base64.b64encode(icon_svg.encode("utf-8")).decode("ascii")
     cx = round((34 + w - 8) / 2 * 10)
@@ -183,7 +189,8 @@ def badge_svg(label: str, accent: str, icon_svg: str) -> str:
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" role="img" aria-label="{esc(label)}">'
         f'<title>{esc(label)}</title>'
         f'<rect width="{w}" height="{h}" rx="15" fill="{T["surface"]}" stroke="{T["border"]}"/>'
-        f'<circle cx="17" cy="15" r="10" fill="{accent}" fill-opacity=".14"/>'
+        f'<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="14" fill="none" stroke="{accent}" stroke-opacity=".22"/>'
+        f'<circle cx="17" cy="15" r="10" fill="{accent}" fill-opacity=".16"/>'
         f'<image x="10.5" y="8.5" width="13" height="13" href="data:image/svg+xml;base64,{icon_b64}"/>'
         f'<g fill="{T["text"]}" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="100">'
         f'<text transform="scale(.1)" x="{cx}" y="185" textLength="{tlen}" font-weight="bold">{esc(label)}</text>'
@@ -192,55 +199,62 @@ def badge_svg(label: str, accent: str, icon_svg: str) -> str:
 
 
 def header_svg() -> str:
-    w, h = 1000, 344
+    w, h = 1000, 348
     chips_svg, cx = [], 44
-    for i, chip in enumerate(CHIPS):
-        cw = len(chip) * 7.3 + 24
+    for i, (chip, dot_color) in enumerate(CHIPS):
+        cw = len(chip) * 7.2 + 34
         chips_svg.append(
             f'<g class="fade" {delay(0.65 + i * 0.08)}>'
-            f'<rect x="{cx}" y="264" width="{cw:.0f}" height="28" rx="14" fill="{T["surface"]}" stroke="{T["border"]}"/>'
-            f'<text x="{cx + cw / 2:.0f}" y="282" text-anchor="middle" class="mono" font-size="11.5" fill="{T["text"]}">{esc(chip)}</text>'
+            f'<rect x="{cx}" y="268" width="{cw:.0f}" height="28" rx="14" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+            f'<circle cx="{cx + 13}" cy="282" r="3" fill="{dot_color}"/>'
+            f'<text x="{cx + 22}" y="286" class="mono" font-size="11.2" fill="{T["text"]}">{esc(chip)}</text>'
             f'</g>'
         )
         cx += cw + 8
 
-    # Pixel / Android phone frame on the right (x=668..958, y=24..320)
-    px, py, pw, ph = 668, 22, 290, 300
+    # Pixel flagship phone frame on the right (x=666..956, y=22..324)
+    px, py, pw, ph = 666, 22, 290, 302
     phone = f"""
-  <g class="fade" {delay(0.25)}>
+  <g class="fade" {delay(0.22)}>
+    <!-- Hardware side buttons (power & volume) -->
+    <rect x="{px + pw - 1}" y="{py + 72}" width="4" height="28" rx="2" fill="#334155"/>
+    <rect x="{px + pw - 1}" y="{py + 114}" width="4" height="48" rx="2" fill="#334155"/>
     <!-- Phone outer chassis -->
-    <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="30" fill="#090c10" stroke="#334155" stroke-width="2"/>
-    <rect x="{px + 7}" y="{py + 7}" width="{pw - 14}" height="{ph - 14}" rx="24" fill="{T['chrome']}" stroke="{T['border']}"/>
+    <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="32" fill="#080a0f" stroke="#334155" stroke-width="2"/>
+    <rect x="{px + 7}" y="{py + 7}" width="{pw - 14}" height="{ph - 14}" rx="25" fill="{T['chrome']}" stroke="{T['border']}"/>
     <!-- Punch-hole camera & status bar -->
-    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="4.5" fill="#05070a" stroke="#1e293b"/>
+    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="4.5" fill="#040609" stroke="#1e293b"/>
+    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="1.5" fill="#38bdf8" fill-opacity=".45"/>
     <text x="{px + 24}" y="{py + 25}" class="mono muted" font-size="10">9:41</text>
     <text x="{px + pw - 24}" y="{py + 25}" text-anchor="end" class="mono mint" font-size="9.5">5G · 100%</text>
 
     <!-- Material You App Header inside phone -->
     <rect x="{px + 20}" y="{py + 40}" width="{pw - 40}" height="68" rx="16" fill="{T['surface']}" stroke="{T['border']}"/>
-    <!-- Android bugdroid silhouette badge -->
-    <rect x="{px + 32}" y="{py + 52}" width="44" height="44" rx="12" fill="{T['mint']}" fill-opacity=".15" stroke="{T['mint']}" stroke-opacity=".4"/>
+    <rect x="{px + 32}" y="{py + 52}" width="44" height="44" rx="12" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".45"/>
     <path d="M{px + 45},{py + 77} a9,9 0 0 1 18,0 Z" fill="{T['mint']}"/>
     <line x1="{px + 48}" y1="{py + 64}" x2="{px + 50}" y2="{py + 68}" stroke="{T['mint']}" stroke-width="1.8" stroke-linecap="round"/>
     <line x1="{px + 60}" y1="{py + 64}" x2="{px + 58}" y2="{py + 68}" stroke="{T['mint']}" stroke-width="1.8" stroke-linecap="round"/>
     <circle cx="{px + 50.5}" cy="{py + 73}" r="1.1" fill="{T['bg']}"/>
     <circle cx="{px + 57.5}" cy="{py + 73}" r="1.1" fill="{T['bg']}"/>
 
-    <text x="{px + 88}" y="{py + 71}" font-size="14" font-weight="700" fill="{T['text']}">2b-adrix.apk</text>
-    <text x="{px + 88}" y="{py + 88}" class="mono mint" font-size="10.5">@Composable UI</text>
+    <text x="{px + 88}" y="{py + 70}" font-size="14" font-weight="800" fill="{T['text']}">2b-adrix.apk</text>
+    <text x="{px + 88}" y="{py + 88}" class="mono mint" font-size="10.5">@Composable UI · M3</text>
 
-    <!-- Live Compose Build Card inside phone -->
+    <!-- Syntax-highlighted Kotlin block inside phone -->
     <rect x="{px + 20}" y="{py + 120}" width="{pw - 40}" height="106" rx="16" fill="{T['bg']}" stroke="{T['border']}"/>
-    <text x="{px + 34}" y="{py + 141}" class="mono coral" font-size="10.5">val stack = listOf(</text>
-    <text x="{px + 44}" y="{py + 159}" class="mono text" font-size="10.5">"Kotlin + Compose",</text>
-    <text x="{px + 44}" y="{py + 177}" class="mono text" font-size="10.5">"Spring Boot APIs",</text>
-    <text x="{px + 44}" y="{py + 195}" class="mono text" font-size="10.5">"Firebase + MongoDB"</text>
-    <text x="{px + 34}" y="{py + 213}" class="mono coral" font-size="10.5">)</text>
+    <text x="{px + 33}" y="{py + 141}" class="mono" font-size="10.5"><tspan fill="{T['coral']}">val</tspan> <tspan fill="{T['text']}">stack</tspan> <tspan fill="{T['dim']}">=</tspan> <tspan fill="{T['sky']}">listOf(</tspan></text>
+    <text x="{px + 43}" y="{py + 159}" class="mono" font-size="10.5"><tspan fill="{T['mint']}">"Kotlin + Compose"</tspan><tspan fill="{T['dim']}">,</tspan></text>
+    <text x="{px + 43}" y="{py + 177}" class="mono" font-size="10.5"><tspan fill="{T['mint']}">"TFLite + SQLCipher"</tspan><tspan fill="{T['dim']}">,</tspan></text>
+    <text x="{px + 43}" y="{py + 195}" class="mono" font-size="10.5"><tspan fill="{T['mint']}">"Spring Boot + REST"</tspan></text>
+    <text x="{px + 33}" y="{py + 213}" class="mono sky" font-size="10.5">)</text>
 
-    <!-- Bottom Material Navigation Pill / Build Status -->
-    <rect x="{px + 20}" y="{py + 238}" width="{pw - 40}" height="36" rx="18" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".45"/>
-    <circle class="pulse" cx="{px + 40}" cy="{py + 256}" r="4.5" fill="{T['mint']}"/>
-    <text x="{px + 54}" y="{py + 260}" class="mono mint" font-size="11" font-weight="700">RELEASE BUILD PASSING</text>
+    <!-- Bottom Material Build Pill -->
+    <rect x="{px + 20}" y="{py + 238}" width="{pw - 40}" height="36" rx="18" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".5"/>
+    <circle class="pulse" cx="{px + 39}" cy="{py + 256}" r="4.5" fill="{T['mint']}"/>
+    <text x="{px + 52}" y="{py + 260}" class="mono mint" font-size="10.8" font-weight="700">RELEASE BUILD PASSING</text>
+
+    <!-- Diagonal glass reflection glare -->
+    <polygon points="{px + 8},{py + 8} {px + 145},{py + 8} {px + 75},{py + ph - 8} {px + 8},{py + ph - 8}" fill="url(#phoneGlare)" opacity=".06"/>
   </g>"""
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(NAME)} — {esc(ROLE)}">
@@ -248,7 +262,7 @@ def header_svg() -> str:
 <style>
 text {{ font-family: {SANS}; fill: {T['text']}; }}
 .mono {{ font-family: {MONO}; white-space: pre; }}
-.muted {{ fill: {T['muted']}; }} .dim {{ fill: {T['dim']}; }} .mint {{ fill: {T['mint']}; }} .coral {{ fill: {T['coral']}; }}
+.muted {{ fill: {T['muted']}; }} .dim {{ fill: {T['dim']}; }} .mint {{ fill: {T['mint']}; }} .coral {{ fill: {T['coral']}; }} .sky {{ fill: {T['sky']}; }}
 .fade {{ animation: fadeIn .8s ease-out both; }}
 .pulse {{ animation: pulseDot 2.2s ease-in-out infinite; }}
 @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(6px); }} to {{ opacity: 1; transform: none; }} }}
@@ -260,73 +274,79 @@ text {{ font-family: {SANS}; fill: {T['text']}; }}
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
     <path d="M 28 0 L 0 0 0 28" fill="none" stroke="{T['grid']}" stroke-width="0.8"/>
   </pattern>
-  <radialGradient id="gMint" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['mint']}" stop-opacity=".22"/><stop offset="1" stop-color="{T['mint']}" stop-opacity="0"/></radialGradient>
-  <radialGradient id="gCoral" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['coral']}" stop-opacity=".18"/><stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gMint" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['mint']}" stop-opacity=".25"/><stop offset="1" stop-color="{T['mint']}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gCoral" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['coral']}" stop-opacity=".20"/><stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gSky" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['sky']}" stop-opacity=".15"/><stop offset="1" stop-color="{T['sky']}" stop-opacity="0"/></radialGradient>
   <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['mint']}"/><stop offset=".55" stop-color="{T['sky']}"/><stop offset="1" stop-color="{T['coral']}"/></linearGradient>
+  <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['mint']}" stop-opacity="0"/><stop offset=".5" stop-color="{T['mint']}" stop-opacity=".85"/><stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/></linearGradient>
+  <linearGradient id="phoneGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
   <clipPath id="frame"><rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="22"/></clipPath>
 </defs>
 <g clip-path="url(#frame)">
   <rect width="{w}" height="{h}" fill="{T['bg']}"/>
   <rect width="{w}" height="{h}" fill="url(#grid)" opacity=".75"/>
+  <rect x="0" y="0" width="{w}" height="2" fill="url(#topBar)"/>
   <ellipse class="glow" cx="150" cy="80" rx="300" ry="180" fill="url(#gMint)"/>
-  <ellipse class="glow" cx="540" cy="290" rx="280" ry="160" fill="url(#gCoral)" style="animation-delay:-6s"/>
+  <ellipse class="glow" cx="520" cy="290" rx="280" ry="160" fill="url(#gCoral)" style="animation-delay:-6s"/>
+  <ellipse class="glow" cx="760" cy="60" rx="240" ry="140" fill="url(#gSky)" style="animation-delay:-10s"/>
 
-  <!-- Top-left HUD badge -->
   <g class="fade">
-    <rect x="44" y="34" width="214" height="26" rx="13" fill="{T['surface']}" stroke="{T['border']}"/>
+    <rect x="44" y="34" width="222" height="26" rx="13" fill="{T['surface']}" stroke="{T['border']}"/>
     <circle class="pulse" cx="60" cy="47" r="4" fill="{T['mint']}"/>
     <text x="72" y="51" class="mono" font-size="10.5" fill="{T['mint']}">ANDROID // {esc(HANDLE)} · OPEN</text>
     <text x="42" y="120" font-size="52" font-weight="900" letter-spacing="1">{esc(NAME)}</text>
-    <rect x="44" y="132" width="120" height="4" rx="2" fill="url(#nameGrad)"/>
+    <rect x="44" y="132" width="136" height="4" rx="2" fill="url(#nameGrad)"/>
   </g>
 
   <g class="fade" {delay(0.2)}>
-    <text x="44" y="168" font-size="24" font-weight="700" fill="url(#nameGrad)" style="fill:url(#nameGrad)">{esc(ROLE)}</text>
-    <text x="44" y="196" font-size="14" class="muted">{esc(SUB)}</text>
+    <text x="44" y="170" font-size="24" font-weight="700" fill="url(#nameGrad)" style="fill:url(#nameGrad)">{esc(ROLE)}</text>
+    <text x="44" y="198" font-size="14" class="muted">{esc(SUB)}</text>
   </g>
 
   <g class="fade" {delay(0.4)}>
-    <rect x="44" y="216" width="4" height="24" rx="2" fill="{T['coral']}"/>
-    <text x="58" y="233" font-size="14.5" font-style="italic" fill="{T['text']}">“{esc(MOTTO)}”</text>
+    <rect x="44" y="218" width="4" height="24" rx="2" fill="{T['coral']}"/>
+    <text x="58" y="235" font-size="14.5" font-style="italic" fill="{T['text']}">“{esc(MOTTO)}”</text>
   </g>
 
   {''.join(chips_svg)}
   {phone}
 </g>
-<path d="M22 10 h-12 v12 M{w - 22} 10 h12 v12 M22 {h - 10} h-12 v-12 M{w - 22} {h - 10} h12 v-12" fill="none" stroke="{T['mint']}" stroke-opacity=".45" stroke-width="1.5"/>
+<path d="M22 10 h-12 v12 M{w - 22} 10 h12 v12 M22 {h - 10} h-12 v-12 M{w - 22} {h - 10} h12 v-12" fill="none" stroke="{T['mint']}" stroke-opacity=".48" stroke-width="1.5"/>
 <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="22" fill="none" stroke="{T['border']}"/>
 </svg>
 """
 
 
 def toolkit_svg() -> str:
-    """2x2 Bento Material Grid (4 capability quadrants instead of flat horizontal rows)."""
-    w, h = 1000, 316
-    box_w, box_h = 468, 120
-    positions = [(22, 16), (510, 16), (22, 148), (510, 148)]
+    """2x2 Bento Material Grid with uniform rounded icon sockets."""
+    w, h = 1000, 326
+    box_w, box_h = 468, 124
+    positions = [(22, 16), (510, 16), (22, 152), (510, 152)]
     body = []
     for idx, ((title, accent, icons, pills), (bx, by)) in enumerate(zip(TOOLKIT_GRID, positions)):
         body.append(
-            f'<g class="fade" {delay(idx * 0.1)}>'
+            f'<g class="fade" {delay(idx * 0.09)}>'
             f'<rect x="{bx}" y="{by}" width="{box_w}" height="{box_h}" rx="14" fill="{T["surface"]}" stroke="{T["border"]}"/>'
-            f'<rect x="{bx}" y="{by + 18}" width="3.5" height="24" rx="1.75" fill="{accent}"/>'
-            f'<text x="{bx + 16}" y="{by + 28}" class="mono" font-size="11" font-weight="700" fill="{accent}" letter-spacing="0.8">{esc(title)}</text>'
+            f'<rect x="{bx}" y="{by + 16}" width="3.5" height="24" rx="1.75" fill="{accent}"/>'
+            f'<text x="{bx + 16}" y="{by + 27}" class="mono" font-size="11" font-weight="700" fill="{accent}" letter-spacing="0.8">{esc(title)}</text>'
         )
-        ix, iy = bx + 16, by + 44
+        ix, iy = bx + 16, by + 40
         for name in icons:
             short = name.split("-")[0]
             body.append(
-                f'<image x="{ix}" y="{iy}" width="40" height="40" href="{_icon_uri(name)}">'
+                f'<rect x="{ix}" y="{iy}" width="44" height="44" rx="10" fill="{T["bg"]}" stroke="{T["border"]}"/>'
+                f'<image x="{ix + 5}" y="{iy + 5}" width="34" height="34" href="{_icon_uri(name)}">'
                 f'<title>{esc(LABELS.get(short, short))}</title></image>'
             )
-            ix += 50
+            ix += 52
         if pills:
-            px, py = bx + 16, by + 92
+            px, py = bx + 16, by + 93
             for pill in pills:
-                pw = len(pill) * 6.5 + 18
+                pw = len(pill) * 6.5 + 22
                 body.append(
                     f'<rect x="{px}" y="{py}" width="{pw:.0f}" height="20" rx="10" fill="{T["bg"]}" stroke="{T["border"]}"/>'
-                    f'<text x="{px + pw / 2:.0f}" y="{py + 13.5}" text-anchor="middle" class="mono muted" font-size="10">{esc(pill)}</text>'
+                    f'<circle cx="{px + 9}" cy="{py + 10}" r="2.2" fill="{accent}"/>'
+                    f'<text x="{px + 16}" y="{py + 13.5}" class="mono muted" font-size="10">{esc(pill)}</text>'
                 )
                 px += pw + 6
         body.append("</g>")
@@ -334,24 +354,25 @@ def toolkit_svg() -> str:
 
 
 def project_card(p: dict) -> str:
-    w, h = 490, 174
+    w, h = 490, 178
     ac = p["accent"]
     pills_svg, px = [], 20
     for pill in p["pills"]:
-        pw = len(pill) * 6.8 + 18
+        pw = len(pill) * 6.8 + 20
         pills_svg.append(
-            f'<rect x="{px}" y="94" width="{pw:.0f}" height="22" rx="11" fill="{T["surface"]}" stroke="{T["border"]}"/>'
-            f'<text x="{px + pw / 2:.0f}" y="109" text-anchor="middle" class="mono muted" font-size="10.5">{esc(pill)}</text>'
+            f'<rect x="{px}" y="97" width="{pw:.0f}" height="22" rx="11" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+            f'<text x="{px + pw / 2:.0f}" y="111.5" text-anchor="middle" class="mono muted" font-size="10.2">{esc(pill)}</text>'
         )
         px += pw + 7
     body = [
-        f'<rect x="20" y="16" width="4" height="26" rx="2" fill="{ac}"/>',
-        f'<text x="34" y="34" font-size="18" font-weight="800">{esc(p["name"])}</text>',
-        f'<text x="20" y="58" font-size="12.5" class="muted">{esc(p["desc"][0])}</text>',
-        f'<text x="20" y="76" font-size="12.5" class="muted">{esc(p["desc"][1])}</text>',
+        f'<rect x="20" y="15" width="4" height="24" rx="2" fill="{ac}"/>',
+        f'<text x="33" y="33" font-size="18" font-weight="800">{esc(p["name"])}</text>',
+        f'<text x="20" y="57" font-size="12.5" class="muted">{esc(p["desc"][0])}</text>',
+        f'<text x="20" y="75" font-size="12.5" class="muted">{esc(p["desc"][1])}</text>',
+        f'<line x1="20" y1="87" x2="{w - 20}" y2="87" stroke="{T["grid"]}"/>',
         "".join(pills_svg),
-        f'<circle cx="{w - 92}" cy="105" r="4.5" fill="{p["lang_color"]}"/>',
-        f'<text x="{w - 82}" y="109" class="mono dim" font-size="10.5">{esc(p["lang"])}</text>',
+        f'<circle cx="{w - 92}" cy="108" r="4.2" fill="{p["lang_color"]}"/>',
+        f'<text x="{w - 82}" y="112" class="mono dim" font-size="10.5">{esc(p["lang"])}</text>',
     ]
     return panel(w, h, f"BUILD #{p['num']} · {p['tag']}", "\n".join(body), tag="OPEN REPO ↗", accent=ac)
 
@@ -362,12 +383,12 @@ def footer_svg() -> str:
 <defs>
   <linearGradient id="fg" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="{T['mint']}" stop-opacity="0"/>
-    <stop offset=".5" stop-color="{T['mint']}" stop-opacity=".75"/>
+    <stop offset=".5" stop-color="{T['mint']}" stop-opacity=".8"/>
     <stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/>
   </linearGradient>
 </defs>
 <rect width="{w}" height="{h}" rx="14" fill="{T['chrome']}" stroke="{T['border']}"/>
-<rect x="0" y="0" width="{w}" height="1.5" fill="url(#fg)"/>
+<rect x="0" y="0" width="{w}" height="1.6" fill="url(#fg)"/>
 <circle cx="24" cy="28" r="4" fill="{T['mint']}"/>
 <text x="38" y="32" font-family="{MONO}" font-size="11.5" fill="{T['muted']}">
   DESIGNED FOR @2B-ADRIX · PURE PYTHON SVG ENGINE · SYNCED BY GITHUB ACTIONS

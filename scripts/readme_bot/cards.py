@@ -1,4 +1,4 @@
-"""Renderers turning collected GitHub metrics into original Material HUD SVG cards."""
+"""Renderers turning collected GitHub metrics into polished Material HUD SVG cards."""
 
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ def _fmt_range(r: tuple[date, date] | None, today: date) -> str:
 # ---------------------------------------------------------------- stats ----
 
 def stats_card(s: dict) -> str:
-    """2x4 Bento Metric Grid + Horizontal Rank Progress Bar (distinct from dotted terminal table)."""
+    """2x4 Bento Metric Grid + Glowing Rank Progress Bar."""
     w, h = 500, 268
     tiles = [
         ("STARS", fmt_int(s["stars"]), T["gold"]),
@@ -49,21 +49,22 @@ def stats_card(s: dict) -> str:
             f'<g class="fade" {delay(0.06 * idx)}>'
             f'<rect x="{x}" y="{y}" width="{bw}" height="{bh}" rx="12" fill="{T["surface"]}" stroke="{T["border"]}"/>'
             f'<rect x="{x + 12}" y="{y + 11}" width="18" height="3" rx="1.5" fill="{color}"/>'
+            f'<circle cx="{x + bw - 14}" cy="{y + 12.5}" r="2.2" fill="{color}" fill-opacity=".6"/>'
             f'<text x="{x + 12}" y="{y + 39}" font-size="21" font-weight="800">{val}</text>'
             f'<text x="{x + 12}" y="{y + 55}" class="mono dim" font-size="9.5">{label}</text>'
             f'</g>'
         )
 
-    # Bottom Rank Meter Bar
     pct = max(0.5, min(99.9, 100 - s["rank"]["percentile"]))
     bar_x, bar_y, bar_w = 17, 168, 466
-    fill_w = bar_w * pct / 100
+    fill_w = max(16, (bar_w - 28) * pct / 100)
     body.append(
         f'<rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="44" rx="12" fill="{T["chrome"]}" stroke="{T["border"]}"/>'
         f'<text x="{bar_x + 14}" y="{bar_y + 18}" class="mono muted" font-size="10.5">ENGINEER RATING · GRADE <tspan fill="{T["mint"]}" font-weight="700">{esc(s["rank"]["level"])}</tspan></text>'
         f'<text x="{bar_x + bar_w - 14}" y="{bar_y + 18}" text-anchor="end" class="mono sky" font-size="10.5">TOP {max(s["rank"]["percentile"], 0.1):.1f}%</text>'
         f'<rect x="{bar_x + 14}" y="{bar_y + 27}" width="{bar_w - 28}" height="7" rx="3.5" fill="{T["grid"]}"/>'
-        f'<rect class="grow" x="{bar_x + 14}" y="{bar_y + 27}" width="{max(16, (bar_w - 28) * pct / 100):.1f}" height="7" rx="3.5" fill="url(#brandGrad)"/>'
+        f'<rect class="grow" x="{bar_x + 14}" y="{bar_y + 27}" width="{fill_w:.1f}" height="7" rx="3.5" fill="url(#brandGrad)"/>'
+        f'<circle cx="{bar_x + 14 + fill_w:.1f}" cy="{bar_y + 30.5}" r="4.5" fill="{T["text"]}" stroke="{T["mint"]}" stroke-width="1.5"/>'
     )
     return panel(w, h, "TELEMETRY // OVERVIEW", "\n".join(body), tag=f"@{s['login']}", accent=T["mint"])
 
@@ -71,7 +72,7 @@ def stats_card(s: dict) -> str:
 # --------------------------------------------------------------- streak ----
 
 def streak_card(st: dict) -> str:
-    """Three elevated Material streak cards with bottom consistency bar."""
+    """Three elevated Material streak cards with pulsing current indicator."""
     w, h = 500, 268
     today = st["today"]
     boxes = [
@@ -85,10 +86,12 @@ def streak_card(st: dict) -> str:
         x = 17 + i * (bw + 11)
         is_mid = i == 1
         stroke = color if is_mid else T["border"]
+        pulse = f'<circle class="pulse" cx="{x + bw / 2 - 34:.1f}" cy="42" r="3" fill="{color}"/>' if is_mid else ""
         body.append(
             f'<g class="fade" {delay(0.12 * i)}>'
-            f'<rect x="{x}" y="16" width="{bw}" height="156" rx="14" fill="{T["surface"]}" stroke="{stroke}" stroke-width="{1.5 if is_mid else 1}"/>'
+            f'<rect x="{x}" y="16" width="{bw}" height="156" rx="14" fill="{T["surface"]}" stroke="{stroke}" stroke-width="{1.6 if is_mid else 1}"/>'
             f'<rect x="{x + 24}" y="16" width="{bw - 48}" height="3" rx="1.5" fill="{color}"/>'
+            f'{pulse}'
             f'<text x="{x + bw / 2:.1f}" y="46" text-anchor="middle" class="mono" font-size="10.5" fill="{color}" letter-spacing="1">{label}</text>'
             f'<text x="{x + bw / 2:.1f}" y="102" text-anchor="middle" font-size="38" font-weight="900">{esc(val)}</text>'
             f'<text x="{x + bw / 2:.1f}" y="126" text-anchor="middle" class="mono muted" font-size="10.5">days</text>'
@@ -105,20 +108,20 @@ def streak_card(st: dict) -> str:
 # ------------------------------------------------------------ languages ----
 
 def languages_card(langs: list[dict], sample: int) -> str:
-    """Horizontal ranked progress bars per language (distinct from top stacked bar)."""
+    """Horizontal ranked progress bars per language."""
     w, h = 500, 268
     body = []
     shown = langs[:6]
     max_pct = max((l["pct"] for l in shown), default=100.0) or 1.0
     for i, lang in enumerate(shown):
         y = 18 + i * 31
-        bw = 240 * (lang["pct"] / max_pct)
+        bw = 236 * (lang["pct"] / max_pct)
         body.append(
             f'<g class="fade" {delay(0.08 * i)}>'
             f'<circle cx="24" cy="{y + 9}" r="4.5" fill="{lang["color"]}"/>'
             f'<text x="38" y="{y + 13}" font-size="12.5" font-weight="600">{esc(lang["name"])}</text>'
-            f'<rect x="168" y="{y + 4}" width="240" height="10" rx="5" fill="{T["grid"]}"/>'
-            f'<rect class="grow" x="168" y="{y + 4}" width="{max(6, bw):.1f}" height="10" rx="5" fill="{lang["color"]}"><title>{esc(lang["name"])}: {lang["pct"]:.1f}%</title></rect>'
+            f'<rect x="168" y="{y + 3}" width="236" height="11" rx="5.5" fill="{T["grid"]}"/>'
+            f'<rect class="grow" x="168" y="{y + 3}" width="{max(6, bw):.1f}" height="11" rx="5.5" fill="{lang["color"]}"><title>{esc(lang["name"])}: {lang["pct"]:.1f}%</title></rect>'
             f'<text x="480" y="{y + 13}" text-anchor="end" class="mono muted" font-size="11.5">{lang["pct"]:.1f}%</text>'
             f'</g>'
         )
@@ -148,7 +151,6 @@ def clock_card(clock: dict) -> str:
     color_of = {i: c for _, rng, c in PERIODS for i in rng}
 
     body = []
-    # Top 4 period cards
     pw = 109
     for idx, (name, _, color) in enumerate(PERIODS):
         x = 17 + idx * (pw + 10)
@@ -164,21 +166,23 @@ def clock_card(clock: dict) -> str:
             f'</g>'
         )
 
-    # Full-width 24-hour bar chart
-    x0, base, max_h, slot = 20, 178, 78, 19.2
+    x0, base, max_h, slot = 20, 178, 76, 19.2
     peak = max(hours) or 1
+    peak_hr = hours.index(peak)
     body.append(f'<rect x="17" y="84" width="466" height="114" rx="12" fill="{T["chrome"]}" stroke="{T["border"]}"/>')
+    body.append(f'<line x1="25" y1="{base - max_h / 2:.1f}" x2="475" y2="{base - max_h / 2:.1f}" stroke="{T["grid"]}" stroke-dasharray="3 4"/>')
     for i, v in enumerate(hours):
         bh = max(3, max_h * v / peak)
         x = x0 + i * slot + 3
+        opacity = 1.0 if i == peak_hr and v > 0 else (0.38 + 0.56 * v / peak)
         body.append(
-            f'<rect class="rise" {delay(i * 0.02)} x="{x:.1f}" y="{base - bh:.1f}" width="12" height="{bh:.1f}" rx="3" fill="{color_of[i]}" opacity="{0.38 + 0.62 * v / peak:.2f}"><title>{i:02d}:00 — {v} commits</title></rect>'
+            f'<rect class="rise" {delay(i * 0.02)} x="{x:.1f}" y="{base - bh:.1f}" width="12" height="{bh:.1f}" rx="3" fill="{color_of[i]}" opacity="{opacity:.2f}"><title>{i:02d}:00 — {v} commits</title></rect>'
         )
     for hr in (0, 6, 12, 18, 23):
         body.append(f'<text x="{x0 + hr * slot + 9:.1f}" y="193" font-size="9.5" class="mono dim" text-anchor="middle">{hr:02d}h</text>')
 
     body.append(
-        f'<text x="18" y="215" class="mono muted" font-size="10">PEAK DAY: <tspan fill="{T["mint"]}" font-weight="700">{top_day.upper()}</tspan> · SAMPLE {fmt_int(clock["sample"])} COMMITS</text>'
+        f'<text x="18" y="215" class="mono muted" font-size="10">PEAK: <tspan fill="{T["mint"]}" font-weight="700">{top_day.upper()} @ {peak_hr:02d}:00</tspan> · SAMPLE {fmt_int(clock["sample"])}</text>'
     )
     return panel(w, h, "RHYTHM // COMMIT CLOCK", "\n".join(body), tag="LOCAL TIME", accent=T["mint"])
 
@@ -223,11 +227,14 @@ def contributions_card(days: list[tuple[str, int]], span: int = 90) -> str:
     )
     body.append(
         f'<defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">'
-        f'<stop offset="0" stop-color="{T["mint"]}" stop-opacity=".30"/><stop offset="1" stop-color="{T["mint"]}" stop-opacity="0"/>'
+        f'<stop offset="0" stop-color="{T["mint"]}" stop-opacity=".32"/><stop offset="1" stop-color="{T["mint"]}" stop-opacity="0"/>'
         f"</linearGradient></defs>"
         f'<path class="fade" {delay(0.7)} d="{area}" fill="url(#areaGrad)"/>'
         f'<path class="draw" pathLength="1" d="{line}" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>'
     )
+    if coords:
+        lx, ly = coords[-1]
+        body.append(f'<circle class="pulse" cx="{lx:.1f}" cy="{ly:.1f}" r="4.5" fill="{T["mint"]}"/>')
     if pts and peak:
         i_peak = max(range(len(pts)), key=lambda i: pts[i][1])
         px, py = coords[i_peak]
@@ -250,18 +257,20 @@ TIER_COLORS = {"S": T["gold"], "A": T["mint"], "B": T["sky"], "C": T["muted"]}
 
 
 def _hex_badge(cx: float, cy: float, color: str, tier: str | None) -> str:
-    r = 25
-    pts = " ".join(f"{cx + r * math.cos(math.radians(60 * k - 90)):.1f},{cy + r * math.sin(math.radians(60 * k - 90)):.1f}" for k in range(6))
+    r_outer, r_inner = 28, 22
+    outer = " ".join(f"{cx + r_outer * math.cos(math.radians(60 * k - 90)):.1f},{cy + r_outer * math.sin(math.radians(60 * k - 90)):.1f}" for k in range(6))
+    inner = " ".join(f"{cx + r_inner * math.cos(math.radians(60 * k - 90)):.1f},{cy + r_inner * math.sin(math.radians(60 * k - 90)):.1f}" for k in range(6))
     label = esc(tier or "—")
     fill = color if tier else T["grid"]
     return (
-        f'<polygon points="{pts}" fill="{fill}" fill-opacity=".16" stroke="{fill}" stroke-width="2"/>'
-        f'<text x="{cx:.1f}" y="{cy + 5.5:.1f}" text-anchor="middle" font-size="{15 if len(label) < 3 else 12}" font-weight="800" fill="{fill}">{label}</text>'
+        f'<polygon points="{outer}" fill="none" stroke="{fill}" stroke-opacity=".35" stroke-width="1" stroke-dasharray="3 2"/>'
+        f'<polygon points="{inner}" fill="{fill}" fill-opacity=".18" stroke="{fill}" stroke-width="2"/>'
+        f'<text x="{cx:.1f}" y="{cy + 5:.1f}" text-anchor="middle" font-size="{14.5 if len(label) < 3 else 11.5}" font-weight="800" fill="{fill}">{label}</text>'
     )
 
 
 def trophies_card(s: dict) -> str:
-    """Hexagon Milestone Badges instead of trophy cups."""
+    """Concentric Hexagon Milestone Medallions."""
     items = [
         ("Contributions", s["contrib_all"], fmt_short(s["contrib_all"])),
         ("Stars", s["stars"], fmt_short(s["stars"])),
@@ -278,7 +287,8 @@ def trophies_card(s: dict) -> str:
     col = (w - 32) / len(items)
     body = []
     for i, (name, value, shown) in enumerate(items):
-        tier = trophy_tier(name if name not in ("Repos", "Pull Reqs", "Tenure") else {"Repos": "Repositories", "Pull Reqs": "Pull Requests", "Tenure": "Experience"}[name], value)
+        key = {"Repos": "Repositories", "Pull Reqs": "Pull Requests", "Tenure": "Experience"}.get(name, name)
+        tier = trophy_tier(key, value)
         color = TIER_COLORS[tier[0]] if tier else T["dim"]
         cx = 16 + col * i + col / 2
         body.append(

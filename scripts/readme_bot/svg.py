@@ -1,4 +1,4 @@
-"""SVG primitives for @2b-adrix's original Material HUD / Android Blueprint theme."""
+"""SVG primitives for @2b-adrix's Material HUD / Android Blueprint theme."""
 
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ THEME = {
     "bg": "#0c0e12",       # warm carbon graphite
     "chrome": "#12161f",   # elevated panel header
     "surface": "#181d29",  # Material card surface
+    "surface2": "#1e2536", # highlighted surface
     "border": "#262d3d",   # crisp slate hairline
     "grid": "#1c2230",     # subtle blueprint grid
     "text": "#f8fafc",
@@ -76,22 +77,22 @@ def panel(
     tag: str = "",
     accent: str | None = None,
 ) -> str:
-    """Wrap `body` in an original Material Dark HUD card (no macOS traffic lights)."""
+    """Wrap `body` in an elevated Material Dark HUD card with specular sheen & corner reticles."""
     t = THEME
     ac = accent or t["mint"]
     right_tag = ""
     if tag:
-        tw = len(tag) * 6.8 + 20
+        tw = len(tag) * 6.8 + 30
         tx = width - 16 - tw
         right_tag = (
             f'<rect x="{tx:.1f}" y="10" width="{tw:.1f}" height="20" rx="10" fill="{t["surface"]}" stroke="{t["border"]}"/>'
-            f'<text x="{tx + tw / 2:.1f}" y="23.5" text-anchor="middle" class="mono dim" font-size="10">{esc(tag)}</text>'
+            f'<circle cx="{tx + 11:.1f}" cy="20" r="2.5" fill="{ac}"/>'
+            f'<text x="{tx + 20:.1f}" y="23.5" class="mono dim" font-size="9.8">{esc(tag)}</text>'
         )
 
-    # Blueprint corner reticles
     reticles = (
         f'<path d="M12 6 h-6 v6 M{width - 12} 6 h6 v6 M12 {height - 6} h-6 v-6 M{width - 12} {height - 6} h6 v-6" '
-        f'fill="none" stroke="{ac}" stroke-opacity=".35" stroke-width="1.2"/>'
+        f'fill="none" stroke="{ac}" stroke-opacity=".42" stroke-width="1.3"/>'
     )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{esc(kicker)}">
@@ -101,8 +102,13 @@ def panel(
   <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="{t['mint']}"/><stop offset=".55" stop-color="{t['sky']}"/><stop offset="1" stop-color="{t['coral']}"/>
   </linearGradient>
-  <radialGradient id="hudGlow" cx="12%" cy="10%" r="75%">
-    <stop offset="0" stop-color="{ac}" stop-opacity=".08"/>
+  <linearGradient id="topSheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="{ac}" stop-opacity="0"/>
+    <stop offset=".5" stop-color="{ac}" stop-opacity=".75"/>
+    <stop offset="1" stop-color="{ac}" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="hudGlow" cx="14%" cy="10%" r="75%">
+    <stop offset="0" stop-color="{ac}" stop-opacity=".11"/>
     <stop offset="1" stop-color="{ac}" stop-opacity="0"/>
   </radialGradient>
   <clipPath id="panelClip"><rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18"/></clipPath>
@@ -111,6 +117,7 @@ def panel(
   <rect width="{width}" height="{height}" fill="{t['bg']}"/>
   <rect width="{width}" height="{height}" fill="url(#hudGlow)"/>
   <rect width="{width}" height="{HEADER_H}" fill="{t['chrome']}"/>
+  <rect x="0" y="0" width="{width}" height="1.6" fill="url(#topSheen)"/>
   <line x1="0" y1="{HEADER_H}" x2="{width}" y2="{HEADER_H}" stroke="{t['border']}"/>
   <rect x="18" y="16" width="16" height="6" rx="3" fill="{ac}"/>
   <text x="42" y="23.5" class="mono muted" font-size="11" font-weight="600" letter-spacing="1">{esc(kicker)}</text>
