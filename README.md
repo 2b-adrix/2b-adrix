@@ -52,7 +52,7 @@ object Adrix : Engineer(
   <a href="https://github.com/2b-adrix/ORACLE-S-PLATE_BACKEND"><img src="./assets/static/projects/oracle-plate-backend.svg" width="49%" alt="ORACLE-S-PLATE_BACKEND Java 21 Spring Boot" /></a>
 </p>
 
-<sub>→ explore all repositories & case studies at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a> · <a href="https://github.com/2b-adrix?tab=repositories">GitHub</a></sub>
+<sub>→ explore all repositories & case studies at <a href="https://github.com/2b-adrix?tab=repositories">GitHub</a></sub>
 
 ## `05` · GitHub Telemetry
 
