@@ -400,7 +400,7 @@ def snake_card(weeks: list[list[tuple[str, int]]]) -> str:
 
     path = _build_snake_path(active, cols)
     n_steps = max(1, len(path) - 1)
-    dur = max(14.0, min(26.0, round(n_steps * 0.055, 1)))
+    dur = max(28.0, min(45.0, round(n_steps * 0.10, 1)))
 
     # Map each active cell to the first step index where the snake head visits it
     eat_step: dict[tuple[int, int], int] = {}
