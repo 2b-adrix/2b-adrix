@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://adrix.is-a.dev"><img src="./assets/static/header.svg" width="100%" alt="Aditya Mishra — Android & Backend Engineer" /></a>
+<a href="https://adrix.is-a.dev"><img src="./assets/static/header.svg" width="100%" alt="Aditya Kumar Mishra — Native Android & Backend Systems Engineer" /></a>
 
 <a href="https://adrix.is-a.dev"><img src="./assets/static/badges/portfolio.svg" alt="Portfolio" /></a>
 <a href="mailto:vadityamishra777@gmail.com"><img src="./assets/static/badges/email.svg" alt="Email" /></a>
@@ -11,59 +11,49 @@
 
 </div>
 
-## `01` · Identity & Engineering Profile
+### About
 
-I engineer **native Android applications and the backend services behind them** — clean Jetpack Compose UIs, resilient mobile architectures, and scalable REST APIs.
+Computer Science undergraduate (**Mewar University '28**) focused on building production-grade native Android software and dependable backend services.
 
-```kotlin
-object Adrix : Engineer(
-    name = "Aditya Kumar Mishra",
-    handle = "2b-adrix",
-    location = "India",
-    education = "B.Tech CSE · Mewar University '28",
-    team = "Alpha-coders",
-) {
-    val focus = listOf("Native Android", "Jetpack Compose", "Clean Architecture", "App Security")
-    val stack = listOf("Kotlin", "Java", "Spring Boot", "Firebase", "MongoDB")
-    val motto = "Engineering products, not just projects."
-}
-```
+- **Native Android:** Crafting responsive UIs in **Kotlin** and **Jetpack Compose** with clean MVVM architecture, Room persistence, and CameraX.
+- **Security-First Mobile:** Integrating on-device ML (**TensorFlow Lite**), encrypted local storage (**SQLCipher**), and biometric authentication.
+- **Backend & Systems:** Designing RESTful services with **Java / Spring Boot**, **MongoDB**, and **Firebase**, while sharpening DSA and system design.
 
-## `02` · Tech Architecture
-
-<img src="./assets/static/toolkit.svg" width="100%" alt="Architecture Matrix: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room, CameraX · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman, JWT · Linux, Git, GitHub, GitHub Actions, VS Code" />
-
-## `03` · Featured Builds
+### Featured Engineering
 
 <p align="center">
-  <a href="https://github.com/2b-adrix/Krishiva-Native"><img src="./assets/static/projects/krishiva-native.svg" width="49%" alt="Krishiva-Native" /></a>
-  <a href="https://github.com/2b-adrix/Arogyagrid"><img src="./assets/static/projects/arogyagrid.svg" width="49%" alt="Arogyagrid" /></a>
+  <a href="https://github.com/2b-adrix/SentinalX"><img src="./assets/static/projects/sentinalx.svg" width="49%" alt="SentinalX — Real-time Android cybersecurity shield" /></a>
+  <a href="https://github.com/2b-adrix/Krishiva-Native"><img src="./assets/static/projects/krishiva-native.svg" width="49%" alt="Krishiva-Native — AI agricultural intelligence platform" /></a>
 </p>
 <p align="center">
-  <a href="https://github.com/2b-adrix/Phantom-Lens"><img src="./assets/static/projects/phantom-lens.svg" width="49%" alt="Phantom-Lens" /></a>
-  <a href="https://github.com/2b-adrix/Alpha-Chat-Native"><img src="./assets/static/projects/alpha-chat-native.svg" width="49%" alt="Alpha-Chat-Native" /></a>
+  <a href="https://github.com/2b-adrix/Arogyagrid"><img src="./assets/static/projects/arogyagrid.svg" width="49%" alt="Arogyagrid — Native healthcare app & Spring Boot backend" /></a>
+  <a href="https://github.com/2b-adrix/Alpha-Chat-Native"><img src="./assets/static/projects/alpha-chat-native.svg" width="49%" alt="Alpha-Chat-Native — Real-time Firebase Android messaging" /></a>
 </p>
 
-<sub>→ explore all repositories & case studies at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a> · <a href="https://github.com/2b-adrix?tab=repositories">GitHub</a></sub>
+<sub>More repositories and architecture notes at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a> · <a href="https://github.com/2b-adrix?tab=repositories">All repositories</a></sub>
 
-## `04` · GitHub Telemetry
+### Technical Stack
+
+<img src="./assets/static/toolkit.svg" width="100%" alt="Technical Stack: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room, TFLite · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman · Linux, Git, GitHub, GitHub Actions, VS Code, SQLCipher" />
+
+### GitHub Telemetry
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/stats.svg" width="49%" alt="GitHub overview telemetry" />
+  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/stats.svg" width="49%" alt="GitHub overview" />
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/streak.svg" width="49%" alt="Contribution streak" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/languages.svg" width="49%" alt="Language composition" />
+  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/languages.svg" width="49%" alt="Language mix" />
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/commit-clock.svg" width="49%" alt="Commit cadence" />
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/contributions.svg" width="98.5%" alt="90-day contribution timeline" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/trophies.svg" width="98.5%" alt="Achievement tiers" />
+  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/trophies.svg" width="98.5%" alt="Milestones" />
 </p>
 
-## `05` · Live Activity Feed
+### Recent Activity
 
 <!--START_SECTION:activity-->
 | When | | What |
@@ -78,21 +68,21 @@ object Adrix : Engineer(
 | `Nov 03` | 🚀 | Released [v1.0.0](https://github.com/2b-adrix/Arogyagrid/releases/tag/v1.0.0) in [2b-adrix/Arogyagrid](https://github.com/2b-adrix/Arogyagrid) |
 <!--END_SECTION:activity-->
 
-## `06` · Contribution Matrix
+### Contribution Graph
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" alt="Contribution snake" />
 </p>
 
 <details>
-<summary><b>More Profiles & Competitive Coding</b></summary>
+<summary><b>Additional Profiles</b></summary>
 <br />
 
 <a href="https://instagram.com/2b_adrix"><img src="./assets/static/badges/instagram.svg" alt="Instagram" /></a>
-<a href="https://www.leetcode.com/2b_adrix"><img src="./assets/static/badges/leetcode.svg" alt="LeetCode" /></a>
+<a href="https://www.leetcode.com/2b-adrix"><img src="./assets/static/badges/leetcode.svg" alt="LeetCode" /></a>
 
 </details>
 
 <br />
 
-<img src="./assets/static/footer.svg" width="100%" alt="Designed for @2b-adrix · Pure Python SVG engine" />
+<img src="./assets/static/footer.svg" width="100%" alt="Aditya Kumar Mishra — github.com/2b-adrix" />
