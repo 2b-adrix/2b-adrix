@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://adrix.is-a.dev"><img src="./assets/static/header.svg" width="100%" alt="Aditya Mishra — Android & Backend Engineer" /></a>
+<a href="https://adrix.is-a.dev"><img src="./assets/static/hero.svg" width="100%" alt="Aditya Mishra — Android & Backend Engineer" /></a>
 
 <a href="https://adrix.is-a.dev"><img src="./assets/static/badges/portfolio.svg" alt="Portfolio" /></a>
 <a href="mailto:vadityamishra777@gmail.com"><img src="./assets/static/badges/email.svg" alt="Email" /></a>

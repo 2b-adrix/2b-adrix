@@ -242,81 +242,45 @@ def header_svg() -> str:
         )
         cx += cw + 7
 
-    # Left-of-right-panel: Pixel Android Client (x=612..792, y=24..324)
-    px, py, pw, ph = 612, 24, 180, 300
-    # Right-of-right-panel: Spring Boot Backend Server Node (x=830..976, y=42..306)
-    sx, sy, sw, sh = 830, 42, 146, 264
+    # Right-side Pixel Phone showcasing WHO AM I (x=656..956, y=22..324)
+    px, py, pw, ph = 656, 22, 300, 302
 
     dual_rig = f"""
   <g class="fade" {delay(0.22)}>
-    <!-- Animated REST/JWT data bridge connecting Android Phone <-> Spring Boot API -->
-    <line x1="{px + pw}" y1="146" x2="{sx}" y2="146" stroke="{T['sky']}" stroke-width="1.6" stroke-dasharray="4 3"/>
-    <line x1="{px + pw}" y1="196" x2="{sx}" y2="196" stroke="{T['mint']}" stroke-width="1.6" stroke-dasharray="4 3"/>
-    <circle cx="{px + pw + 19}" cy="146" r="3.5" fill="{T['sky']}">
-      <animate attributeName="cx" values="{px + pw + 3};{sx - 3};{px + pw + 3}" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="{sx - 19}" cy="196" r="3.5" fill="{T['mint']}">
-      <animate attributeName="cx" values="{sx - 3};{px + pw + 3};{sx - 3}" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <rect x="{px + pw + 3}" y="160" width="32" height="20" rx="5" fill="{T['surface']}" stroke="{T['border']}"/>
-    <text x="{px + pw + 19}" y="173.5" text-anchor="middle" class="mono sky" font-size="8.5" font-weight="700">REST</text>
-
+    <!-- Hardware buttons (power & volume) -->
+    <rect x="{px + pw - 1}" y="{py + 72}" width="4" height="28" rx="2" fill="#334155"/>
+    <rect x="{px + pw - 1}" y="{py + 114}" width="4" height="48" rx="2" fill="#334155"/>
     <!-- Pixel Hardware Chassis -->
-    <rect x="{px + pw - 1}" y="{py + 68}" width="3.5" height="24" rx="1.5" fill="#334155"/>
-    <rect x="{px + pw - 1}" y="{py + 104}" width="3.5" height="40" rx="1.5" fill="#334155"/>
-    <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="26" fill="#080a0f" stroke="#334155" stroke-width="1.8"/>
-    <rect x="{px + 6}" y="{py + 6}" width="{pw - 12}" height="{ph - 12}" rx="20" fill="{T['chrome']}" stroke="{T['border']}"/>
-    <circle cx="{px + pw / 2:.0f}" cy="{py + 18}" r="4" fill="#040609" stroke="#1e293b"/>
-    <text x="{px + 18}" y="{py + 22}" class="mono muted" font-size="9">9:41</text>
-    <text x="{px + pw - 18}" y="{py + 22}" text-anchor="end" class="mono mint" font-size="8.5">5G</text>
+    <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="32" fill="#080a0f" stroke="#334155" stroke-width="2"/>
+    <rect x="{px + 7}" y="{py + 7}" width="{pw - 14}" height="{ph - 14}" rx="25" fill="{T['chrome']}" stroke="{T['border']}"/>
+    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="4.5" fill="#040609" stroke="#1e293b"/>
+    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="1.5" fill="#38bdf8" fill-opacity=".45"/>
+    <text x="{px + 24}" y="{py + 25}" class="mono muted" font-size="10">9:41</text>
+    <text x="{px + pw - 24}" y="{py + 25}" text-anchor="end" class="mono mint" font-size="9.5">5G · INDIA</text>
 
-    <!-- Identity inside Pixel -->
-    <rect x="{px + 14}" y="{py + 34}" width="{pw - 28}" height="56" rx="12" fill="{T['surface']}" stroke="{T['border']}"/>
-    <rect x="{px + 22}" y="{py + 44}" width="34" height="34" rx="9" fill="{T['mint']}" fill-opacity=".15" stroke="{T['mint']}" stroke-opacity=".45"/>
-    <path d="M{px + 31},{py + 64} a8,8 0 0 1 16,0 Z" fill="{T['mint']}"/>
-    <circle cx="{px + 36}" cy="{py + 60}" r="1" fill="{T['bg']}"/>
-    <circle cx="{px + 42}" cy="{py + 60}" r="1" fill="{T['bg']}"/>
-    <text x="{px + 63}" y="{py + 59}" font-size="11.5" font-weight="800">Aditya Mishra</text>
-    <text x="{px + 63}" y="{py + 74}" class="mono mint" font-size="8.8">@2b-adrix · India</text>
+    <!-- Identity Header inside Pixel -->
+    <rect x="{px + 20}" y="{py + 38}" width="{pw - 40}" height="58" rx="14" fill="{T['surface']}" stroke="{T['border']}"/>
+    <rect x="{px + 30}" y="{py + 48}" width="38" height="38" rx="10" fill="{T['mint']}" fill-opacity=".15" stroke="{T['mint']}" stroke-opacity=".45"/>
+    <path d="M{px + 40},{py + 70} a9,9 0 0 1 18,0 Z" fill="{T['mint']}"/>
+    <circle cx="{px + 45.5}" cy="{py + 66}" r="1.1" fill="{T['bg']}"/>
+    <circle cx="{px + 52.5}" cy="{py + 66}" r="1.1" fill="{T['bg']}"/>
+    <text x="{px + 78}" y="{py + 64}" font-size="13.5" font-weight="800">Aditya Kumar Mishra</text>
+    <text x="{px + 78}" y="{py + 80}" class="mono mint" font-size="9.8">@2b-adrix · CSE '28</text>
 
-    <!-- Who Am I Bio Block -->
-    <rect x="{px + 14}" y="{py + 100}" width="{pw - 28}" height="122" rx="12" fill="{T['bg']}" stroke="{T['border']}"/>
-    <text x="{px + 24}" y="{py + 120}" class="mono coral" font-size="9.2" font-weight="700">$ whoami</text>
-    <text x="{px + 24}" y="{py + 139}" font-size="11" font-weight="700" fill="{T['text']}">Android &amp; Backend</text>
-    <text x="{px + 24}" y="{py + 159}" class="mono mint" font-size="9">· B.Tech CSE '28</text>
-    <text x="{px + 24}" y="{py + 176}" class="mono mint" font-size="9">· Mewar University</text>
-    <text x="{px + 24}" y="{py + 193}" class="mono mint" font-size="9">· Team Alpha-coders</text>
-    <text x="{px + 24}" y="{py + 210}" class="mono sky" font-size="9">· Open to Collab</text>
+    <!-- WHO AM I Profile Card inside Pixel -->
+    <rect x="{px + 20}" y="{py + 106}" width="{pw - 40}" height="122" rx="14" fill="{T['bg']}" stroke="{T['border']}"/>
+    <text x="{px + 34}" y="{py + 126}" class="mono coral" font-size="9.5" font-weight="700" letter-spacing="0.8">WHO AM I</text>
+    <text x="{px + 34}" y="{py + 146}" font-size="13.5" font-weight="800" fill="{T['text']}">Android &amp; Backend Engineer</text>
+    <text x="{px + 34}" y="{py + 167}" class="mono mint" font-size="10">· B.Tech CSE · Mewar Univ</text>
+    <text x="{px + 34}" y="{py + 184}" class="mono mint" font-size="10">· Team Alpha-coders</text>
+    <text x="{px + 34}" y="{py + 201}" class="mono sky" font-size="10">· Builds Apps &amp; Spring APIs</text>
+    <text x="{px + 34}" y="{py + 218}" class="mono muted" font-size="10">· App Security &amp; DSA</text>
 
-    <!-- Phone bottom status pill -->
-    <rect x="{px + 14}" y="{py + 234}" width="{pw - 28}" height="32" rx="16" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".5"/>
-    <circle class="pulse" cx="{px + 30}" cy="{py + 250}" r="3.8" fill="{T['mint']}"/>
-    <text x="{px + 41}" y="{py + 253.5}" class="mono mint" font-size="9.2" font-weight="700">ANDROID CLIENT</text>
-    <polygon points="{px + 7},{py + 7} {px + 105},{py + 7} {px + 55},{py + ph - 7} {px + 7},{py + ph - 7}" fill="url(#phoneGlare)" opacity=".05"/>
-
-    <!-- Spring Boot Backend Server Node -->
-    <rect x="{sx}" y="{sy}" width="{sw}" height="{sh}" rx="16" fill="{T['chrome']}" stroke="{T['border']}"/>
-    <rect x="{sx + 20}" y="{sy}" width="{sw - 40}" height="2.5" rx="1.25" fill="{T['sky']}"/>
-    <text x="{sx + 14}" y="{sy + 24}" class="mono sky" font-size="9.5" font-weight="700">API SERVER</text>
-    <circle class="pulse" cx="{sx + sw - 16}" cy="{sy + 20}" r="3.5" fill="{T['mint']}"/>
-
-    <!-- Server rack modules -->
-    <rect x="{sx + 12}" y="{sy + 38}" width="{sw - 24}" height="50" rx="9" fill="{T['surface']}" stroke="{T['border']}"/>
-    <text x="{sx + 20}" y="{sy + 57}" font-size="11.5" font-weight="800">Spring Boot</text>
-    <text x="{sx + 20}" y="{sy + 74}" class="mono sky" font-size="9">Java 17/21 · API</text>
-
-    <rect x="{sx + 12}" y="{sy + 96}" width="{sw - 24}" height="74" rx="9" fill="{T['bg']}" stroke="{T['border']}"/>
-    <text x="{sx + 20}" y="{sy + 114}" class="mono coral" font-size="9">POST /v1/auth</text>
-    <text x="{sx + 20}" y="{sy + 131}" class="mono mint" font-size="9">200 OK · JWT</text>
-    <text x="{sx + 20}" y="{sy + 148}" class="mono muted" font-size="9">GET /v1/sync</text>
-    <text x="{sx + 20}" y="{sy + 163}" class="mono dim" font-size="8.5">JPA · Security</text>
-
-    <rect x="{sx + 12}" y="{sy + 178}" width="{sw - 24}" height="42" rx="9" fill="{T['surface']}" stroke="{T['border']}"/>
-    <text x="{sx + 20}" y="{sy + 196}" class="mono gold" font-size="9">DATA + CLOUD</text>
-    <text x="{sx + 20}" y="{sy + 211}" class="mono muted" font-size="8.5">Mongo · SQL · Fb</text>
-
-    <rect x="{sx + 12}" y="{sy + 228}" width="{sw - 24}" height="24" rx="12" fill="{T['sky']}" fill-opacity=".14" stroke="{T['sky']}" stroke-opacity=".45"/>
-    <text x="{sx + sw / 2:.0f}" y="{sy + 243.5}" text-anchor="middle" class="mono sky" font-size="8.8" font-weight="700">DOCKER READY</text>
+    <!-- Bottom Status Pill -->
+    <rect x="{px + 20}" y="{py + 240}" width="{pw - 40}" height="34" rx="17" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".5"/>
+    <circle class="pulse" cx="{px + 38}" cy="{py + 257}" r="4.2" fill="{T['mint']}"/>
+    <text x="{px + 50}" y="{py + 261}" class="mono mint" font-size="10.2" font-weight="700">OPEN TO COLLABORATION</text>
+    <polygon points="{px + 8},{py + 8} {px + 148},{py + 8} {px + 78},{py + ph - 8} {px + 8},{py + ph - 8}" fill="url(#phoneGlare)" opacity=".05"/>
   </g>"""
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(NAME)} — {esc(ROLE)}">
@@ -515,7 +479,7 @@ def footer_svg() -> str:
 
 def build(root: Path) -> None:
     out = root / "assets" / "static"
-    write(out / "header.svg", header_svg())
+    write(out / "hero.svg", header_svg())
     write(out / "architecture.svg", architecture_svg())
     write(out / "toolkit.svg", toolkit_svg())
     write(out / "footer.svg", footer_svg())

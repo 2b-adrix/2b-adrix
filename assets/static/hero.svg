@@ -50,74 +50,40 @@ text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fil
   <g class="fade" style="animation-delay:0.60s"><rect x="44" y="268" width="71" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="56" cy="282" r="3" fill="#a97bff"/><text x="65" y="286" class="mono" font-size="10.8" fill="#f8fafc">Kotlin</text></g><g class="fade" style="animation-delay:0.68s"><rect x="122.4" y="268" width="134" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="134.4" cy="282" r="3" fill="#3ddc84"/><text x="143.4" y="286" class="mono" font-size="10.8" fill="#f8fafc">Jetpack Compose</text></g><g class="fade" style="animation-delay:0.76s"><rect x="262.9" y="268" width="106" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="274.9" cy="282" r="3" fill="#38bdf8"/><text x="283.9" y="286" class="mono" font-size="10.8" fill="#f8fafc">Spring Boot</text></g><g class="fade" style="animation-delay:0.84s"><rect x="375.79999999999995" y="268" width="99" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="387.79999999999995" cy="282" r="3" fill="#fbbf24"/><text x="396.79999999999995" y="286" class="mono" font-size="10.8" fill="#f8fafc">JWT · REST</text></g><g class="fade" style="animation-delay:0.92s"><rect x="481.79999999999995" y="268" width="120" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="493.79999999999995" cy="282" r="3" fill="#ff8a4c"/><text x="502.79999999999995" y="286" class="mono" font-size="10.8" fill="#f8fafc">MongoDB · SQL</text></g>
   
   <g class="fade" style="animation-delay:0.22s">
-    <!-- Animated REST/JWT data bridge connecting Android Phone <-> Spring Boot API -->
-    <line x1="792" y1="146" x2="830" y2="146" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="4 3"/>
-    <line x1="792" y1="196" x2="830" y2="196" stroke="#3ddc84" stroke-width="1.6" stroke-dasharray="4 3"/>
-    <circle cx="811" cy="146" r="3.5" fill="#38bdf8">
-      <animate attributeName="cx" values="795;827;795" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="811" cy="196" r="3.5" fill="#3ddc84">
-      <animate attributeName="cx" values="827;795;827" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <rect x="795" y="160" width="32" height="20" rx="5" fill="#181d29" stroke="#262d3d"/>
-    <text x="811" y="173.5" text-anchor="middle" class="mono sky" font-size="8.5" font-weight="700">REST</text>
-
+    <!-- Hardware buttons (power & volume) -->
+    <rect x="955" y="94" width="4" height="28" rx="2" fill="#334155"/>
+    <rect x="955" y="136" width="4" height="48" rx="2" fill="#334155"/>
     <!-- Pixel Hardware Chassis -->
-    <rect x="791" y="92" width="3.5" height="24" rx="1.5" fill="#334155"/>
-    <rect x="791" y="128" width="3.5" height="40" rx="1.5" fill="#334155"/>
-    <rect x="612" y="24" width="180" height="300" rx="26" fill="#080a0f" stroke="#334155" stroke-width="1.8"/>
-    <rect x="618" y="30" width="168" height="288" rx="20" fill="#12161f" stroke="#262d3d"/>
-    <circle cx="702" cy="42" r="4" fill="#040609" stroke="#1e293b"/>
-    <text x="630" y="46" class="mono muted" font-size="9">9:41</text>
-    <text x="774" y="46" text-anchor="end" class="mono mint" font-size="8.5">5G</text>
+    <rect x="656" y="22" width="300" height="302" rx="32" fill="#080a0f" stroke="#334155" stroke-width="2"/>
+    <rect x="663" y="29" width="286" height="288" rx="25" fill="#12161f" stroke="#262d3d"/>
+    <circle cx="806" cy="43" r="4.5" fill="#040609" stroke="#1e293b"/>
+    <circle cx="806" cy="43" r="1.5" fill="#38bdf8" fill-opacity=".45"/>
+    <text x="680" y="47" class="mono muted" font-size="10">9:41</text>
+    <text x="932" y="47" text-anchor="end" class="mono mint" font-size="9.5">5G · INDIA</text>
 
-    <!-- Identity inside Pixel -->
-    <rect x="626" y="58" width="152" height="56" rx="12" fill="#181d29" stroke="#262d3d"/>
-    <rect x="634" y="68" width="34" height="34" rx="9" fill="#3ddc84" fill-opacity=".15" stroke="#3ddc84" stroke-opacity=".45"/>
-    <path d="M643,88 a8,8 0 0 1 16,0 Z" fill="#3ddc84"/>
-    <circle cx="648" cy="84" r="1" fill="#0c0e12"/>
-    <circle cx="654" cy="84" r="1" fill="#0c0e12"/>
-    <text x="675" y="83" font-size="11.5" font-weight="800">Aditya Mishra</text>
-    <text x="675" y="98" class="mono mint" font-size="8.8">@2b-adrix · India</text>
+    <!-- Identity Header inside Pixel -->
+    <rect x="676" y="60" width="260" height="58" rx="14" fill="#181d29" stroke="#262d3d"/>
+    <rect x="686" y="70" width="38" height="38" rx="10" fill="#3ddc84" fill-opacity=".15" stroke="#3ddc84" stroke-opacity=".45"/>
+    <path d="M696,92 a9,9 0 0 1 18,0 Z" fill="#3ddc84"/>
+    <circle cx="701.5" cy="88" r="1.1" fill="#0c0e12"/>
+    <circle cx="708.5" cy="88" r="1.1" fill="#0c0e12"/>
+    <text x="734" y="86" font-size="13.5" font-weight="800">Aditya Kumar Mishra</text>
+    <text x="734" y="102" class="mono mint" font-size="9.8">@2b-adrix · CSE '28</text>
 
-    <!-- Who Am I Bio Block -->
-    <rect x="626" y="124" width="152" height="122" rx="12" fill="#0c0e12" stroke="#262d3d"/>
-    <text x="636" y="144" class="mono coral" font-size="9.2" font-weight="700">$ whoami</text>
-    <text x="636" y="163" font-size="11" font-weight="700" fill="#f8fafc">Android &amp; Backend</text>
-    <text x="636" y="183" class="mono mint" font-size="9">· B.Tech CSE '28</text>
-    <text x="636" y="200" class="mono mint" font-size="9">· Mewar University</text>
-    <text x="636" y="217" class="mono mint" font-size="9">· Team Alpha-coders</text>
-    <text x="636" y="234" class="mono sky" font-size="9">· Open to Collab</text>
+    <!-- WHO AM I Profile Card inside Pixel -->
+    <rect x="676" y="128" width="260" height="122" rx="14" fill="#0c0e12" stroke="#262d3d"/>
+    <text x="690" y="148" class="mono coral" font-size="9.5" font-weight="700" letter-spacing="0.8">WHO AM I</text>
+    <text x="690" y="168" font-size="13.5" font-weight="800" fill="#f8fafc">Android &amp; Backend Engineer</text>
+    <text x="690" y="189" class="mono mint" font-size="10">· B.Tech CSE · Mewar Univ</text>
+    <text x="690" y="206" class="mono mint" font-size="10">· Team Alpha-coders</text>
+    <text x="690" y="223" class="mono sky" font-size="10">· Builds Apps &amp; Spring APIs</text>
+    <text x="690" y="240" class="mono muted" font-size="10">· App Security &amp; DSA</text>
 
-    <!-- Phone bottom status pill -->
-    <rect x="626" y="258" width="152" height="32" rx="16" fill="#3ddc84" fill-opacity=".14" stroke="#3ddc84" stroke-opacity=".5"/>
-    <circle class="pulse" cx="642" cy="274" r="3.8" fill="#3ddc84"/>
-    <text x="653" y="277.5" class="mono mint" font-size="9.2" font-weight="700">ANDROID CLIENT</text>
-    <polygon points="619,31 717,31 667,317 619,317" fill="url(#phoneGlare)" opacity=".05"/>
-
-    <!-- Spring Boot Backend Server Node -->
-    <rect x="830" y="42" width="146" height="264" rx="16" fill="#12161f" stroke="#262d3d"/>
-    <rect x="850" y="42" width="106" height="2.5" rx="1.25" fill="#38bdf8"/>
-    <text x="844" y="66" class="mono sky" font-size="9.5" font-weight="700">API SERVER</text>
-    <circle class="pulse" cx="960" cy="62" r="3.5" fill="#3ddc84"/>
-
-    <!-- Server rack modules -->
-    <rect x="842" y="80" width="122" height="50" rx="9" fill="#181d29" stroke="#262d3d"/>
-    <text x="850" y="99" font-size="11.5" font-weight="800">Spring Boot</text>
-    <text x="850" y="116" class="mono sky" font-size="9">Java 17/21 · API</text>
-
-    <rect x="842" y="138" width="122" height="74" rx="9" fill="#0c0e12" stroke="#262d3d"/>
-    <text x="850" y="156" class="mono coral" font-size="9">POST /v1/auth</text>
-    <text x="850" y="173" class="mono mint" font-size="9">200 OK · JWT</text>
-    <text x="850" y="190" class="mono muted" font-size="9">GET /v1/sync</text>
-    <text x="850" y="205" class="mono dim" font-size="8.5">JPA · Security</text>
-
-    <rect x="842" y="220" width="122" height="42" rx="9" fill="#181d29" stroke="#262d3d"/>
-    <text x="850" y="238" class="mono gold" font-size="9">DATA + CLOUD</text>
-    <text x="850" y="253" class="mono muted" font-size="8.5">Mongo · SQL · Fb</text>
-
-    <rect x="842" y="270" width="122" height="24" rx="12" fill="#38bdf8" fill-opacity=".14" stroke="#38bdf8" stroke-opacity=".45"/>
-    <text x="903" y="285.5" text-anchor="middle" class="mono sky" font-size="8.8" font-weight="700">DOCKER READY</text>
+    <!-- Bottom Status Pill -->
+    <rect x="676" y="262" width="260" height="34" rx="17" fill="#3ddc84" fill-opacity=".14" stroke="#3ddc84" stroke-opacity=".5"/>
+    <circle class="pulse" cx="694" cy="279" r="4.2" fill="#3ddc84"/>
+    <text x="706" y="283" class="mono mint" font-size="10.2" font-weight="700">OPEN TO COLLABORATION</text>
+    <polygon points="664,30 804,30 734,316 664,316" fill="url(#phoneGlare)" opacity=".05"/>
   </g>
 </g>
 <path d="M22 10 h-12 v12 M978 10 h12 v12 M22 338 h-12 v-12 M978 338 h12 v-12" fill="none" stroke="#3ddc84" stroke-opacity=".48" stroke-width="1.5"/>
