@@ -71,23 +71,23 @@ text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fil
     <text x="630" y="46" class="mono muted" font-size="9">9:41</text>
     <text x="774" y="46" text-anchor="end" class="mono mint" font-size="8.5">5G</text>
 
-    <!-- App Identity inside Pixel -->
+    <!-- Identity inside Pixel -->
     <rect x="626" y="58" width="152" height="56" rx="12" fill="#181d29" stroke="#262d3d"/>
     <rect x="634" y="68" width="34" height="34" rx="9" fill="#3ddc84" fill-opacity=".15" stroke="#3ddc84" stroke-opacity=".45"/>
     <path d="M643,88 a8,8 0 0 1 16,0 Z" fill="#3ddc84"/>
     <circle cx="648" cy="84" r="1" fill="#0c0e12"/>
     <circle cx="654" cy="84" r="1" fill="#0c0e12"/>
-    <text x="676" y="83" font-size="12" font-weight="800">2b-adrix.apk</text>
-    <text x="676" y="98" class="mono mint" font-size="9">Compose · M3</text>
+    <text x="675" y="83" font-size="11.5" font-weight="800">Aditya Mishra</text>
+    <text x="675" y="98" class="mono mint" font-size="8.8">@2b-adrix · India</text>
 
-    <!-- Kotlin Client Block -->
+    <!-- Who Am I Bio Block -->
     <rect x="626" y="124" width="152" height="122" rx="12" fill="#0c0e12" stroke="#262d3d"/>
-    <text x="636" y="144" class="mono" font-size="9.5"><tspan fill="#ff8a4c">@Composable</tspan></text>
-    <text x="636" y="161" class="mono" font-size="9.5"><tspan fill="#38bdf8">fun</tspan> <tspan fill="#f8fafc">Client()</tspan></text>
-    <text x="636" y="181" class="mono" font-size="9.2"><tspan fill="#3ddc84">· MVVM + Room</tspan></text>
-    <text x="636" y="198" class="mono" font-size="9.2"><tspan fill="#3ddc84">· TFLite ML</tspan></text>
-    <text x="636" y="215" class="mono" font-size="9.2"><tspan fill="#3ddc84">· SQLCipher</tspan></text>
-    <text x="636" y="232" class="mono" font-size="9.2"><tspan fill="#3ddc84">· Retrofit/JWT</tspan></text>
+    <text x="636" y="144" class="mono coral" font-size="9.2" font-weight="700">$ whoami</text>
+    <text x="636" y="163" font-size="11" font-weight="700" fill="#f8fafc">Android &amp; Backend</text>
+    <text x="636" y="183" class="mono mint" font-size="9">· B.Tech CSE '28</text>
+    <text x="636" y="200" class="mono mint" font-size="9">· Mewar University</text>
+    <text x="636" y="217" class="mono mint" font-size="9">· Team Alpha-coders</text>
+    <text x="636" y="234" class="mono sky" font-size="9">· Open to Collab</text>
 
     <!-- Phone bottom status pill -->
     <rect x="626" y="258" width="152" height="32" rx="16" fill="#3ddc84" fill-opacity=".14" stroke="#3ddc84" stroke-opacity=".5"/>
@@ -97,7 +97,7 @@ text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fil
 
     <!-- Spring Boot Backend Server Node -->
     <rect x="830" y="42" width="146" height="264" rx="16" fill="#12161f" stroke="#262d3d"/>
-    <rect x="830" y="42" width="146" height="2" rx="1" fill="#38bdf8"/>
+    <rect x="850" y="42" width="106" height="2.5" rx="1.25" fill="#38bdf8"/>
     <text x="844" y="66" class="mono sky" font-size="9.5" font-weight="700">API SERVER</text>
     <circle class="pulse" cx="960" cy="62" r="3.5" fill="#3ddc84"/>
 

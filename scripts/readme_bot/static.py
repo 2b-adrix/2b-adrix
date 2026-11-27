@@ -270,23 +270,23 @@ def header_svg() -> str:
     <text x="{px + 18}" y="{py + 22}" class="mono muted" font-size="9">9:41</text>
     <text x="{px + pw - 18}" y="{py + 22}" text-anchor="end" class="mono mint" font-size="8.5">5G</text>
 
-    <!-- App Identity inside Pixel -->
+    <!-- Identity inside Pixel -->
     <rect x="{px + 14}" y="{py + 34}" width="{pw - 28}" height="56" rx="12" fill="{T['surface']}" stroke="{T['border']}"/>
     <rect x="{px + 22}" y="{py + 44}" width="34" height="34" rx="9" fill="{T['mint']}" fill-opacity=".15" stroke="{T['mint']}" stroke-opacity=".45"/>
     <path d="M{px + 31},{py + 64} a8,8 0 0 1 16,0 Z" fill="{T['mint']}"/>
     <circle cx="{px + 36}" cy="{py + 60}" r="1" fill="{T['bg']}"/>
     <circle cx="{px + 42}" cy="{py + 60}" r="1" fill="{T['bg']}"/>
-    <text x="{px + 64}" y="{py + 59}" font-size="12" font-weight="800">2b-adrix.apk</text>
-    <text x="{px + 64}" y="{py + 74}" class="mono mint" font-size="9">Compose · M3</text>
+    <text x="{px + 63}" y="{py + 59}" font-size="11.5" font-weight="800">Aditya Mishra</text>
+    <text x="{px + 63}" y="{py + 74}" class="mono mint" font-size="8.8">@2b-adrix · India</text>
 
-    <!-- Kotlin Client Block -->
+    <!-- Who Am I Bio Block -->
     <rect x="{px + 14}" y="{py + 100}" width="{pw - 28}" height="122" rx="12" fill="{T['bg']}" stroke="{T['border']}"/>
-    <text x="{px + 24}" y="{py + 120}" class="mono" font-size="9.5"><tspan fill="{T['coral']}">@Composable</tspan></text>
-    <text x="{px + 24}" y="{py + 137}" class="mono" font-size="9.5"><tspan fill="{T['sky']}">fun</tspan> <tspan fill="{T['text']}">Client()</tspan></text>
-    <text x="{px + 24}" y="{py + 157}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· MVVM + Room</tspan></text>
-    <text x="{px + 24}" y="{py + 174}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· TFLite ML</tspan></text>
-    <text x="{px + 24}" y="{py + 191}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· SQLCipher</tspan></text>
-    <text x="{px + 24}" y="{py + 208}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· Retrofit/JWT</tspan></text>
+    <text x="{px + 24}" y="{py + 120}" class="mono coral" font-size="9.2" font-weight="700">$ whoami</text>
+    <text x="{px + 24}" y="{py + 139}" font-size="11" font-weight="700" fill="{T['text']}">Android &amp; Backend</text>
+    <text x="{px + 24}" y="{py + 159}" class="mono mint" font-size="9">· B.Tech CSE '28</text>
+    <text x="{px + 24}" y="{py + 176}" class="mono mint" font-size="9">· Mewar University</text>
+    <text x="{px + 24}" y="{py + 193}" class="mono mint" font-size="9">· Team Alpha-coders</text>
+    <text x="{px + 24}" y="{py + 210}" class="mono sky" font-size="9">· Open to Collab</text>
 
     <!-- Phone bottom status pill -->
     <rect x="{px + 14}" y="{py + 234}" width="{pw - 28}" height="32" rx="16" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".5"/>
@@ -296,7 +296,7 @@ def header_svg() -> str:
 
     <!-- Spring Boot Backend Server Node -->
     <rect x="{sx}" y="{sy}" width="{sw}" height="{sh}" rx="16" fill="{T['chrome']}" stroke="{T['border']}"/>
-    <rect x="{sx}" y="{sy}" width="{sw}" height="2" rx="1" fill="{T['sky']}"/>
+    <rect x="{sx + 20}" y="{sy}" width="{sw - 40}" height="2.5" rx="1.25" fill="{T['sky']}"/>
     <text x="{sx + 14}" y="{sy + 24}" class="mono sky" font-size="9.5" font-weight="700">API SERVER</text>
     <circle class="pulse" cx="{sx + sw - 16}" cy="{sy + 20}" r="3.5" fill="{T['mint']}"/>
 
