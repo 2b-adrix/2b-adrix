@@ -48,6 +48,7 @@ def cmd_github() -> None:
     write(OUT / "commit-clock.svg", cards.clock_card(data["clock"]))
     write(OUT / "contributions.svg", cards.contributions_card(data["recent_days"]))
     write(OUT / "trophies.svg", cards.trophies_card(data["stats"]))
+    write(OUT / "snake.svg", cards.snake_card(data["weeks"]))
 
 
 def cmd_views() -> None:

@@ -5,7 +5,7 @@ from __future__ import annotations
 import math
 from datetime import date
 
-from .svg import CHROME_H, MONO, TERM_THEME, THEME, card, delay, esc, fmt_int, fmt_short
+from .svg import CHROME_H, MONO, TERM_THEME, THEME, card, delay, esc, fmt_int, fmt_short, panel
 
 T = TERM_THEME
 
@@ -307,3 +307,204 @@ def views_badge(count: int) -> str:
 def placeholder_card(w: int, h: int, title: str, message: str) -> str:
     body = f'<text x="{w / 2}" y="{(h - CHROME_H) / 2 + 4}" text-anchor="middle" font-size="13" class="mono muted">{esc(message)}</text>'
     return card(w, h, title, body)
+
+
+# ----------------------------------------------------------------- snake ----
+
+SNAKE_LEVELS = ("#161c28", "#134e32", "#1d7a4c", "#29b469", "#3ddc84")
+SNAKE_SEGMENTS = (
+    (THEME["mint"], 13, 4.0, 1.00),   # glowing Android Mint head
+    ("#2dd4bf", 12, 3.5, 0.92),       # teal
+    (THEME["sky"], 11, 3.5, 0.82),    # electric sky
+    (THEME["kotlin"], 10, 3.0, 0.72), # Kotlin violet
+    (THEME["coral"], 9, 3.0, 0.60),   # coral tail
+)
+
+
+def _snake_level(count: int, q: tuple[int, int, int]) -> int:
+    if count <= 0:
+        return 0
+    if count <= q[0]:
+        return 1
+    if count <= q[1]:
+        return 2
+    if count <= q[2]:
+        return 3
+    return 4
+
+
+def _build_snake_path(active: list[tuple[int, int]], cols: int) -> list[tuple[int, int]]:
+    """Build a continuous 1-step orthogonal grid path visiting every active cell."""
+    if not active:
+        return [(c, 3) for c in range(-1, cols + 1)]
+    remaining = set(active)
+    path: list[tuple[int, int]] = [(-1, 0), (0, 0)]
+    cur = (0, 0)
+    remaining.discard(cur)
+
+    while remaining:
+        nxt = min(
+            remaining,
+            key=lambda p: (abs(p[0] - cur[0]) + abs(p[1] - cur[1])) * 3 + (0 if p[0] >= cur[0] else 2) + abs(p[1] - cur[1]) * 0.1,
+        )
+        c, r = cur
+        tc, tr = nxt
+        while c != tc:
+            c += 1 if tc > c else -1
+            path.append((c, r))
+            remaining.discard((c, r))
+        while r != tr:
+            r += 1 if tr > r else -1
+            path.append((c, r))
+            remaining.discard((c, r))
+        cur = nxt
+
+    c, r = cur
+    while c < cols:
+        c += 1
+        path.append((c, r))
+    return path
+
+
+def snake_card(weeks: list[list[tuple[str, int]]]) -> str:
+    """Custom animated Material HUD contribution snake matching @2b-adrix's profile."""
+    w, h = 1000, 250
+    weeks = weeks[-53:]
+    cols = max(1, len(weeks))
+    cell, step = 13, 17
+    gx, gy = 62, 28
+    grid_w = cols * step - 4
+
+    counts = [cnt for col in weeks for _, cnt in col if cnt > 0]
+    counts_sorted = sorted(counts)
+    if counts_sorted:
+        n_c = len(counts_sorted)
+        q = (
+            counts_sorted[min(n_c - 1, n_c // 4)],
+            counts_sorted[min(n_c - 1, n_c // 2)],
+            counts_sorted[min(n_c - 1, (3 * n_c) // 4)],
+        )
+    else:
+        q = (1, 3, 6)
+
+    grid: dict[tuple[int, int], tuple[str, int, int]] = {}
+    active: list[tuple[int, int]] = []
+    total = 0
+    for c, col in enumerate(weeks):
+        for r, (d_str, cnt) in enumerate(col[:7]):
+            lvl = _snake_level(cnt, q)
+            grid[(c, r)] = (d_str, cnt, lvl)
+            total += cnt
+            if cnt > 0:
+                active.append((c, r))
+
+    path = _build_snake_path(active, cols)
+    n_steps = max(1, len(path) - 1)
+    dur = max(14.0, min(26.0, round(n_steps * 0.055, 1)))
+
+    # Map each active cell to the first step index where the snake head visits it
+    eat_step: dict[tuple[int, int], int] = {}
+    for idx, pos in enumerate(path):
+        if pos in grid and grid[pos][1] > 0 and pos not in eat_step:
+            eat_step[pos] = idx
+
+    css_parts = [f".snk {{ animation: none {dur:.1f}s linear infinite; }}"]
+    # Snake segment animations (emit keyframes only at start, end, and direction turns)
+    for seg_i, (_, size, _, _) in enumerate(SNAKE_SEGMENTS):
+        offset_px = (cell - size) / 2
+        seq = [
+            path[i - seg_i] if i >= seg_i else (-1 - (seg_i - i), path[0][1])
+            for i in range(n_steps + 1)
+        ]
+        frames = []
+        for i, (pc, pr) in enumerate(seq):
+            if i == 0 or i == n_steps:
+                keep = True
+            else:
+                d_prev = (pc - seq[i - 1][0], pr - seq[i - 1][1])
+                d_next = (seq[i + 1][0] - pc, seq[i + 1][1] - pr)
+                keep = d_prev != d_next
+            if keep:
+                pct = i * 100 / n_steps
+                tx = gx + pc * step + offset_px
+                ty = gy + pr * step + offset_px
+                frames.append(f"{pct:.2f}%{{transform:translate({tx:.1f}px,{ty:.1f}px)}}")
+        css_parts.append(f"@keyframes s{seg_i}{{{''.join(frames)}}}.s{seg_i}{{animation-name:s{seg_i};}}")
+
+    # Eaten cell animations
+    eaten_fill = "#12161f"
+    for idx, (pos, step_i) in enumerate(eat_step.items()):
+        orig = SNAKE_LEVELS[grid[pos][2]]
+        p1 = max(0.0, step_i * 100 / n_steps - 0.15)
+        p2 = min(94.5, step_i * 100 / n_steps + 0.05)
+        css_parts.append(
+            f"@keyframes e{idx}{{0%,{p1:.2f}%{{fill:{orig}}}{p2:.2f}%,96%{{fill:{eaten_fill}}}100%{{fill:{orig}}}}}"
+            f".e{idx}{{animation:e{idx} {dur:.1f}s linear infinite;}}"
+        )
+    eat_cls = {pos: f"e{idx}" for idx, pos in enumerate(eat_step)}
+
+    # Progress bar synced with snake
+    css_parts.append(
+        f"@keyframes snkBar{{0%{{transform:scaleX(0)}}92%,97%{{transform:scaleX(1)}}100%{{transform:scaleX(0)}}}}"
+        f".snkBar{{animation:snkBar {dur:.1f}s linear infinite;transform-box:fill-box;transform-origin:left center;}}"
+    )
+
+    body = []
+    # Month labels across top of grid
+    last_month = ""
+    for c, col in enumerate(weeks):
+        if not col:
+            continue
+        m = date.fromisoformat(col[0][0]).strftime("%b")
+        if m != last_month and (c == 0 or c < cols - 2):
+            body.append(f'<text x="{gx + c * step}" y="18" class="mono dim" font-size="9.5">{m}</text>')
+            last_month = m
+
+    # Weekday labels on left
+    for r, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
+        body.append(f'<text x="{gx - 10}" y="{gy + r * step + 10}" text-anchor="end" class="mono dim" font-size="9.5">{label}</text>')
+
+    # Matrix cells wrapped in clipPath so snake enters/exits cleanly at grid edges
+    grid_clip = f'<clipPath id="snkGrid"><rect x="{gx - 2}" y="{gy - 2}" width="{grid_w + 4}" height="{7 * step}" rx="4"/></clipPath>'
+    cells = []
+    for (c, r), (d_str, cnt, lvl) in grid.items():
+        x, y = gx + c * step, gy + r * step
+        fill = SNAKE_LEVELS[lvl]
+        cls = f' class="{eat_cls[(c, r)]}"' if (c, r) in eat_cls else ""
+        stroke = f' stroke="#1f2737" stroke-width="0.8"' if lvl == 0 else ""
+        tip = esc(f"{d_str}: {cnt} contribution{'s' if cnt != 1 else ''}")
+        cells.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{fill}"{cls}{stroke}><title>{tip}</title></rect>')
+
+    snake_rects = []
+    for seg_i, (color, size, rad, op) in reversed(list(enumerate(SNAKE_SEGMENTS))):
+        snake_rects.append(f'<rect class="snk s{seg_i}" width="{size}" height="{size}" rx="{rad}" fill="{color}" opacity="{op:.2f}"/>')
+
+    body.append(grid_clip)
+    body.append(f'<g clip-path="url(#snkGrid)">{"".join(cells)}{"".join(snake_rects)}</g>')
+
+    # Synced progress track + footer metadata + legend
+    py = gy + 7 * step + 12
+    body.append(
+        f'<rect x="{gx}" y="{py}" width="{grid_w}" height="4" rx="2" fill="{THEME["surface"]}"/>'
+        f'<rect class="snkBar" x="{gx}" y="{py}" width="{grid_w}" height="4" rx="2" fill="url(#brandGrad)"/>'
+    )
+    ly = py + 23
+    body.append(
+        f'<text x="{gx}" y="{ly}" class="mono muted" font-size="10.5">'
+        f'<tspan fill="{THEME["mint"]}" font-weight="700">{fmt_int(total)}</tspan> contributions · {len(active)} active days</text>'
+    )
+    lx = gx + grid_w - 126
+    body.append(f'<text x="{lx - 8}" y="{ly}" text-anchor="end" class="mono dim" font-size="9.5">Less</text>')
+    for i, col_hex in enumerate(SNAKE_LEVELS):
+        body.append(f'<rect x="{lx + i * 16}" y="{ly - 9.5}" width="11" height="11" rx="2.5" fill="{col_hex}"/>')
+    body.append(f'<text x="{lx + 84}" y="{ly}" class="mono dim" font-size="9.5">More</text>')
+
+    return panel(
+        w,
+        h,
+        "MATRIX // CONTRIBUTION SNAKE",
+        "\n".join(body),
+        extra_css="".join(css_parts),
+        tag=f"LIVE {cols}W",
+        accent=THEME["mint"],
+    )

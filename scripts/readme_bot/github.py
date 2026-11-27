@@ -291,6 +291,10 @@ def collect(login: str) -> dict:
         "stats": stats,
         "streak": streak,
         "recent_days": recent,
+        "weeks": [
+            [(d["date"], d["contributionCount"]) for d in w["contributionDays"]]
+            for w in cc["contributionCalendar"]["weeks"]
+        ],
         "languages": compute_languages(commits, repo_langs, exclude),
         "clock": compute_commit_clock(commits),
     }

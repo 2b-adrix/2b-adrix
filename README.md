@@ -89,7 +89,7 @@ object Adrix : Engineer(
 ## `07` · Contribution Matrix
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" alt="Contribution snake" />
+  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/snake.svg" width="98.5%" alt="Contribution snake" />
 </p>
 
 <details>
