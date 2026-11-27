@@ -1,4 +1,4 @@
-"""Static artwork: animated header banner, toolkit card, and social badges."""
+"""Static artwork: animated header banner, toolkit card, project cards, badges & footer."""
 
 from __future__ import annotations
 
@@ -14,25 +14,25 @@ NAME = "Aditya Mishra"
 ROLE = "Android & Backend Engineer"
 TAGLINE = "B.Tech CSE · Mewar University '28 · Alpha-coders"
 MOTTO = "Engineering products, not just projects."
-CHIPS = ["Kotlin", "Jetpack Compose", "Spring Boot", "Firebase", "Android"]
+CHIPS = ["Kotlin", "Jetpack Compose", "Spring Boot", "Firebase", "Clean Arch"]
 
 TERMINAL = [
     (True, "whoami", ""),
     (False, "adrix — android & backend engineer", "muted"),
     (True, "adb shell getprop ro.adrix.stack", ""),
-    (False, "MODULE        STATUS    FOCUS", "dim"),
-    (False, "android-ui    Active    Kotlin · Compose", "ok"),
-    (False, "backend-api   Active    Spring · MongoDB", "ok"),
-    (False, "app-security  Learning  Clean Arch · DSA", "ok"),
-    (True, "uptime --since 2024", ""),
-    (False, "shipping native Android apps ✓", "accent"),
+    (False, "MODULE        STATUS     STACK", "dim"),
+    (False, "android-ui    Active     Kotlin · Compose", "ok"),
+    (False, "backend-api   Active     Spring · MongoDB", "ok"),
+    (False, "app-security  Learning   Clean Arch · DSA", "ok"),
+    (True, "./gradlew :app:ship --release", ""),
+    (False, "BUILD SUCCESSFUL — shipping products ✓", "accent"),
 ]
 
 TOOLKIT = [
     ("Languages", ["Kotlin-Dark", "Java-Dark", "Python-Dark", "TypeScript", "JavaScript", "HTML", "CSS"], []),
-    ("Android & UI", ["AndroidStudio-Dark", "Gradle-Dark", "Firebase-Dark", "SQLite"], ["Jetpack Compose", "MVVM", "Room"]),
-    ("Backend & APIs", ["Spring-Dark", "MongoDB", "MySQL-Dark", "NodeJS-Dark", "REST", "Postman"], []),
-    ("Systems & Tools", ["Linux-Dark", "Git", "Github-Dark", "GithubActions-Dark", "VSCode-Dark"], []),
+    ("Android & UI", ["AndroidStudio-Dark", "Gradle-Dark", "Firebase-Dark", "SQLite"], ["Jetpack Compose", "MVVM", "Room", "CameraX"]),
+    ("Backend & APIs", ["Spring-Dark", "MongoDB", "MySQL-Dark", "NodeJS-Dark", "REST", "Postman"], ["JWT", "RESTful"]),
+    ("DevOps & Tools", ["Linux-Dark", "Git", "Github-Dark", "GithubActions-Dark", "VSCode-Dark"], ["App Security", "DSA"]),
 ]
 
 LABELS = {
@@ -60,17 +60,72 @@ LABELS = {
     "VSCode": "VS Code",
 }
 
+PROJECTS = [
+    {
+        "file": "krishiva-native.svg",
+        "name": "Krishiva-Native",
+        "tag": "AI · AGRITECH",
+        "lang": "Kotlin",
+        "lang_color": "#a97bff",
+        "desc": [
+            "AI agricultural platform with instant crop disease",
+            "diagnosis via Gemini AI + CameraX & Mandi prices.",
+        ],
+        "pills": ["Jetpack Compose", "CameraX", "Gemini AI"],
+        "accent": "#34d399",
+    },
+    {
+        "file": "arogyagrid.svg",
+        "name": "Arogyagrid",
+        "tag": "HEALTHTECH · FULLSTACK",
+        "lang": "Kotlin + Java",
+        "lang_color": "#22d3ee",
+        "desc": [
+            "Native Android healthcare client powered by a",
+            "dedicated Spring Boot REST API backend.",
+        ],
+        "pills": ["Kotlin", "Spring Boot", "REST API"],
+        "accent": "#22d3ee",
+    },
+    {
+        "file": "phantom-lens.svg",
+        "name": "Phantom-Lens",
+        "tag": "ANDROID · CAMERA",
+        "lang": "Kotlin",
+        "lang_color": "#a97bff",
+        "desc": [
+            "Native Kotlin Android camera & visual utility",
+            "built around clean MVVM separation of concerns.",
+        ],
+        "pills": ["Kotlin", "Android", "MVVM"],
+        "accent": "#a78bfa",
+    },
+    {
+        "file": "alpha-chat-native.svg",
+        "name": "Alpha-Chat-Native",
+        "tag": "REALTIME · MESSAGING",
+        "lang": "Kotlin",
+        "lang_color": "#a97bff",
+        "desc": [
+            "Native real-time Android chat application with",
+            "instant sync and Firebase authentication.",
+        ],
+        "pills": ["Kotlin", "Firebase", "Realtime"],
+        "accent": "#fbbf24",
+    },
+]
+
 BADGES = [
     (
         "portfolio.svg",
         "ADRIX.IS-A.DEV",
-        "#0b0f14",
+        "#070b12",
         '<svg fill="#22d3ee" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8ZM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96ZM4.26 14a7.83 7.83 0 0 1 0-4h3.38a16.5 16.5 0 0 0-.14 2c0 .68.05 1.35.14 2H4.26Zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16Zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8ZM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96ZM14.34 14H9.66a14.7 14.7 0 0 1-.16-2c0-.68.06-1.35.16-2h4.68c.1.65.16 1.32.16 2 0 .68-.06 1.35-.16 2Zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56ZM16.36 14c.09-.65.14-1.32.14-2 0-.68-.05-1.35-.14-2h3.38a7.83 7.83 0 0 1 0 4h-3.38Z"/></svg>',
     ),
     (
         "email.svg",
         "EMAIL",
-        "#0b0f14",
+        "#070b12",
         '<svg fill="#22d3ee" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>',
     ),
     (
@@ -125,12 +180,12 @@ def badge_svg(label: str, color: str, icon_svg: str) -> str:
 
 
 def header_svg() -> str:
-    w, h = 1000, 320
-    char_w, type_speed = 7.9, 0.055
-    tx, ty0, line_h = 552, 92, 21
+    w, h = 1000, 336
+    char_w, type_speed = 7.9, 0.052
+    tx, ty0, line_h = 548, 96, 21
 
     lines_svg, clips = [], []
-    t = 0.6
+    t = 0.5
     for i, (prompt, text, cls) in enumerate(TERMINAL):
         y = ty0 + i * line_h
         if prompt:
@@ -141,10 +196,10 @@ def header_svg() -> str:
                 f'<set attributeName="width" to="0" begin="0s"/>'
                 f'<animate attributeName="width" values="{values}" calcMode="discrete" begin="{t:.2f}s" dur="{n * type_speed:.2f}s" fill="freeze"/>'
             )
-            t += n * type_speed + 0.35
+            t += n * type_speed + 0.30
         else:
             anim = f'<set attributeName="width" to="0" begin="0s"/><set attributeName="width" to="440" begin="{t:.2f}s"/>'
-            t += 0.12
+            t += 0.11
         clips.append(f'<clipPath id="ln{i}"><rect x="{tx - 2}" y="{y - 15}" height="{line_h}" width="440">{anim}</rect></clipPath>')
         content = (
             f'<tspan class="ok">~</tspan> <tspan class="accent">$</tspan> {esc(text)}' if prompt else f'<tspan class="{cls}">{esc(text)}</tspan>'
@@ -161,8 +216,8 @@ def header_svg() -> str:
     for i, chip in enumerate(CHIPS):
         cw = len(chip) * 7.2 + 22
         chips_svg.append(
-            f'<g class="fade" {delay(0.9 + i * 0.08)}><rect x="{cx}" y="246" width="{cw:.0f}" height="26" rx="13" fill="{T["chrome"]}" stroke="{T["border"]}"/>'
-            f'<text x="{cx + cw / 2:.0f}" y="263" text-anchor="middle" class="mono" font-size="11.5" style="fill:{T["text"]}">{esc(chip)}</text></g>'
+            f'<g class="fade" {delay(0.85 + i * 0.08)}><rect x="{cx}" y="256" width="{cw:.0f}" height="26" rx="13" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+            f'<text x="{cx + cw / 2:.0f}" y="273" text-anchor="middle" class="mono" font-size="11.5" style="fill:{T["text"]}">{esc(chip)}</text></g>'
         )
         cx += cw + 8
 
@@ -173,43 +228,53 @@ text {{ font-family: {SANS}; fill: {T['text']}; }}
 .mono {{ font-family: {MONO}; white-space: pre; }}
 .muted {{ fill: {T['muted']}; }} .dim {{ fill: {T['dim']}; }} .accent {{ fill: {T['accent']}; }} .ok {{ fill: {T['ok']}; }}
 .fade {{ animation: fadeIn .8s ease-out both; }}
+.pulse {{ animation: pulseDot 2.2s ease-in-out infinite; }}
 @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(6px); }} to {{ opacity: 1; transform: none; }} }}
+@keyframes pulseDot {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: .35; }} }}
 .glow {{ animation: drift 14s ease-in-out infinite alternate; }}
 @keyframes drift {{ from {{ transform: translate(0,0); }} to {{ transform: translate(40px,-14px); }} }}
 </style>
 <defs>
   <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.1" fill="{T['grid']}"/></pattern>
   <radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['accent']}" stop-opacity=".22"/><stop offset="1" stop-color="{T['accent']}" stop-opacity="0"/></radialGradient>
-  <radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['accent2']}" stop-opacity=".20"/><stop offset="1" stop-color="{T['accent2']}" stop-opacity="0"/></radialGradient>
-  <linearGradient id="roleGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['accent']}"/><stop offset="1" stop-color="{T['accent2']}"/></linearGradient>
+  <radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['ok']}" stop-opacity=".18"/><stop offset="1" stop-color="{T['ok']}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['accent2']}" stop-opacity=".20"/><stop offset="1" stop-color="{T['accent2']}" stop-opacity="0"/></radialGradient>
+  <linearGradient id="roleGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['accent']}"/><stop offset=".5" stop-color="{T['ok']}"/><stop offset="1" stop-color="{T['accent2']}"/></linearGradient>
+  <linearGradient id="topSheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['accent']}" stop-opacity="0"/><stop offset=".5" stop-color="{T['ok']}" stop-opacity=".85"/><stop offset="1" stop-color="{T['accent2']}" stop-opacity="0"/></linearGradient>
   <clipPath id="frame"><rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="16"/></clipPath>
   {''.join(clips)}
 </defs>
 <g clip-path="url(#frame)">
   <rect width="{w}" height="{h}" fill="{T['bg']}"/>
   <rect width="{w}" height="{h}" fill="url(#dots)"/>
-  <ellipse class="glow" cx="170" cy="70" rx="320" ry="190" fill="url(#g1)"/>
-  <ellipse class="glow" cx="860" cy="280" rx="340" ry="200" fill="url(#g2)" style="animation-delay:-7s"/>
+  <rect x="0" y="0" width="{w}" height="2" fill="url(#topSheen)"/>
+  <ellipse class="glow" cx="160" cy="70" rx="310" ry="190" fill="url(#g1)"/>
+  <ellipse class="glow" cx="420" cy="300" rx="260" ry="150" fill="url(#g2)" style="animation-delay:-4s"/>
+  <ellipse class="glow" cx="870" cy="270" rx="330" ry="200" fill="url(#g3)" style="animation-delay:-8s"/>
 
   <g class="fade">
-    <text x="40" y="62" class="mono" font-size="13"><tspan class="accent">//</tspan> <tspan class="muted">hello, world — i'm</tspan></text>
-    <text x="38" y="118" font-size="54" font-weight="800" letter-spacing="-1">{esc(NAME)}</text>
+    <text x="40" y="54" class="mono" font-size="13"><tspan class="accent">//</tspan> <tspan class="muted">hello, world — i'm</tspan></text>
+    <rect x="335" y="37" width="166" height="24" rx="12" fill="{T['surface']}" stroke="{T['border']}"/>
+    <circle class="pulse" cx="350" cy="49" r="4" fill="{T['ok']}"/>
+    <text x="362" y="53" class="mono" font-size="10.5" fill="{T['ok']}">OPEN TO COLLAB</text>
+    <text x="38" y="116" font-size="54" font-weight="800" letter-spacing="-1">{esc(NAME)}</text>
   </g>
   <g class="fade" {delay(0.25)}>
     <text x="40" y="156" font-size="24" font-weight="700" fill="url(#roleGrad)" style="fill:url(#roleGrad)">{esc(ROLE)}</text>
     <text x="40" y="186" font-size="14" class="muted">{esc(TAGLINE)}</text>
   </g>
   <g class="fade" {delay(0.5)}>
-    <rect x="40" y="204" width="3" height="22" rx="1.5" fill="{T['accent']}"/>
-    <text x="52" y="220" font-size="14" font-style="italic" style="fill:{T['text']}">“{esc(MOTTO)}”</text>
+    <rect x="40" y="206" width="3.5" height="24" rx="1.75" fill="url(#roleGrad)"/>
+    <text x="53" y="223" font-size="14" font-style="italic" style="fill:{T['text']}">“{esc(MOTTO)}”</text>
   </g>
   {''.join(chips_svg)}
 
   <g>
-    <rect x="530" y="30" width="440" height="262" rx="12" fill="{T['chrome']}" fill-opacity=".92" stroke="{T['border']}"/>
-    <path d="M530 62 h440" stroke="{T['border']}"/>
-    <circle cx="550" cy="46" r="5.5" fill="#ff5f57"/><circle cx="568" cy="46" r="5.5" fill="#febc2e"/><circle cx="586" cy="46" r="5.5" fill="#28c840"/>
-    <text x="750" y="50" text-anchor="middle" class="mono dim" font-size="11.5">adrix@android: ~</text>
+    <rect x="526" y="32" width="444" height="272" rx="12" fill="{T['chrome']}" fill-opacity=".94" stroke="{T['border']}"/>
+    <path d="M526 64 h444" stroke="{T['border']}"/>
+    <circle cx="546" cy="48" r="5.5" fill="#ff5f57"/><circle cx="564" cy="48" r="5.5" fill="#febc2e"/><circle cx="582" cy="48" r="5.5" fill="#28c840"/>
+    <text x="748" y="52" text-anchor="middle" class="mono dim" font-size="11.5">adrix@pixel-dev: ~</text>
+    <circle class="pulse" cx="950" cy="48" r="4" fill="{T['ok']}"/>
     {''.join(lines_svg)}
     {cursor}
   </g>
@@ -222,36 +287,89 @@ text {{ font-family: {SANS}; fill: {T['text']}; }}
 def toolkit_svg() -> str:
     w = 1000
     row_h, icon, gap = 66, 44, 12
-    h = 36 + 24 + row_h * len(TOOLKIT) + 8
+    h = 36 + 24 + row_h * len(TOOLKIT) + 10
+    row_colors = [T["kotlin"], T["ok"], T["accent"], T["accent2"]]
     body = []
     for r, (label, icons, pills) in enumerate(TOOLKIT):
         y = 24 + r * row_h
         key = label.lower().replace(" & ", "_").replace(" ", "_")
+        rc = row_colors[r % len(row_colors)]
         body.append(
             f'<g class="fade" {delay(r * 0.12)}>'
-            f'<text x="24" y="{y + 27}" class="mono" font-size="12.5"><tspan class="accent">{esc(key)}</tspan><tspan class="dim">:</tspan></text>'
+            f'<rect x="20" y="{y + 10}" width="3" height="24" rx="1.5" fill="{rc}"/>'
+            f'<text x="32" y="{y + 27}" class="mono" font-size="12.5"><tspan fill="{rc}">{esc(key)}</tspan><tspan class="dim">:</tspan></text>'
         )
-        x = 190
+        x = 180
         for name in icons:
             short = name.split("-")[0]
             body.append(f'<image x="{x}" y="{y}" width="{icon}" height="{icon}" href="{_icon_uri(name)}"><title>{esc(LABELS.get(short, short))}</title></image>')
             x += icon + gap
         for pill in pills:
-            pw = len(pill) * 7.6 + 24
+            pw = len(pill) * 7.4 + 22
             body.append(
-                f'<rect x="{x}" y="{y + 9}" width="{pw:.0f}" height="26" rx="13" fill="{T["chrome"]}" stroke="{T["border"]}"/>'
-                f'<text x="{x + pw / 2:.0f}" y="{y + 26}" text-anchor="middle" class="mono" font-size="12">{esc(pill)}</text>'
+                f'<rect x="{x}" y="{y + 9}" width="{pw:.0f}" height="26" rx="13" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+                f'<text x="{x + pw / 2:.0f}" y="{y + 26}" text-anchor="middle" class="mono" font-size="11.5">{esc(pill)}</text>'
             )
             x += pw + 8
         body.append("</g>")
         if r < len(TOOLKIT) - 1:
-            body.append(f'<line x1="24" y1="{y + row_h - 10}" x2="{w - 24}" y2="{y + row_h - 10}" stroke="{T["grid"]}"/>')
-    return card(w, h, "~/toolkit.yaml", "\n".join(body), right_label="what I build with")
+            body.append(f'<line x1="20" y1="{y + row_h - 10}" x2="{w - 20}" y2="{y + row_h - 10}" stroke="{T["grid"]}"/>')
+    return card(w, h, "~/toolkit.yaml", "\n".join(body), right_label="22 tools · 4 layers")
+
+
+def project_card(p: dict) -> str:
+    w, h = 490, 168
+    ac = p["accent"]
+    pills_svg, px = [], 20
+    for pill in p["pills"]:
+        pw = len(pill) * 6.8 + 18
+        pills_svg.append(
+            f'<rect x="{px}" y="94" width="{pw:.0f}" height="22" rx="11" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+            f'<text x="{px + pw / 2:.0f}" y="109" text-anchor="middle" class="mono muted" font-size="10.5">{esc(pill)}</text>'
+        )
+        px += pw + 7
+    body = [
+        f'<rect x="0" y="0" width="3.5" height="{h - 36}" fill="{ac}"/>',
+        f'<text x="20" y="28" font-size="17" font-weight="700">{esc(p["name"])}</text>',
+        f'<rect x="336" y="12" width="134" height="20" rx="10" fill="{T["surface"]}" stroke="{T["border"]}"/>',
+        f'<text x="403" y="26" text-anchor="middle" class="mono" font-size="9.5" fill="{ac}">{esc(p["tag"])}</text>',
+        f'<text x="20" y="54" font-size="12.5" class="muted">{esc(p["desc"][0])}</text>',
+        f'<text x="20" y="72" font-size="12.5" class="muted">{esc(p["desc"][1])}</text>',
+        "".join(pills_svg),
+        f'<circle cx="{w - 86}" cy="105" r="4.5" fill="{p["lang_color"]}"/>',
+        f'<text x="{w - 76}" y="109" class="mono dim" font-size="10.5">{esc(p["lang"])}</text>',
+    ]
+    return card(w, h, f"~/projects/{p['name']}", "\n".join(body), right_label="open repo ↗")
+
+
+def footer_svg() -> str:
+    w, h = 1000, 56
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Footer">
+<defs>
+  <linearGradient id="fg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="{T['accent']}" stop-opacity="0"/>
+    <stop offset=".5" stop-color="{T['ok']}" stop-opacity=".7"/>
+    <stop offset="1" stop-color="{T['accent2']}" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="{w}" height="{h}" rx="10" fill="{T['chrome']}" stroke="{T['border']}"/>
+<rect x="0" y="0" width="{w}" height="1.5" fill="url(#fg)"/>
+<text x="24" y="32" font-family="{MONO}" font-size="11.5" fill="{T['muted']}">
+  <tspan fill="{T['ok']}">✓</tspan> rendered in-repo with Python stdlib · automated via GitHub Actions
+</text>
+<text x="{w - 24}" y="32" text-anchor="end" font-family="{MONO}" font-size="11.5" fill="{T['dim']}">
+  @2b-adrix · adrix.is-a.dev
+</text>
+</svg>
+"""
 
 
 def build(root: Path) -> None:
     out = root / "assets" / "static"
     write(out / "header.svg", header_svg())
     write(out / "toolkit.svg", toolkit_svg())
+    write(out / "footer.svg", footer_svg())
+    for p in PROJECTS:
+        write(out / "projects" / p["file"], project_card(p))
     for filename, label, color, icon_svg in BADGES:
         write(out / "badges" / filename, badge_svg(label, color, icon_svg))

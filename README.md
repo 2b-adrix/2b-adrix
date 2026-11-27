@@ -14,7 +14,7 @@
 
 ### `$ cat ~/about.md`
 
-I build **native Android applications and the backend services behind them** — clean Jetpack Compose UIs, reliable architectures, and REST APIs. The goal is always the same: *engineering products, not just projects*.
+I engineer **native Android applications and the backend services behind them** — clean Jetpack Compose UIs, resilient mobile architectures, and scalable REST APIs.
 
 ```yaml
 apiVersion: v1
@@ -37,19 +37,20 @@ status:
 
 ### `$ ls ~/toolkit`
 
-<img src="./assets/static/toolkit.svg" width="100%" alt="Toolkit: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman · Linux, Git, GitHub, GitHub Actions, VS Code" />
+<img src="./assets/static/toolkit.svg" width="100%" alt="Toolkit: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room, CameraX · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman, JWT · Linux, Git, GitHub, GitHub Actions, VS Code" />
 
 ### `$ ls ~/projects --featured`
 
-| Project | What it does | Built with |
-| :-- | :-- | :-- |
-| [**Krishiva-Native**](https://github.com/2b-adrix/Krishiva-Native) | AI-powered agricultural intelligence platform for farmers — instant crop disease diagnosis via Gemini AI & CameraX, real-time Mandi prices, and agronomy advice. | `Kotlin` `Jetpack Compose` `CameraX` `Gemini AI` |
-| [**Arogyagrid**](https://github.com/2b-adrix/Arogyagrid) | Native Android healthcare client paired with a dedicated [Spring Boot backend](https://github.com/2b-adrix/arogyagrid-backend) for connected health workflows. | `Kotlin` `Java` `Spring Boot` `REST` |
-| [**Phantom-Lens**](https://github.com/2b-adrix/Phantom-Lens) | Native Kotlin Android application exploring camera utilities and clean mobile architecture. | `Kotlin` `Android` `MVVM` |
-| [**Alpha-Chat-Native**](https://github.com/2b-adrix/Alpha-Chat-Native) | Native real-time messaging Android app built with Kotlin and Firebase. | `Kotlin` `Android` `Firebase` |
-| [**LeadGen_Hunter**](https://github.com/2b-adrix/LeadGen_Hunter) | Android lead-discovery and productivity utility built in Kotlin. | `Kotlin` `Android` |
+<p align="center">
+  <a href="https://github.com/2b-adrix/Krishiva-Native"><img src="./assets/static/projects/krishiva-native.svg" width="49%" alt="Krishiva-Native" /></a>
+  <a href="https://github.com/2b-adrix/Arogyagrid"><img src="./assets/static/projects/arogyagrid.svg" width="49%" alt="Arogyagrid" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/2b-adrix/Phantom-Lens"><img src="./assets/static/projects/phantom-lens.svg" width="49%" alt="Phantom-Lens" /></a>
+  <a href="https://github.com/2b-adrix/Alpha-Chat-Native"><img src="./assets/static/projects/alpha-chat-native.svg" width="49%" alt="Alpha-Chat-Native" /></a>
+</p>
 
-<sub>→ more repositories & case studies at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a></sub>
+<sub>→ more repositories & case studies at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a> · <a href="https://github.com/2b-adrix?tab=repositories">all GitHub repos</a></sub>
 
 ### `$ gh stats --user 2b-adrix`
 
@@ -97,3 +98,7 @@ status:
 <a href="https://www.leetcode.com/2b_adrix"><img src="./assets/static/badges/leetcode.svg" alt="LeetCode" /></a>
 
 </details>
+
+<br />
+
+<img src="./assets/static/footer.svg" width="100%" alt="Built with Python stdlib · Automated via GitHub Actions" />
