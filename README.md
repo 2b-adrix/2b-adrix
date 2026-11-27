@@ -13,7 +13,7 @@
 
 ## `01` · Identity & Engineering Profile
 
-I engineer **native Android applications and the backend services behind them** — clean Jetpack Compose UIs, resilient mobile architectures, and scalable REST APIs.
+I build **end-to-end Android products and the Spring Boot backends that power them** — pairing Jetpack Compose clients and on-device ML/security with JWT-secured REST APIs, relational/NoSQL data layers, and Dockerized deployments.
 
 ```kotlin
 object Adrix : Engineer(
@@ -23,37 +23,45 @@ object Adrix : Engineer(
     education = "B.Tech CSE · Mewar University '28",
     team = "Alpha-coders",
 ) {
-    val focus = listOf("Native Android", "Jetpack Compose", "Clean Architecture", "App Security")
-    val stack = listOf("Kotlin", "Java", "Spring Boot", "Firebase", "MongoDB")
+    val android = listOf("Kotlin", "Jetpack Compose", "MVVM", "Room", "TFLite", "SQLCipher")
+    val backend = listOf("Java 17/21", "Spring Boot", "Spring Security", "JWT", "MongoDB", "Docker")
     val motto = "Engineering products, not just projects."
 }
 ```
 
-## `02` · Tech Architecture
+## `02` · End-to-End Architecture
 
-<img src="./assets/static/toolkit.svg" width="100%" alt="Architecture Matrix: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room, CameraX · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman, JWT · Linux, Git, GitHub, GitHub Actions, VS Code" />
+<img src="./assets/static/architecture.svg" width="100%" alt="Android Client to Spring Boot REST API to MongoDB/MySQL/Firebase Architecture" />
 
-## `03` · Featured Builds
+## `03` · Tech Architecture
+
+<img src="./assets/static/toolkit.svg" width="100%" alt="Architecture Matrix: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room, TFLite · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman, Spring Security, JWT, JPA · Docker, Linux, Git, GitHub, GitHub Actions, VS Code" />
+
+## `04` · Featured Builds
 
 <p align="center">
   <a href="https://github.com/2b-adrix/Krishiva-Native"><img src="./assets/static/projects/krishiva-native.svg" width="49%" alt="Krishiva-Native" /></a>
-  <a href="https://github.com/2b-adrix/Arogyagrid"><img src="./assets/static/projects/arogyagrid.svg" width="49%" alt="Arogyagrid" /></a>
+  <a href="https://github.com/2b-adrix/SentinalX"><img src="./assets/static/projects/sentinalx.svg" width="49%" alt="SentinalX" /></a>
 </p>
 <p align="center">
-  <a href="https://github.com/2b-adrix/SentinalX"><img src="./assets/static/projects/sentinalx.svg" width="49%" alt="SentinalX" /></a>
+  <a href="https://github.com/2b-adrix/Arogyagrid"><img src="./assets/static/projects/arogyagrid.svg" width="49%" alt="Arogyagrid Android Client" /></a>
+  <a href="https://github.com/2b-adrix/arogyagrid-backend"><img src="./assets/static/projects/arogyagrid-backend.svg" width="49%" alt="arogyagrid-backend Spring Boot API" /></a>
+</p>
+<p align="center">
   <a href="https://github.com/2b-adrix/Alpha-Chat-Native"><img src="./assets/static/projects/alpha-chat-native.svg" width="49%" alt="Alpha-Chat-Native" /></a>
+  <a href="https://github.com/2b-adrix/ORACLE-S-PLATE_BACKEND"><img src="./assets/static/projects/oracle-plate-backend.svg" width="49%" alt="ORACLE-S-PLATE_BACKEND Java 21 Spring Boot" /></a>
 </p>
 
 <sub>→ explore all repositories & case studies at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a> · <a href="https://github.com/2b-adrix?tab=repositories">GitHub</a></sub>
 
-## `04` · GitHub Telemetry
+## `05` · GitHub Telemetry
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/stats.svg" width="49%" alt="GitHub overview telemetry" />
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/streak.svg" width="49%" alt="Contribution streak" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/languages.svg" width="49%" alt="Language composition" />
+  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/languages.svg" width="49%" alt="Language mix" />
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/commit-clock.svg" width="49%" alt="Commit cadence" />
 </p>
 <p align="center">
@@ -63,7 +71,7 @@ object Adrix : Engineer(
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/trophies.svg" width="98.5%" alt="Achievement tiers" />
 </p>
 
-## `05` · Live Activity Feed
+## `06` · Live Activity Feed
 
 <!--START_SECTION:activity-->
 | When | | What |
@@ -78,14 +86,14 @@ object Adrix : Engineer(
 | `Nov 03` | 🚀 | Released [v1.0.0](https://github.com/2b-adrix/Arogyagrid/releases/tag/v1.0.0) in [2b-adrix/Arogyagrid](https://github.com/2b-adrix/Arogyagrid) |
 <!--END_SECTION:activity-->
 
-## `06` · Contribution Matrix
+## `07` · Contribution Matrix
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" alt="Contribution snake" />
 </p>
 
 <details>
-<summary><b>More Profiles & Competitive Coding</b></summary>
+<summary><b><code>$ cat ~/.socials</code></b></summary>
 <br />
 
 <a href="https://instagram.com/2b_adrix"><img src="./assets/static/badges/instagram.svg" alt="Instagram" /></a>
@@ -95,4 +103,4 @@ object Adrix : Engineer(
 
 <br />
 
-<img src="./assets/static/footer.svg" width="100%" alt="Designed for @2b-adrix · Pure Python SVG engine" />
+<img src="./assets/static/footer.svg" width="100%" alt="Android + Backend Engine · Automated via GitHub Actions" />

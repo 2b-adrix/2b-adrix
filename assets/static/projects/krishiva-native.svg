@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="490" height="178" viewBox="0 0 490 178" role="img" aria-label="BUILD #01 · AI · AGRITECH">
-<title>BUILD #01 · AI · AGRITECH</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="178" viewBox="0 0 490 178" role="img" aria-label="BUILD #01 · ANDROID · AI">
+<title>BUILD #01 · ANDROID · AI</title>
 <style>
 text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f8fafc; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
@@ -39,7 +39,7 @@ text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fil
   <rect x="0" y="0" width="490" height="1.6" fill="url(#topSheen)"/>
   <line x1="0" y1="40" x2="490" y2="40" stroke="#262d3d"/>
   <rect x="18" y="16" width="16" height="6" rx="3" fill="#3ddc84"/>
-  <text x="42" y="23.5" class="mono muted" font-size="11" font-weight="600" letter-spacing="1">BUILD #01 · AI · AGRITECH</text>
+  <text x="42" y="23.5" class="mono muted" font-size="11" font-weight="600" letter-spacing="1">BUILD #01 · ANDROID · AI</text>
   <rect x="369.2" y="10" width="104.8" height="20" rx="10" fill="#181d29" stroke="#262d3d"/><circle cx="380.2" cy="20" r="2.5" fill="#3ddc84"/><text x="389.2" y="23.5" class="mono dim" font-size="9.8">OPEN REPO ↗</text>
   <g transform="translate(0 40)">
 <rect x="20" y="15" width="4" height="24" rx="2" fill="#3ddc84"/>

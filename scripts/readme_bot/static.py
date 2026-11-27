@@ -1,4 +1,4 @@
-"""Static artwork: polished Pixel-frame hero, 2x2 Bento toolkit, project cards, pill badges & footer."""
+"""Static artwork: Android+Backend dual-node hero, End-to-End Architecture card, 2x2 Bento toolkit, 6 project cards, pill badges & footer."""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ CHIPS = [
     ("Kotlin", T["kotlin"]),
     ("Jetpack Compose", T["mint"]),
     ("Spring Boot", T["sky"]),
-    ("Firebase", T["gold"]),
-    ("Clean Arch", T["coral"]),
+    ("JWT · REST", T["gold"]),
+    ("MongoDB · SQL", T["coral"]),
 ]
 
 TOOLKIT_GRID = [
@@ -31,7 +31,7 @@ TOOLKIT_GRID = [
         [],
     ),
     (
-        "02 // ANDROID & UI",
+        "02 // ANDROID & MOBILE",
         T["mint"],
         ["AndroidStudio-Dark", "Gradle-Dark", "Firebase-Dark", "SQLite"],
         ["Jetpack Compose", "MVVM", "Room", "TFLite"],
@@ -40,12 +40,12 @@ TOOLKIT_GRID = [
         "03 // BACKEND & APIS",
         T["sky"],
         ["Spring-Dark", "MongoDB", "MySQL-Dark", "NodeJS-Dark", "REST", "Postman"],
-        ["JWT", "RESTful"],
+        ["Spring Security", "JWT", "JPA"],
     ),
     (
-        "04 // SYSTEMS & TOOLS",
+        "04 // DEVOPS & SECURITY",
         T["coral"],
-        ["Linux-Dark", "Git", "Github-Dark", "GithubActions-Dark", "VSCode-Dark"],
+        ["Docker", "Linux-Dark", "Git", "Github-Dark", "GithubActions-Dark", "VSCode-Dark"],
         ["SQLCipher", "DSA"],
     ),
 ]
@@ -68,6 +68,7 @@ LABELS = {
     "NodeJS": "Node.js",
     "REST": "REST API",
     "Postman": "Postman",
+    "Docker": "Docker",
     "Linux": "Linux",
     "Git": "Git",
     "Github": "GitHub",
@@ -80,7 +81,7 @@ PROJECTS = [
         "file": "krishiva-native.svg",
         "num": "01",
         "name": "Krishiva-Native",
-        "tag": "AI · AGRITECH",
+        "tag": "ANDROID · AI",
         "lang": "Kotlin",
         "lang_color": T["kotlin"],
         "desc": [
@@ -91,24 +92,10 @@ PROJECTS = [
         "accent": T["mint"],
     },
     {
-        "file": "arogyagrid.svg",
-        "num": "02",
-        "name": "Arogyagrid",
-        "tag": "HEALTHTECH",
-        "lang": "Kotlin + Java",
-        "lang_color": T["sky"],
-        "desc": [
-            "Native Android healthcare client powered by a",
-            "dedicated Spring Boot REST API backend.",
-        ],
-        "pills": ["Kotlin", "Spring Boot", "REST API"],
-        "accent": T["sky"],
-    },
-    {
         "file": "sentinalx.svg",
-        "num": "03",
+        "num": "02",
         "name": "SentinalX",
-        "tag": "CYBERSECURITY",
+        "tag": "ANDROID · SECURITY",
         "lang": "Kotlin",
         "lang_color": T["kotlin"],
         "desc": [
@@ -119,10 +106,38 @@ PROJECTS = [
         "accent": T["kotlin"],
     },
     {
-        "file": "alpha-chat-native.svg",
+        "file": "arogyagrid.svg",
+        "num": "03",
+        "name": "Arogyagrid",
+        "tag": "ANDROID CLIENT",
+        "lang": "Kotlin",
+        "lang_color": T["kotlin"],
+        "desc": [
+            "Native Android smart-health supply chain client",
+            "synced with the Arogyagrid Spring Boot API.",
+        ],
+        "pills": ["Kotlin", "Android", "REST Client"],
+        "accent": T["mint"],
+    },
+    {
+        "file": "arogyagrid-backend.svg",
         "num": "04",
+        "name": "arogyagrid-backend",
+        "tag": "SPRING BOOT API",
+        "lang": "Java 17",
+        "lang_color": T["sky"],
+        "desc": [
+            "Production Spring Boot 3 REST API with Spring",
+            "Security, JJWT auth, JPA persistence & Docker.",
+        ],
+        "pills": ["Spring Boot 3", "JJWT", "JPA · Docker"],
+        "accent": T["sky"],
+    },
+    {
+        "file": "alpha-chat-native.svg",
+        "num": "05",
         "name": "Alpha-Chat-Native",
-        "tag": "REALTIME",
+        "tag": "ANDROID · REALTIME",
         "lang": "Kotlin",
         "lang_color": T["coral"],
         "desc": [
@@ -131,6 +146,20 @@ PROJECTS = [
         ],
         "pills": ["Kotlin", "Firebase", "Realtime"],
         "accent": T["coral"],
+    },
+    {
+        "file": "oracle-plate-backend.svg",
+        "num": "06",
+        "name": "ORACLE-S-PLATE_BACKEND",
+        "tag": "JAVA 21 · BACKEND",
+        "lang": "Java 21",
+        "lang_color": T["sky"],
+        "desc": [
+            "Modern Java 21 + Spring Boot 4 backend service",
+            "with Spring Security and modular REST endpoints.",
+        ],
+        "pills": ["Java 21", "Spring Boot 4", "Security"],
+        "accent": T["sky"],
     },
 ]
 
@@ -199,62 +228,95 @@ def badge_svg(label: str, accent: str, icon_svg: str) -> str:
 
 
 def header_svg() -> str:
+    """Dual-Node Hero: Pixel Android Client linked via live REST/JWT pulse to Spring Boot Backend."""
     w, h = 1000, 348
     chips_svg, cx = [], 44
     for i, (chip, dot_color) in enumerate(CHIPS):
-        cw = len(chip) * 7.2 + 34
+        cw = len(chip) * 6.9 + 30
         chips_svg.append(
-            f'<g class="fade" {delay(0.65 + i * 0.08)}>'
+            f'<g class="fade" {delay(0.6 + i * 0.08)}>'
             f'<rect x="{cx}" y="268" width="{cw:.0f}" height="28" rx="14" fill="{T["surface"]}" stroke="{T["border"]}"/>'
-            f'<circle cx="{cx + 13}" cy="282" r="3" fill="{dot_color}"/>'
-            f'<text x="{cx + 22}" y="286" class="mono" font-size="11.2" fill="{T["text"]}">{esc(chip)}</text>'
+            f'<circle cx="{cx + 12}" cy="282" r="3" fill="{dot_color}"/>'
+            f'<text x="{cx + 21}" y="286" class="mono" font-size="10.8" fill="{T["text"]}">{esc(chip)}</text>'
             f'</g>'
         )
-        cx += cw + 8
+        cx += cw + 7
 
-    # Pixel flagship phone frame on the right (x=666..956, y=22..324)
-    px, py, pw, ph = 666, 22, 290, 302
-    phone = f"""
+    # Left-of-right-panel: Pixel Android Client (x=612..792, y=24..324)
+    px, py, pw, ph = 612, 24, 180, 300
+    # Right-of-right-panel: Spring Boot Backend Server Node (x=830..976, y=42..306)
+    sx, sy, sw, sh = 830, 42, 146, 264
+
+    dual_rig = f"""
   <g class="fade" {delay(0.22)}>
-    <!-- Hardware side buttons (power & volume) -->
-    <rect x="{px + pw - 1}" y="{py + 72}" width="4" height="28" rx="2" fill="#334155"/>
-    <rect x="{px + pw - 1}" y="{py + 114}" width="4" height="48" rx="2" fill="#334155"/>
-    <!-- Phone outer chassis -->
-    <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="32" fill="#080a0f" stroke="#334155" stroke-width="2"/>
-    <rect x="{px + 7}" y="{py + 7}" width="{pw - 14}" height="{ph - 14}" rx="25" fill="{T['chrome']}" stroke="{T['border']}"/>
-    <!-- Punch-hole camera & status bar -->
-    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="4.5" fill="#040609" stroke="#1e293b"/>
-    <circle cx="{px + pw / 2:.0f}" cy="{py + 21}" r="1.5" fill="#38bdf8" fill-opacity=".45"/>
-    <text x="{px + 24}" y="{py + 25}" class="mono muted" font-size="10">9:41</text>
-    <text x="{px + pw - 24}" y="{py + 25}" text-anchor="end" class="mono mint" font-size="9.5">5G · 100%</text>
+    <!-- Animated REST/JWT data bridge connecting Android Phone <-> Spring Boot API -->
+    <line x1="{px + pw}" y1="146" x2="{sx}" y2="146" stroke="{T['sky']}" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <line x1="{px + pw}" y1="196" x2="{sx}" y2="196" stroke="{T['mint']}" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <circle cx="{px + pw + 19}" cy="146" r="3.5" fill="{T['sky']}">
+      <animate attributeName="cx" values="{px + pw + 3};{sx - 3};{px + pw + 3}" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="{sx - 19}" cy="196" r="3.5" fill="{T['mint']}">
+      <animate attributeName="cx" values="{sx - 3};{px + pw + 3};{sx - 3}" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="{px + pw + 3}" y="160" width="32" height="20" rx="5" fill="{T['surface']}" stroke="{T['border']}"/>
+    <text x="{px + pw + 19}" y="173.5" text-anchor="middle" class="mono sky" font-size="8.5" font-weight="700">REST</text>
 
-    <!-- Material You App Header inside phone -->
-    <rect x="{px + 20}" y="{py + 40}" width="{pw - 40}" height="68" rx="16" fill="{T['surface']}" stroke="{T['border']}"/>
-    <rect x="{px + 32}" y="{py + 52}" width="44" height="44" rx="12" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".45"/>
-    <path d="M{px + 45},{py + 77} a9,9 0 0 1 18,0 Z" fill="{T['mint']}"/>
-    <line x1="{px + 48}" y1="{py + 64}" x2="{px + 50}" y2="{py + 68}" stroke="{T['mint']}" stroke-width="1.8" stroke-linecap="round"/>
-    <line x1="{px + 60}" y1="{py + 64}" x2="{px + 58}" y2="{py + 68}" stroke="{T['mint']}" stroke-width="1.8" stroke-linecap="round"/>
-    <circle cx="{px + 50.5}" cy="{py + 73}" r="1.1" fill="{T['bg']}"/>
-    <circle cx="{px + 57.5}" cy="{py + 73}" r="1.1" fill="{T['bg']}"/>
+    <!-- Pixel Hardware Chassis -->
+    <rect x="{px + pw - 1}" y="{py + 68}" width="3.5" height="24" rx="1.5" fill="#334155"/>
+    <rect x="{px + pw - 1}" y="{py + 104}" width="3.5" height="40" rx="1.5" fill="#334155"/>
+    <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="26" fill="#080a0f" stroke="#334155" stroke-width="1.8"/>
+    <rect x="{px + 6}" y="{py + 6}" width="{pw - 12}" height="{ph - 12}" rx="20" fill="{T['chrome']}" stroke="{T['border']}"/>
+    <circle cx="{px + pw / 2:.0f}" cy="{py + 18}" r="4" fill="#040609" stroke="#1e293b"/>
+    <text x="{px + 18}" y="{py + 22}" class="mono muted" font-size="9">9:41</text>
+    <text x="{px + pw - 18}" y="{py + 22}" text-anchor="end" class="mono mint" font-size="8.5">5G</text>
 
-    <text x="{px + 88}" y="{py + 70}" font-size="14" font-weight="800" fill="{T['text']}">2b-adrix.apk</text>
-    <text x="{px + 88}" y="{py + 88}" class="mono mint" font-size="10.5">@Composable UI · M3</text>
+    <!-- App Identity inside Pixel -->
+    <rect x="{px + 14}" y="{py + 34}" width="{pw - 28}" height="56" rx="12" fill="{T['surface']}" stroke="{T['border']}"/>
+    <rect x="{px + 22}" y="{py + 44}" width="34" height="34" rx="9" fill="{T['mint']}" fill-opacity=".15" stroke="{T['mint']}" stroke-opacity=".45"/>
+    <path d="M{px + 31},{py + 64} a8,8 0 0 1 16,0 Z" fill="{T['mint']}"/>
+    <circle cx="{px + 36}" cy="{py + 60}" r="1" fill="{T['bg']}"/>
+    <circle cx="{px + 42}" cy="{py + 60}" r="1" fill="{T['bg']}"/>
+    <text x="{px + 64}" y="{py + 59}" font-size="12" font-weight="800">2b-adrix.apk</text>
+    <text x="{px + 64}" y="{py + 74}" class="mono mint" font-size="9">Compose · M3</text>
 
-    <!-- Syntax-highlighted Kotlin block inside phone -->
-    <rect x="{px + 20}" y="{py + 120}" width="{pw - 40}" height="106" rx="16" fill="{T['bg']}" stroke="{T['border']}"/>
-    <text x="{px + 33}" y="{py + 141}" class="mono" font-size="10.5"><tspan fill="{T['coral']}">val</tspan> <tspan fill="{T['text']}">stack</tspan> <tspan fill="{T['dim']}">=</tspan> <tspan fill="{T['sky']}">listOf(</tspan></text>
-    <text x="{px + 43}" y="{py + 159}" class="mono" font-size="10.5"><tspan fill="{T['mint']}">"Kotlin + Compose"</tspan><tspan fill="{T['dim']}">,</tspan></text>
-    <text x="{px + 43}" y="{py + 177}" class="mono" font-size="10.5"><tspan fill="{T['mint']}">"TFLite + SQLCipher"</tspan><tspan fill="{T['dim']}">,</tspan></text>
-    <text x="{px + 43}" y="{py + 195}" class="mono" font-size="10.5"><tspan fill="{T['mint']}">"Spring Boot + REST"</tspan></text>
-    <text x="{px + 33}" y="{py + 213}" class="mono sky" font-size="10.5">)</text>
+    <!-- Kotlin Client Block -->
+    <rect x="{px + 14}" y="{py + 100}" width="{pw - 28}" height="122" rx="12" fill="{T['bg']}" stroke="{T['border']}"/>
+    <text x="{px + 24}" y="{py + 120}" class="mono" font-size="9.5"><tspan fill="{T['coral']}">@Composable</tspan></text>
+    <text x="{px + 24}" y="{py + 137}" class="mono" font-size="9.5"><tspan fill="{T['sky']}">fun</tspan> <tspan fill="{T['text']}">Client()</tspan></text>
+    <text x="{px + 24}" y="{py + 157}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· MVVM + Room</tspan></text>
+    <text x="{px + 24}" y="{py + 174}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· TFLite ML</tspan></text>
+    <text x="{px + 24}" y="{py + 191}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· SQLCipher</tspan></text>
+    <text x="{px + 24}" y="{py + 208}" class="mono" font-size="9.2"><tspan fill="{T['mint']}">· Retrofit/JWT</tspan></text>
 
-    <!-- Bottom Material Build Pill -->
-    <rect x="{px + 20}" y="{py + 238}" width="{pw - 40}" height="36" rx="18" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".5"/>
-    <circle class="pulse" cx="{px + 39}" cy="{py + 256}" r="4.5" fill="{T['mint']}"/>
-    <text x="{px + 52}" y="{py + 260}" class="mono mint" font-size="10.8" font-weight="700">RELEASE BUILD PASSING</text>
+    <!-- Phone bottom status pill -->
+    <rect x="{px + 14}" y="{py + 234}" width="{pw - 28}" height="32" rx="16" fill="{T['mint']}" fill-opacity=".14" stroke="{T['mint']}" stroke-opacity=".5"/>
+    <circle class="pulse" cx="{px + 30}" cy="{py + 250}" r="3.8" fill="{T['mint']}"/>
+    <text x="{px + 41}" y="{py + 253.5}" class="mono mint" font-size="9.2" font-weight="700">ANDROID CLIENT</text>
+    <polygon points="{px + 7},{py + 7} {px + 105},{py + 7} {px + 55},{py + ph - 7} {px + 7},{py + ph - 7}" fill="url(#phoneGlare)" opacity=".05"/>
 
-    <!-- Diagonal glass reflection glare -->
-    <polygon points="{px + 8},{py + 8} {px + 145},{py + 8} {px + 75},{py + ph - 8} {px + 8},{py + ph - 8}" fill="url(#phoneGlare)" opacity=".06"/>
+    <!-- Spring Boot Backend Server Node -->
+    <rect x="{sx}" y="{sy}" width="{sw}" height="{sh}" rx="16" fill="{T['chrome']}" stroke="{T['border']}"/>
+    <rect x="{sx}" y="{sy}" width="{sw}" height="2" rx="1" fill="{T['sky']}"/>
+    <text x="{sx + 14}" y="{sy + 24}" class="mono sky" font-size="9.5" font-weight="700">API SERVER</text>
+    <circle class="pulse" cx="{sx + sw - 16}" cy="{sy + 20}" r="3.5" fill="{T['mint']}"/>
+
+    <!-- Server rack modules -->
+    <rect x="{sx + 12}" y="{sy + 38}" width="{sw - 24}" height="50" rx="9" fill="{T['surface']}" stroke="{T['border']}"/>
+    <text x="{sx + 20}" y="{sy + 57}" font-size="11.5" font-weight="800">Spring Boot</text>
+    <text x="{sx + 20}" y="{sy + 74}" class="mono sky" font-size="9">Java 17/21 · API</text>
+
+    <rect x="{sx + 12}" y="{sy + 96}" width="{sw - 24}" height="74" rx="9" fill="{T['bg']}" stroke="{T['border']}"/>
+    <text x="{sx + 20}" y="{sy + 114}" class="mono coral" font-size="9">POST /v1/auth</text>
+    <text x="{sx + 20}" y="{sy + 131}" class="mono mint" font-size="9">200 OK · JWT</text>
+    <text x="{sx + 20}" y="{sy + 148}" class="mono muted" font-size="9">GET /v1/sync</text>
+    <text x="{sx + 20}" y="{sy + 163}" class="mono dim" font-size="8.5">JPA · Security</text>
+
+    <rect x="{sx + 12}" y="{sy + 178}" width="{sw - 24}" height="42" rx="9" fill="{T['surface']}" stroke="{T['border']}"/>
+    <text x="{sx + 20}" y="{sy + 196}" class="mono gold" font-size="9">DATA + CLOUD</text>
+    <text x="{sx + 20}" y="{sy + 211}" class="mono muted" font-size="8.5">Mongo · SQL · Fb</text>
+
+    <rect x="{sx + 12}" y="{sy + 228}" width="{sw - 24}" height="24" rx="12" fill="{T['sky']}" fill-opacity=".14" stroke="{T['sky']}" stroke-opacity=".45"/>
+    <text x="{sx + sw / 2:.0f}" y="{sy + 243.5}" text-anchor="middle" class="mono sky" font-size="8.8" font-weight="700">DOCKER READY</text>
   </g>"""
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(NAME)} — {esc(ROLE)}">
@@ -262,7 +324,7 @@ def header_svg() -> str:
 <style>
 text {{ font-family: {SANS}; fill: {T['text']}; }}
 .mono {{ font-family: {MONO}; white-space: pre; }}
-.muted {{ fill: {T['muted']}; }} .dim {{ fill: {T['dim']}; }} .mint {{ fill: {T['mint']}; }} .coral {{ fill: {T['coral']}; }} .sky {{ fill: {T['sky']}; }}
+.muted {{ fill: {T['muted']}; }} .dim {{ fill: {T['dim']}; }} .mint {{ fill: {T['mint']}; }} .coral {{ fill: {T['coral']}; }} .sky {{ fill: {T['sky']}; }} .gold {{ fill: {T['gold']}; }}
 .fade {{ animation: fadeIn .8s ease-out both; }}
 .pulse {{ animation: pulseDot 2.2s ease-in-out infinite; }}
 @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(6px); }} to {{ opacity: 1; transform: none; }} }}
@@ -274,11 +336,10 @@ text {{ font-family: {SANS}; fill: {T['text']}; }}
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
     <path d="M 28 0 L 0 0 0 28" fill="none" stroke="{T['grid']}" stroke-width="0.8"/>
   </pattern>
-  <radialGradient id="gMint" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['mint']}" stop-opacity=".25"/><stop offset="1" stop-color="{T['mint']}" stop-opacity="0"/></radialGradient>
-  <radialGradient id="gCoral" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['coral']}" stop-opacity=".20"/><stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/></radialGradient>
-  <radialGradient id="gSky" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['sky']}" stop-opacity=".15"/><stop offset="1" stop-color="{T['sky']}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gMint" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['mint']}" stop-opacity=".24"/><stop offset="1" stop-color="{T['mint']}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gSky" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{T['sky']}" stop-opacity=".18"/><stop offset="1" stop-color="{T['sky']}" stop-opacity="0"/></radialGradient>
   <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['mint']}"/><stop offset=".55" stop-color="{T['sky']}"/><stop offset="1" stop-color="{T['coral']}"/></linearGradient>
-  <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['mint']}" stop-opacity="0"/><stop offset=".5" stop-color="{T['mint']}" stop-opacity=".85"/><stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/></linearGradient>
+  <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{T['mint']}" stop-opacity="0"/><stop offset=".5" stop-color="{T['sky']}" stop-opacity=".85"/><stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/></linearGradient>
   <linearGradient id="phoneGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
   <clipPath id="frame"><rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="22"/></clipPath>
 </defs>
@@ -287,34 +348,86 @@ text {{ font-family: {SANS}; fill: {T['text']}; }}
   <rect width="{w}" height="{h}" fill="url(#grid)" opacity=".75"/>
   <rect x="0" y="0" width="{w}" height="2" fill="url(#topBar)"/>
   <ellipse class="glow" cx="150" cy="80" rx="300" ry="180" fill="url(#gMint)"/>
-  <ellipse class="glow" cx="520" cy="290" rx="280" ry="160" fill="url(#gCoral)" style="animation-delay:-6s"/>
-  <ellipse class="glow" cx="760" cy="60" rx="240" ry="140" fill="url(#gSky)" style="animation-delay:-10s"/>
+  <ellipse class="glow" cx="840" cy="240" rx="280" ry="170" fill="url(#gSky)" style="animation-delay:-7s"/>
 
   <g class="fade">
-    <rect x="44" y="34" width="222" height="26" rx="13" fill="{T['surface']}" stroke="{T['border']}"/>
+    <rect x="44" y="34" width="286" height="26" rx="13" fill="{T['surface']}" stroke="{T['border']}"/>
     <circle class="pulse" cx="60" cy="47" r="4" fill="{T['mint']}"/>
-    <text x="72" y="51" class="mono" font-size="10.5" fill="{T['mint']}">ANDROID // {esc(HANDLE)} · OPEN</text>
-    <text x="42" y="120" font-size="52" font-weight="900" letter-spacing="1">{esc(NAME)}</text>
+    <text x="72" y="51" class="mono" font-size="10.2" fill="{T['mint']}">ANDROID + BACKEND // {esc(HANDLE)}</text>
+    <text x="42" y="120" font-size="50" font-weight="900" letter-spacing="1">{esc(NAME)}</text>
     <rect x="44" y="132" width="136" height="4" rx="2" fill="url(#nameGrad)"/>
   </g>
 
   <g class="fade" {delay(0.2)}>
-    <text x="44" y="170" font-size="24" font-weight="700" fill="url(#nameGrad)" style="fill:url(#nameGrad)">{esc(ROLE)}</text>
-    <text x="44" y="198" font-size="14" class="muted">{esc(SUB)}</text>
+    <text x="44" y="170" font-size="23" font-weight="700" fill="url(#nameGrad)" style="fill:url(#nameGrad)">{esc(ROLE)}</text>
+    <text x="44" y="198" font-size="13.5" class="muted">{esc(SUB)}</text>
   </g>
 
   <g class="fade" {delay(0.4)}>
     <rect x="44" y="218" width="4" height="24" rx="2" fill="{T['coral']}"/>
-    <text x="58" y="235" font-size="14.5" font-style="italic" fill="{T['text']}">“{esc(MOTTO)}”</text>
+    <text x="58" y="235" font-size="14" font-style="italic" fill="{T['text']}">“{esc(MOTTO)}”</text>
   </g>
 
   {''.join(chips_svg)}
-  {phone}
+  {dual_rig}
 </g>
 <path d="M22 10 h-12 v12 M{w - 22} 10 h12 v12 M22 {h - 10} h-12 v-12 M{w - 22} {h - 10} h12 v-12" fill="none" stroke="{T['mint']}" stroke-opacity=".48" stroke-width="1.5"/>
 <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="22" fill="none" stroke="{T['border']}"/>
 </svg>
 """
+
+
+def architecture_svg() -> str:
+    """Animated End-to-End Android Client -> Spring Boot API -> Data & Cloud Architecture Card."""
+    w, h = 1000, 224
+    nodes = [
+        (
+            24,
+            T["mint"],
+            "01 · MOBILE CLIENT",
+            "Native Android App",
+            ["Kotlin · Jetpack Compose · Material 3", "MVVM · Room + SQLCipher Vault", "CameraX · TFLite ML · Biometrics"],
+        ),
+        (
+            356,
+            T["sky"],
+            "02 · BACKEND SERVICES",
+            "Spring Boot REST API",
+            ["Java 17/21 · Spring Boot 3 & 4", "Spring Security · JJWT Auth", "REST Controllers · Spring Data JPA"],
+        ),
+        (
+            688,
+            T["coral"],
+            "03 · DATA & CLOUD",
+            "Persistence & AI Layer",
+            ["MongoDB · MySQL · SQLite", "Firebase Auth & Realtime Sync", "Docker Containers · Gemini AI"],
+        ),
+    ]
+    body = []
+    # Connecting lines + animated glowing packets
+    for x_start, x_end, label, color in ((312, 356, "HTTPS", T["mint"]), (644, 688, "JPA/DB", T["sky"])):
+        body.append(
+            f'<line x1="{x_start}" y1="84" x2="{x_end}" y2="84" stroke="{color}" stroke-width="1.8" stroke-dasharray="4 3"/>'
+            f'<circle cx="{x_start + 8}" cy="84" r="3.5" fill="{color}">'
+            f'<animate attributeName="cx" values="{x_start + 4};{x_end - 4};{x_start + 4}" dur="2.1s" repeatCount="indefinite"/></circle>'
+            f'<rect x="{x_start + 4}" y="58" width="36" height="16" rx="4" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+            f'<text x="{(x_start + x_end) / 2:.0f}" y="69" text-anchor="middle" class="mono" font-size="8.5" fill="{color}">{label}</text>'
+        )
+
+    for idx, (nx, ac, kicker, title, bullets) in enumerate(nodes):
+        body.append(
+            f'<g class="fade" {delay(0.1 * idx)}>'
+            f'<rect x="{nx}" y="18" width="288" height="144" rx="14" fill="{T["surface"]}" stroke="{T["border"]}"/>'
+            f'<rect x="{nx}" y="34" width="3.5" height="28" rx="1.75" fill="{ac}"/>'
+            f'<text x="{nx + 16}" y="40" class="mono" font-size="9.5" font-weight="700" fill="{ac}" letter-spacing="0.8">{esc(kicker)}</text>'
+            f'<text x="{nx + 16}" y="62" font-size="16" font-weight="800">{esc(title)}</text>'
+            f'<line x1="{nx + 16}" y1="74" x2="{nx + 272}" y2="74" stroke="{T["grid"]}"/>'
+            f'<text x="{nx + 16}" y="96" class="mono muted" font-size="10.8">› {esc(bullets[0])}</text>'
+            f'<text x="{nx + 16}" y="117" class="mono muted" font-size="10.8">› {esc(bullets[1])}</text>'
+            f'<text x="{nx + 16}" y="138" class="mono muted" font-size="10.8">› {esc(bullets[2])}</text>'
+            f'</g>'
+        )
+    return panel(w, h, "ARCHITECTURE // END-TO-END SYSTEM FLOW", "\n".join(body), tag="MOBILE ↔ API ↔ DATA", accent=T["sky"])
 
 
 def toolkit_svg() -> str:
@@ -350,7 +463,7 @@ def toolkit_svg() -> str:
                 )
                 px += pw + 6
         body.append("</g>")
-    return panel(w, h, "STACK // ARCHITECTURE MATRIX", "\n".join(body), tag="22 TOOLS · 4 LAYERS", accent=T["mint"])
+    return panel(w, h, "STACK // ARCHITECTURE MATRIX", "\n".join(body), tag="23 TOOLS · 4 LAYERS", accent=T["mint"])
 
 
 def project_card(p: dict) -> str:
@@ -383,7 +496,7 @@ def footer_svg() -> str:
 <defs>
   <linearGradient id="fg" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="{T['mint']}" stop-opacity="0"/>
-    <stop offset=".5" stop-color="{T['mint']}" stop-opacity=".8"/>
+    <stop offset=".5" stop-color="{T['sky']}" stop-opacity=".8"/>
     <stop offset="1" stop-color="{T['coral']}" stop-opacity="0"/>
   </linearGradient>
 </defs>
@@ -391,7 +504,7 @@ def footer_svg() -> str:
 <rect x="0" y="0" width="{w}" height="1.6" fill="url(#fg)"/>
 <circle cx="24" cy="28" r="4" fill="{T['mint']}"/>
 <text x="38" y="32" font-family="{MONO}" font-size="11.5" fill="{T['muted']}">
-  DESIGNED FOR @2B-ADRIX · PURE PYTHON SVG ENGINE · SYNCED BY GITHUB ACTIONS
+  ANDROID + BACKEND ENGINE · PURE PYTHON SVG · SYNCED BY GITHUB ACTIONS
 </text>
 <text x="{w - 24}" y="32" text-anchor="end" font-family="{MONO}" font-size="11.5" fill="{T['coral']}">
   adrix.is-a.dev
@@ -403,6 +516,7 @@ def footer_svg() -> str:
 def build(root: Path) -> None:
     out = root / "assets" / "static"
     write(out / "header.svg", header_svg())
+    write(out / "architecture.svg", architecture_svg())
     write(out / "toolkit.svg", toolkit_svg())
     write(out / "footer.svg", footer_svg())
     for p in PROJECTS:

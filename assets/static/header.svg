@@ -3,7 +3,7 @@
 <style>
 text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f8fafc; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
-.muted { fill: #94a3b8; } .dim { fill: #64748b; } .mint { fill: #3ddc84; } .coral { fill: #ff8a4c; } .sky { fill: #38bdf8; }
+.muted { fill: #94a3b8; } .dim { fill: #64748b; } .mint { fill: #3ddc84; } .coral { fill: #ff8a4c; } .sky { fill: #38bdf8; } .gold { fill: #fbbf24; }
 .fade { animation: fadeIn .8s ease-out both; }
 .pulse { animation: pulseDot 2.2s ease-in-out infinite; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
@@ -15,11 +15,10 @@ text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fil
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
     <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1c2230" stroke-width="0.8"/>
   </pattern>
-  <radialGradient id="gMint" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3ddc84" stop-opacity=".25"/><stop offset="1" stop-color="#3ddc84" stop-opacity="0"/></radialGradient>
-  <radialGradient id="gCoral" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff8a4c" stop-opacity=".20"/><stop offset="1" stop-color="#ff8a4c" stop-opacity="0"/></radialGradient>
-  <radialGradient id="gSky" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#38bdf8" stop-opacity=".15"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gMint" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3ddc84" stop-opacity=".24"/><stop offset="1" stop-color="#3ddc84" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gSky" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#38bdf8" stop-opacity=".18"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
   <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3ddc84"/><stop offset=".55" stop-color="#38bdf8"/><stop offset="1" stop-color="#ff8a4c"/></linearGradient>
-  <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3ddc84" stop-opacity="0"/><stop offset=".5" stop-color="#3ddc84" stop-opacity=".85"/><stop offset="1" stop-color="#ff8a4c" stop-opacity="0"/></linearGradient>
+  <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3ddc84" stop-opacity="0"/><stop offset=".5" stop-color="#38bdf8" stop-opacity=".85"/><stop offset="1" stop-color="#ff8a4c" stop-opacity="0"/></linearGradient>
   <linearGradient id="phoneGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
   <clipPath id="frame"><rect x=".5" y=".5" width="999" height="347" rx="22"/></clipPath>
 </defs>
@@ -28,69 +27,97 @@ text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fil
   <rect width="1000" height="348" fill="url(#grid)" opacity=".75"/>
   <rect x="0" y="0" width="1000" height="2" fill="url(#topBar)"/>
   <ellipse class="glow" cx="150" cy="80" rx="300" ry="180" fill="url(#gMint)"/>
-  <ellipse class="glow" cx="520" cy="290" rx="280" ry="160" fill="url(#gCoral)" style="animation-delay:-6s"/>
-  <ellipse class="glow" cx="760" cy="60" rx="240" ry="140" fill="url(#gSky)" style="animation-delay:-10s"/>
+  <ellipse class="glow" cx="840" cy="240" rx="280" ry="170" fill="url(#gSky)" style="animation-delay:-7s"/>
 
   <g class="fade">
-    <rect x="44" y="34" width="222" height="26" rx="13" fill="#181d29" stroke="#262d3d"/>
+    <rect x="44" y="34" width="286" height="26" rx="13" fill="#181d29" stroke="#262d3d"/>
     <circle class="pulse" cx="60" cy="47" r="4" fill="#3ddc84"/>
-    <text x="72" y="51" class="mono" font-size="10.5" fill="#3ddc84">ANDROID // @2b-adrix · OPEN</text>
-    <text x="42" y="120" font-size="52" font-weight="900" letter-spacing="1">ADITYA MISHRA</text>
+    <text x="72" y="51" class="mono" font-size="10.2" fill="#3ddc84">ANDROID + BACKEND // @2b-adrix</text>
+    <text x="42" y="120" font-size="50" font-weight="900" letter-spacing="1">ADITYA MISHRA</text>
     <rect x="44" y="132" width="136" height="4" rx="2" fill="url(#nameGrad)"/>
   </g>
 
   <g class="fade" style="animation-delay:0.20s">
-    <text x="44" y="170" font-size="24" font-weight="700" fill="url(#nameGrad)" style="fill:url(#nameGrad)">Android &amp; Backend Engineer</text>
-    <text x="44" y="198" font-size="14" class="muted">B.Tech CSE · Mewar University '28 · Alpha-coders</text>
+    <text x="44" y="170" font-size="23" font-weight="700" fill="url(#nameGrad)" style="fill:url(#nameGrad)">Android &amp; Backend Engineer</text>
+    <text x="44" y="198" font-size="13.5" class="muted">B.Tech CSE · Mewar University '28 · Alpha-coders</text>
   </g>
 
   <g class="fade" style="animation-delay:0.40s">
     <rect x="44" y="218" width="4" height="24" rx="2" fill="#ff8a4c"/>
-    <text x="58" y="235" font-size="14.5" font-style="italic" fill="#f8fafc">“Engineering products, not just projects.”</text>
+    <text x="58" y="235" font-size="14" font-style="italic" fill="#f8fafc">“Engineering products, not just projects.”</text>
   </g>
 
-  <g class="fade" style="animation-delay:0.65s"><rect x="44" y="268" width="77" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="57" cy="282" r="3" fill="#a97bff"/><text x="66" y="286" class="mono" font-size="11.2" fill="#f8fafc">Kotlin</text></g><g class="fade" style="animation-delay:0.73s"><rect x="129.2" y="268" width="142" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="142.2" cy="282" r="3" fill="#3ddc84"/><text x="151.2" y="286" class="mono" font-size="11.2" fill="#f8fafc">Jetpack Compose</text></g><g class="fade" style="animation-delay:0.81s"><rect x="279.2" y="268" width="113" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="292.2" cy="282" r="3" fill="#38bdf8"/><text x="301.2" y="286" class="mono" font-size="11.2" fill="#f8fafc">Spring Boot</text></g><g class="fade" style="animation-delay:0.89s"><rect x="400.4" y="268" width="92" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="413.4" cy="282" r="3" fill="#fbbf24"/><text x="422.4" y="286" class="mono" font-size="11.2" fill="#f8fafc">Firebase</text></g><g class="fade" style="animation-delay:0.97s"><rect x="500.0" y="268" width="106" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="513.0" cy="282" r="3" fill="#ff8a4c"/><text x="522.0" y="286" class="mono" font-size="11.2" fill="#f8fafc">Clean Arch</text></g>
+  <g class="fade" style="animation-delay:0.60s"><rect x="44" y="268" width="71" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="56" cy="282" r="3" fill="#a97bff"/><text x="65" y="286" class="mono" font-size="10.8" fill="#f8fafc">Kotlin</text></g><g class="fade" style="animation-delay:0.68s"><rect x="122.4" y="268" width="134" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="134.4" cy="282" r="3" fill="#3ddc84"/><text x="143.4" y="286" class="mono" font-size="10.8" fill="#f8fafc">Jetpack Compose</text></g><g class="fade" style="animation-delay:0.76s"><rect x="262.9" y="268" width="106" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="274.9" cy="282" r="3" fill="#38bdf8"/><text x="283.9" y="286" class="mono" font-size="10.8" fill="#f8fafc">Spring Boot</text></g><g class="fade" style="animation-delay:0.84s"><rect x="375.79999999999995" y="268" width="99" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="387.79999999999995" cy="282" r="3" fill="#fbbf24"/><text x="396.79999999999995" y="286" class="mono" font-size="10.8" fill="#f8fafc">JWT · REST</text></g><g class="fade" style="animation-delay:0.92s"><rect x="481.79999999999995" y="268" width="120" height="28" rx="14" fill="#181d29" stroke="#262d3d"/><circle cx="493.79999999999995" cy="282" r="3" fill="#ff8a4c"/><text x="502.79999999999995" y="286" class="mono" font-size="10.8" fill="#f8fafc">MongoDB · SQL</text></g>
   
   <g class="fade" style="animation-delay:0.22s">
-    <!-- Hardware side buttons (power & volume) -->
-    <rect x="955" y="94" width="4" height="28" rx="2" fill="#334155"/>
-    <rect x="955" y="136" width="4" height="48" rx="2" fill="#334155"/>
-    <!-- Phone outer chassis -->
-    <rect x="666" y="22" width="290" height="302" rx="32" fill="#080a0f" stroke="#334155" stroke-width="2"/>
-    <rect x="673" y="29" width="276" height="288" rx="25" fill="#12161f" stroke="#262d3d"/>
-    <!-- Punch-hole camera & status bar -->
-    <circle cx="811" cy="43" r="4.5" fill="#040609" stroke="#1e293b"/>
-    <circle cx="811" cy="43" r="1.5" fill="#38bdf8" fill-opacity=".45"/>
-    <text x="690" y="47" class="mono muted" font-size="10">9:41</text>
-    <text x="932" y="47" text-anchor="end" class="mono mint" font-size="9.5">5G · 100%</text>
+    <!-- Animated REST/JWT data bridge connecting Android Phone <-> Spring Boot API -->
+    <line x1="792" y1="146" x2="830" y2="146" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <line x1="792" y1="196" x2="830" y2="196" stroke="#3ddc84" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <circle cx="811" cy="146" r="3.5" fill="#38bdf8">
+      <animate attributeName="cx" values="795;827;795" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="811" cy="196" r="3.5" fill="#3ddc84">
+      <animate attributeName="cx" values="827;795;827" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="795" y="160" width="32" height="20" rx="5" fill="#181d29" stroke="#262d3d"/>
+    <text x="811" y="173.5" text-anchor="middle" class="mono sky" font-size="8.5" font-weight="700">REST</text>
 
-    <!-- Material You App Header inside phone -->
-    <rect x="686" y="62" width="250" height="68" rx="16" fill="#181d29" stroke="#262d3d"/>
-    <rect x="698" y="74" width="44" height="44" rx="12" fill="#3ddc84" fill-opacity=".14" stroke="#3ddc84" stroke-opacity=".45"/>
-    <path d="M711,99 a9,9 0 0 1 18,0 Z" fill="#3ddc84"/>
-    <line x1="714" y1="86" x2="716" y2="90" stroke="#3ddc84" stroke-width="1.8" stroke-linecap="round"/>
-    <line x1="726" y1="86" x2="724" y2="90" stroke="#3ddc84" stroke-width="1.8" stroke-linecap="round"/>
-    <circle cx="716.5" cy="95" r="1.1" fill="#0c0e12"/>
-    <circle cx="723.5" cy="95" r="1.1" fill="#0c0e12"/>
+    <!-- Pixel Hardware Chassis -->
+    <rect x="791" y="92" width="3.5" height="24" rx="1.5" fill="#334155"/>
+    <rect x="791" y="128" width="3.5" height="40" rx="1.5" fill="#334155"/>
+    <rect x="612" y="24" width="180" height="300" rx="26" fill="#080a0f" stroke="#334155" stroke-width="1.8"/>
+    <rect x="618" y="30" width="168" height="288" rx="20" fill="#12161f" stroke="#262d3d"/>
+    <circle cx="702" cy="42" r="4" fill="#040609" stroke="#1e293b"/>
+    <text x="630" y="46" class="mono muted" font-size="9">9:41</text>
+    <text x="774" y="46" text-anchor="end" class="mono mint" font-size="8.5">5G</text>
 
-    <text x="754" y="92" font-size="14" font-weight="800" fill="#f8fafc">2b-adrix.apk</text>
-    <text x="754" y="110" class="mono mint" font-size="10.5">@Composable UI · M3</text>
+    <!-- App Identity inside Pixel -->
+    <rect x="626" y="58" width="152" height="56" rx="12" fill="#181d29" stroke="#262d3d"/>
+    <rect x="634" y="68" width="34" height="34" rx="9" fill="#3ddc84" fill-opacity=".15" stroke="#3ddc84" stroke-opacity=".45"/>
+    <path d="M643,88 a8,8 0 0 1 16,0 Z" fill="#3ddc84"/>
+    <circle cx="648" cy="84" r="1" fill="#0c0e12"/>
+    <circle cx="654" cy="84" r="1" fill="#0c0e12"/>
+    <text x="676" y="83" font-size="12" font-weight="800">2b-adrix.apk</text>
+    <text x="676" y="98" class="mono mint" font-size="9">Compose · M3</text>
 
-    <!-- Syntax-highlighted Kotlin block inside phone -->
-    <rect x="686" y="142" width="250" height="106" rx="16" fill="#0c0e12" stroke="#262d3d"/>
-    <text x="699" y="163" class="mono" font-size="10.5"><tspan fill="#ff8a4c">val</tspan> <tspan fill="#f8fafc">stack</tspan> <tspan fill="#64748b">=</tspan> <tspan fill="#38bdf8">listOf(</tspan></text>
-    <text x="709" y="181" class="mono" font-size="10.5"><tspan fill="#3ddc84">"Kotlin + Compose"</tspan><tspan fill="#64748b">,</tspan></text>
-    <text x="709" y="199" class="mono" font-size="10.5"><tspan fill="#3ddc84">"TFLite + SQLCipher"</tspan><tspan fill="#64748b">,</tspan></text>
-    <text x="709" y="217" class="mono" font-size="10.5"><tspan fill="#3ddc84">"Spring Boot + REST"</tspan></text>
-    <text x="699" y="235" class="mono sky" font-size="10.5">)</text>
+    <!-- Kotlin Client Block -->
+    <rect x="626" y="124" width="152" height="122" rx="12" fill="#0c0e12" stroke="#262d3d"/>
+    <text x="636" y="144" class="mono" font-size="9.5"><tspan fill="#ff8a4c">@Composable</tspan></text>
+    <text x="636" y="161" class="mono" font-size="9.5"><tspan fill="#38bdf8">fun</tspan> <tspan fill="#f8fafc">Client()</tspan></text>
+    <text x="636" y="181" class="mono" font-size="9.2"><tspan fill="#3ddc84">· MVVM + Room</tspan></text>
+    <text x="636" y="198" class="mono" font-size="9.2"><tspan fill="#3ddc84">· TFLite ML</tspan></text>
+    <text x="636" y="215" class="mono" font-size="9.2"><tspan fill="#3ddc84">· SQLCipher</tspan></text>
+    <text x="636" y="232" class="mono" font-size="9.2"><tspan fill="#3ddc84">· Retrofit/JWT</tspan></text>
 
-    <!-- Bottom Material Build Pill -->
-    <rect x="686" y="260" width="250" height="36" rx="18" fill="#3ddc84" fill-opacity=".14" stroke="#3ddc84" stroke-opacity=".5"/>
-    <circle class="pulse" cx="705" cy="278" r="4.5" fill="#3ddc84"/>
-    <text x="718" y="282" class="mono mint" font-size="10.8" font-weight="700">RELEASE BUILD PASSING</text>
+    <!-- Phone bottom status pill -->
+    <rect x="626" y="258" width="152" height="32" rx="16" fill="#3ddc84" fill-opacity=".14" stroke="#3ddc84" stroke-opacity=".5"/>
+    <circle class="pulse" cx="642" cy="274" r="3.8" fill="#3ddc84"/>
+    <text x="653" y="277.5" class="mono mint" font-size="9.2" font-weight="700">ANDROID CLIENT</text>
+    <polygon points="619,31 717,31 667,317 619,317" fill="url(#phoneGlare)" opacity=".05"/>
 
-    <!-- Diagonal glass reflection glare -->
-    <polygon points="674,30 811,30 741,316 674,316" fill="url(#phoneGlare)" opacity=".06"/>
+    <!-- Spring Boot Backend Server Node -->
+    <rect x="830" y="42" width="146" height="264" rx="16" fill="#12161f" stroke="#262d3d"/>
+    <rect x="830" y="42" width="146" height="2" rx="1" fill="#38bdf8"/>
+    <text x="844" y="66" class="mono sky" font-size="9.5" font-weight="700">API SERVER</text>
+    <circle class="pulse" cx="960" cy="62" r="3.5" fill="#3ddc84"/>
+
+    <!-- Server rack modules -->
+    <rect x="842" y="80" width="122" height="50" rx="9" fill="#181d29" stroke="#262d3d"/>
+    <text x="850" y="99" font-size="11.5" font-weight="800">Spring Boot</text>
+    <text x="850" y="116" class="mono sky" font-size="9">Java 17/21 · API</text>
+
+    <rect x="842" y="138" width="122" height="74" rx="9" fill="#0c0e12" stroke="#262d3d"/>
+    <text x="850" y="156" class="mono coral" font-size="9">POST /v1/auth</text>
+    <text x="850" y="173" class="mono mint" font-size="9">200 OK · JWT</text>
+    <text x="850" y="190" class="mono muted" font-size="9">GET /v1/sync</text>
+    <text x="850" y="205" class="mono dim" font-size="8.5">JPA · Security</text>
+
+    <rect x="842" y="220" width="122" height="42" rx="9" fill="#181d29" stroke="#262d3d"/>
+    <text x="850" y="238" class="mono gold" font-size="9">DATA + CLOUD</text>
+    <text x="850" y="253" class="mono muted" font-size="8.5">Mongo · SQL · Fb</text>
+
+    <rect x="842" y="270" width="122" height="24" rx="12" fill="#38bdf8" fill-opacity=".14" stroke="#38bdf8" stroke-opacity=".45"/>
+    <text x="903" y="285.5" text-anchor="middle" class="mono sky" font-size="8.8" font-weight="700">DOCKER READY</text>
   </g>
 </g>
 <path d="M22 10 h-12 v12 M978 10 h12 v12 M22 338 h-12 v-12 M978 338 h12 v-12" fill="none" stroke="#3ddc84" stroke-opacity=".48" stroke-width="1.5"/>

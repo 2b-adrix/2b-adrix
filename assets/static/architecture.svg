@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="224" viewBox="0 0 1000 224" role="img" aria-label="ARCHITECTURE // END-TO-END SYSTEM FLOW">
+<title>ARCHITECTURE // END-TO-END SYSTEM FLOW</title>
+<style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f8fafc; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
+.muted { fill: #94a3b8; }
+.dim { fill: #64748b; }
+.mint { fill: #3ddc84; }
+.coral { fill: #ff8a4c; }
+.sky { fill: #38bdf8; }
+.fade { animation: fadeIn .65s ease-out both; }
+.grow { animation: growX .95s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+.rise { animation: growY .95s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }
+.pulse { animation: pulseDot 2.4s ease-in-out infinite; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+</style>
+<defs>
+  <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3ddc84"/><stop offset=".55" stop-color="#38bdf8"/><stop offset="1" stop-color="#ff8a4c"/>
+  </linearGradient>
+  <linearGradient id="topSheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#38bdf8" stop-opacity=".75"/>
+    <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="hudGlow" cx="14%" cy="10%" r="75%">
+    <stop offset="0" stop-color="#38bdf8" stop-opacity=".11"/>
+    <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="panelClip"><rect x="0.5" y="0.5" width="999" height="223" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#panelClip)">
+  <rect width="1000" height="224" fill="#0c0e12"/>
+  <rect width="1000" height="224" fill="url(#hudGlow)"/>
+  <rect width="1000" height="40" fill="#12161f"/>
+  <rect x="0" y="0" width="1000" height="1.6" fill="url(#topSheen)"/>
+  <line x1="0" y1="40" x2="1000" y2="40" stroke="#262d3d"/>
+  <rect x="18" y="16" width="16" height="6" rx="3" fill="#38bdf8"/>
+  <text x="42" y="23.5" class="mono muted" font-size="11" font-weight="600" letter-spacing="1">ARCHITECTURE // END-TO-END SYSTEM FLOW</text>
+  <rect x="824.8" y="10" width="159.2" height="20" rx="10" fill="#181d29" stroke="#262d3d"/><circle cx="835.8" cy="20" r="2.5" fill="#38bdf8"/><text x="844.8" y="23.5" class="mono dim" font-size="9.8">MOBILE ↔ API ↔ DATA</text>
+  <g transform="translate(0 40)">
+<line x1="312" y1="84" x2="356" y2="84" stroke="#3ddc84" stroke-width="1.8" stroke-dasharray="4 3"/><circle cx="320" cy="84" r="3.5" fill="#3ddc84"><animate attributeName="cx" values="316;352;316" dur="2.1s" repeatCount="indefinite"/></circle><rect x="316" y="58" width="36" height="16" rx="4" fill="#181d29" stroke="#262d3d"/><text x="334" y="69" text-anchor="middle" class="mono" font-size="8.5" fill="#3ddc84">HTTPS</text>
+<line x1="644" y1="84" x2="688" y2="84" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4 3"/><circle cx="652" cy="84" r="3.5" fill="#38bdf8"><animate attributeName="cx" values="648;684;648" dur="2.1s" repeatCount="indefinite"/></circle><rect x="648" y="58" width="36" height="16" rx="4" fill="#181d29" stroke="#262d3d"/><text x="666" y="69" text-anchor="middle" class="mono" font-size="8.5" fill="#38bdf8">JPA/DB</text>
+<g class="fade" style="animation-delay:0.00s"><rect x="24" y="18" width="288" height="144" rx="14" fill="#181d29" stroke="#262d3d"/><rect x="24" y="34" width="3.5" height="28" rx="1.75" fill="#3ddc84"/><text x="40" y="40" class="mono" font-size="9.5" font-weight="700" fill="#3ddc84" letter-spacing="0.8">01 · MOBILE CLIENT</text><text x="40" y="62" font-size="16" font-weight="800">Native Android App</text><line x1="40" y1="74" x2="296" y2="74" stroke="#1c2230"/><text x="40" y="96" class="mono muted" font-size="10.8">› Kotlin · Jetpack Compose · Material 3</text><text x="40" y="117" class="mono muted" font-size="10.8">› MVVM · Room + SQLCipher Vault</text><text x="40" y="138" class="mono muted" font-size="10.8">› CameraX · TFLite ML · Biometrics</text></g>
+<g class="fade" style="animation-delay:0.10s"><rect x="356" y="18" width="288" height="144" rx="14" fill="#181d29" stroke="#262d3d"/><rect x="356" y="34" width="3.5" height="28" rx="1.75" fill="#38bdf8"/><text x="372" y="40" class="mono" font-size="9.5" font-weight="700" fill="#38bdf8" letter-spacing="0.8">02 · BACKEND SERVICES</text><text x="372" y="62" font-size="16" font-weight="800">Spring Boot REST API</text><line x1="372" y1="74" x2="628" y2="74" stroke="#1c2230"/><text x="372" y="96" class="mono muted" font-size="10.8">› Java 17/21 · Spring Boot 3 &amp; 4</text><text x="372" y="117" class="mono muted" font-size="10.8">› Spring Security · JJWT Auth</text><text x="372" y="138" class="mono muted" font-size="10.8">› REST Controllers · Spring Data JPA</text></g>
+<g class="fade" style="animation-delay:0.20s"><rect x="688" y="18" width="288" height="144" rx="14" fill="#181d29" stroke="#262d3d"/><rect x="688" y="34" width="3.5" height="28" rx="1.75" fill="#ff8a4c"/><text x="704" y="40" class="mono" font-size="9.5" font-weight="700" fill="#ff8a4c" letter-spacing="0.8">03 · DATA &amp; CLOUD</text><text x="704" y="62" font-size="16" font-weight="800">Persistence &amp; AI Layer</text><line x1="704" y1="74" x2="960" y2="74" stroke="#1c2230"/><text x="704" y="96" class="mono muted" font-size="10.8">› MongoDB · MySQL · SQLite</text><text x="704" y="117" class="mono muted" font-size="10.8">› Firebase Auth &amp; Realtime Sync</text><text x="704" y="138" class="mono muted" font-size="10.8">› Docker Containers · Gemini AI</text></g>
+  </g>
+</g>
+<path d="M12 6 h-6 v6 M988 6 h6 v6 M12 218 h-6 v-6 M988 218 h6 v-6" fill="none" stroke="#38bdf8" stroke-opacity=".42" stroke-width="1.3"/>
+<rect x="0.5" y="0.5" width="999" height="223" rx="18" fill="none" stroke="#262d3d"/>
+</svg>

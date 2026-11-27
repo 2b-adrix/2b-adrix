@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="178" viewBox="0 0 490 178" role="img" aria-label="BUILD #04 · SPRING BOOT API">
+<title>BUILD #04 · SPRING BOOT API</title>
+<style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f8fafc; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
+.muted { fill: #94a3b8; }
+.dim { fill: #64748b; }
+.mint { fill: #3ddc84; }
+.coral { fill: #ff8a4c; }
+.sky { fill: #38bdf8; }
+.fade { animation: fadeIn .65s ease-out both; }
+.grow { animation: growX .95s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+.rise { animation: growY .95s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }
+.pulse { animation: pulseDot 2.4s ease-in-out infinite; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+</style>
+<defs>
+  <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3ddc84"/><stop offset=".55" stop-color="#38bdf8"/><stop offset="1" stop-color="#ff8a4c"/>
+  </linearGradient>
+  <linearGradient id="topSheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#38bdf8" stop-opacity=".75"/>
+    <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="hudGlow" cx="14%" cy="10%" r="75%">
+    <stop offset="0" stop-color="#38bdf8" stop-opacity=".11"/>
+    <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="panelClip"><rect x="0.5" y="0.5" width="489" height="177" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#panelClip)">
+  <rect width="490" height="178" fill="#0c0e12"/>
+  <rect width="490" height="178" fill="url(#hudGlow)"/>
+  <rect width="490" height="40" fill="#12161f"/>
+  <rect x="0" y="0" width="490" height="1.6" fill="url(#topSheen)"/>
+  <line x1="0" y1="40" x2="490" y2="40" stroke="#262d3d"/>
+  <rect x="18" y="16" width="16" height="6" rx="3" fill="#38bdf8"/>
+  <text x="42" y="23.5" class="mono muted" font-size="11" font-weight="600" letter-spacing="1">BUILD #04 · SPRING BOOT API</text>
+  <rect x="369.2" y="10" width="104.8" height="20" rx="10" fill="#181d29" stroke="#262d3d"/><circle cx="380.2" cy="20" r="2.5" fill="#38bdf8"/><text x="389.2" y="23.5" class="mono dim" font-size="9.8">OPEN REPO ↗</text>
+  <g transform="translate(0 40)">
+<rect x="20" y="15" width="4" height="24" rx="2" fill="#38bdf8"/>
+<text x="33" y="33" font-size="18" font-weight="800">arogyagrid-backend</text>
+<text x="20" y="57" font-size="12.5" class="muted">Production Spring Boot 3 REST API with Spring</text>
+<text x="20" y="75" font-size="12.5" class="muted">Security, JJWT auth, JPA persistence &amp; Docker.</text>
+<line x1="20" y1="87" x2="470" y2="87" stroke="#1c2230"/>
+<rect x="20" y="97" width="108" height="22" rx="11" fill="#181d29" stroke="#262d3d"/><text x="74" y="111.5" text-anchor="middle" class="mono muted" font-size="10.2">Spring Boot 3</text><rect x="135.39999999999998" y="97" width="47" height="22" rx="11" fill="#181d29" stroke="#262d3d"/><text x="159" y="111.5" text-anchor="middle" class="mono muted" font-size="10.2">JJWT</text><rect x="189.59999999999997" y="97" width="102" height="22" rx="11" fill="#181d29" stroke="#262d3d"/><text x="240" y="111.5" text-anchor="middle" class="mono muted" font-size="10.2">JPA · Docker</text>
+<circle cx="398" cy="108" r="4.2" fill="#38bdf8"/>
+<text x="408" y="112" class="mono dim" font-size="10.5">Java 17</text>
+  </g>
+</g>
+<path d="M12 6 h-6 v6 M478 6 h6 v6 M12 172 h-6 v-6 M478 172 h6 v-6" fill="none" stroke="#38bdf8" stroke-opacity=".42" stroke-width="1.3"/>
+<rect x="0.5" y="0.5" width="489" height="177" rx="18" fill="none" stroke="#262d3d"/>
+</svg>
