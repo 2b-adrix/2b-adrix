@@ -123,14 +123,23 @@ def compute_streaks(days: dict[str, int], today: date) -> dict:
 
 
 def fetch_recent_commits(login: str, max_commits: int = 1000) -> list[dict]:
-    """Most recent commits authored by this account (search caps at 1,000)."""
-    def page(n: int) -> list[dict]:
-        url = f"search/commits?q=author:{login}&sort=author-date&order=desc&per_page=100&page={n}"
-        return gh_rest(url).get("items", [])
+    """Most recent project commits authored by this account (excludes profile meta-repos)."""
+    q = f"author:{login} -repo:{login}/{login} -repo:{login}/.github"
+    import urllib.parse
 
-    with ThreadPoolExecutor(max_workers=5) as pool:
-        pages = list(pool.map(page, range(1, max_commits // 100 + 1)))
-    return [item for items in pages for item in items]
+    def page(n: int) -> dict:
+        encoded = urllib.parse.urlencode({"q": q, "sort": "author-date", "order": "desc", "per_page": 100, "page": n})
+        return gh_rest(f"search/commits?{encoded}")
+
+    first = page(1)
+    items = list(first.get("items", []))
+    total = min(int(first.get("total_count", len(items))), max_commits)
+    last_page = (total + 99) // 100
+    if last_page > 1:
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            for res in pool.map(page, range(2, last_page + 1)):
+                items.extend(res.get("items", []))
+    return items
 
 
 def compute_commit_clock(commits: list[dict]) -> dict:

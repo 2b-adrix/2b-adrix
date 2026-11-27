@@ -76,13 +76,13 @@ def streak_card(st: dict) -> str:
     w, h = 500, 268
     today = st["today"]
     boxes = [
-        ("TOTAL", fmt_short(st["total"]), f"since {_fmt_day(st['first'])}", T["sky"]),
-        ("CURRENT", str(st["current"]), _fmt_range(st["current_range"], today), T["mint"]),
-        ("LONGEST", str(st["longest"]), _fmt_range(st["longest_range"], today), T["coral"]),
+        ("TOTAL", fmt_short(st["total"]), "contributions", f"since {_fmt_day(st['first'])}", T["sky"]),
+        ("CURRENT", str(st["current"]), "day" if st["current"] == 1 else "days", _fmt_range(st["current_range"], today), T["mint"]),
+        ("LONGEST", str(st["longest"]), "day" if st["longest"] == 1 else "days", _fmt_range(st["longest_range"], today), T["coral"]),
     ]
     body = []
     bw = 148
-    for i, (label, val, sub, color) in enumerate(boxes):
+    for i, (label, val, unit, sub, color) in enumerate(boxes):
         x = 17 + i * (bw + 11)
         is_mid = i == 1
         stroke = color if is_mid else T["border"]
@@ -94,7 +94,7 @@ def streak_card(st: dict) -> str:
             f'{pulse}'
             f'<text x="{x + bw / 2:.1f}" y="46" text-anchor="middle" class="mono" font-size="10.5" fill="{color}" letter-spacing="1">{label}</text>'
             f'<text x="{x + bw / 2:.1f}" y="102" text-anchor="middle" font-size="38" font-weight="900">{esc(val)}</text>'
-            f'<text x="{x + bw / 2:.1f}" y="126" text-anchor="middle" class="mono muted" font-size="10.5">days</text>'
+            f'<text x="{x + bw / 2:.1f}" y="126" text-anchor="middle" class="mono muted" font-size="10.5">{unit}</text>'
             f'<text x="{x + bw / 2:.1f}" y="152" text-anchor="middle" class="mono dim" font-size="9.5">{esc(sub)}</text>'
             f'</g>'
         )
