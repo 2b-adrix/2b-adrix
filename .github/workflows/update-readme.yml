@@ -1,0 +1,97 @@
+name: Update README
+
+# Recent activity + GitHub stat cards + profile views badge, rendered in-repo by
+# scripts/readme_bot (stdlib Python, no installs, no third-party stat servers).
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/readme_bot/**"
+      - ".github/workflows/update-readme.yml"
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: Refresh profile README
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONPATH: scripts
+      PYTHONUNBUFFERED: "1"
+      README_BOT_OUT: out
+      GH_USER: ${{ github.repository_owner }}
+      GH_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Restore last published cards
+        run: |
+          mkdir -p out
+          if git fetch -q --depth=1 origin output; then
+            git archive FETCH_HEAD | tar -x -C out
+            echo "OLD_TREE=$(git rev-parse 'FETCH_HEAD^{tree}')" >> "$GITHUB_ENV"
+          else
+            echo "No output branch yet; starting fresh."
+          fi
+
+      - name: Recent activity
+        id: activity
+        continue-on-error: true
+        run: python3 -m readme_bot activity
+
+      - name: GitHub stats, streak, languages, commit clock, contributions & trophies
+        id: github
+        continue-on-error: true
+        run: python3 -m readme_bot github
+
+      - name: Profile views
+        id: views
+        continue-on-error: true
+        run: python3 -m readme_bot views
+
+      - name: Publish cards to the output branch (single commit, force-pushed)
+        run: |
+          export GIT_INDEX_FILE="$RUNNER_TEMP/output.index"
+          git --work-tree=out add -A .
+          tree=$(git write-tree)
+          if [ "$tree" = "${OLD_TREE:-}" ]; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          commit=$(git commit-tree "$tree" -m "Profile cards ($(date -u +%FT%TZ))")
+          git push --force origin "$commit:refs/heads/output"
+
+      - name: Commit README if the activity list changed
+        run: |
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README unchanged."
+            exit 0
+          fi
+          git commit -m "chore(readme): update recent activity"
+          git push
+
+      - name: Surface failures
+        if: steps.activity.outcome == 'failure' || steps.github.outcome == 'failure' || steps.views.outcome == 'failure'
+        run: |
+          echo "::error::activity=${{ steps.activity.outcome }} github=${{ steps.github.outcome }} views=${{ steps.views.outcome }} (successful parts were still published)"
+          exit 1
