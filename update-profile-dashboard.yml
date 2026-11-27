@@ -1,0 +1,95 @@
+name: Update Profile Dashboard
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "profile_dashboard.py"
+      - ".github/workflows/update-profile-dashboard.yml"
+
+concurrency:
+  group: profile-dashboard
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Generate account cards and recent activity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      GH_USER: 2b-adrix
+      GH_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+      OUTPUT_DIR: ${{ runner.temp }}/profile-cards
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Generate dashboard SVGs and update activity
+        run: python3 profile_dashboard.py
+
+      - name: Commit README when recent activity changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "README activity is unchanged."
+          else
+            git commit -m "chore(readme): refresh recent GitHub activity"
+            git push origin HEAD:main
+          fi
+
+      - name: Publish dashboard cards without deleting existing output files
+        env:
+          PUSH_TOKEN: ${{ github.token }}
+
+        run: |
+          set -euo pipefail
+
+          if [ ! -d "$OUTPUT_DIR" ] || [ -z "$(find "$OUTPUT_DIR" -maxdepth 1 -name '*.svg' -print -quit)" ]; then
+            echo "No SVG cards were generated; refusing to change the output branch."
+            exit 1
+          fi
+
+          REPO_URL="https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          TEMP_REPO="$RUNNER_TEMP/output-branch"
+
+          if git ls-remote --exit-code --heads "$REPO_URL" output >/dev/null 2>&1; then
+            git clone --depth 1 --branch output "$REPO_URL" "$TEMP_REPO"
+          else
+            mkdir -p "$TEMP_REPO"
+            git -C "$TEMP_REPO" init -b output
+            git -C "$TEMP_REPO" remote add origin "$REPO_URL"
+          fi
+
+          cp "$OUTPUT_DIR"/*.svg "$TEMP_REPO"/
+
+          cd "$TEMP_REPO"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add stats.svg streak.svg languages.svg commit-clock.svg contributions.svg milestones.svg
+
+          if git diff --cached --quiet; then
+            echo "Dashboard cards are unchanged."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh profile dashboard cards"
+          git push origin HEAD:output
