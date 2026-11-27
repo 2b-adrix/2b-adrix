@@ -1,98 +1,140 @@
-<div align="center">
-
-<a href="https://adrix.is-a.dev"><img src="./assets/static/header.svg" width="100%" alt="Aditya Mishra — Android & Backend Engineer" /></a>
-
-<a href="https://adrix.is-a.dev"><img src="./assets/static/badges/portfolio.svg" alt="Portfolio" /></a>
-<a href="mailto:vadityamishra777@gmail.com"><img src="./assets/static/badges/email.svg" alt="Email" /></a>
-<a href="https://www.linkedin.com/in/2b-adrix"><img src="./assets/static/badges/linkedin.svg" alt="LinkedIn" /></a>
-<a href="https://x.com/AdityaMishraSu1"><img src="./assets/static/badges/x.svg" alt="X / Twitter" /></a>
-<img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/views.svg" alt="Profile views" />
-<img src="https://komarev.com/ghpvc/?username=2b-adrix&style=pixel" width="1" height="1" alt="" />
-
-</div>
-
-## `01` · Identity & Engineering Profile
-
-I engineer **native Android applications and the backend services behind them** — clean Jetpack Compose UIs, resilient mobile architectures, and scalable REST APIs.
-
-```kotlin
-object Adrix : Engineer(
-    name = "Aditya Kumar Mishra",
-    handle = "2b-adrix",
-    location = "India",
-    education = "B.Tech CSE · Mewar University '28",
-    team = "Alpha-coders",
-) {
-    val focus = listOf("Native Android", "Jetpack Compose", "Clean Architecture", "App Security")
-    val stack = listOf("Kotlin", "Java", "Spring Boot", "Firebase", "MongoDB")
-    val motto = "Engineering products, not just projects."
-}
-```
-
-## `02` · Tech Architecture
-
-<img src="./assets/static/toolkit.svg" width="100%" alt="Architecture Matrix: Kotlin, Java, Python, TypeScript, JavaScript, HTML5, CSS3 · Android Studio, Gradle, Firebase, SQLite, Jetpack Compose, MVVM, Room, CameraX · Spring Boot, MongoDB, MySQL, Node.js, REST API, Postman, JWT · Linux, Git, GitHub, GitHub Actions, VS Code" />
-
-## `03` · Featured Builds
-
+<img src = "https://github.com/2b-adrix/2b-adrix/blob/main/1774850926972.png " width="1000"/>
 <p align="center">
-  <a href="https://github.com/2b-adrix/Krishiva-Native"><img src="./assets/static/projects/krishiva-native.svg" width="49%" alt="Krishiva-Native" /></a>
-  <a href="https://github.com/2b-adrix/Arogyagrid"><img src="./assets/static/projects/arogyagrid.svg" width="49%" alt="Arogyagrid" /></a>
-</p>
-<p align="center">
-  <a href="https://github.com/2b-adrix/SentinalX"><img src="./assets/static/projects/sentinalx.svg" width="49%" alt="SentinalX" /></a>
-  <a href="https://github.com/2b-adrix/Alpha-Chat-Native"><img src="./assets/static/projects/alpha-chat-native.svg" width="49%" alt="Alpha-Chat-Native" /></a>
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=850&height=55&lines=Android+Engineer+%7C+Kotlin+%7C+Jetpack+Compose+%F0%9F%9A%80;Building+Scalable+Native+Android+Applications+%F0%9F%9B%A0%EF%B8%8F;Cloud-Native+Development+%7C+Spring+Boot+%7C+MongoDB+%E2%98%81%EF%B8%8F;Engineering+Products%2C+Not+Just+Projects+%F0%9F%94%A5" alt="Android Engineer | Kotlin | Jetpack Compose" />
 </p>
 
-<sub>→ explore all repositories & case studies at <a href="https://adrix.is-a.dev">adrix.is-a.dev</a> · <a href="https://github.com/2b-adrix?tab=repositories">GitHub</a></sub>
-
-## `04` · GitHub Telemetry
+[![Profile Views](https://komarev.com/ghpvc/?username=2b-adrix&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/2b-adrix)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/stats.svg" width="49%" alt="GitHub overview telemetry" />
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/streak.svg" width="49%" alt="Contribution streak" />
+  <font src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=1000&lines=Android+Developer+%7C+Cybersecurity+Enthusiast;Building+secure+and+scalable+mobile+solutions" alt="Typing animation showing Android Developer & Cybersecurity Enthusiast"/>
 </p>
+
+---
+
+## 👨‍💻 About Me
+
+I'm **Aditya Kumar Mishra**, a Computer Science student focused on building reliable, scalable native Android applications.
+
+- 🎓 B.Tech in Computer Science and Engineering — Mewar University.
+- 📱 Focused on **Android development with Kotlin and Jetpack Compose**.
+- 🧱 Interested in clean architecture, app security, performance, and backend engineering.
+- ☁️ Exploring backend development with Spring Boot, REST APIs, and databases.
+- 🤝 Open to meaningful collaborations, feedback, and engineering challenges.
+- 📫 **Email:** [vadityamishra777@gmail.com](mailto:vadityamishra777@gmail.com)
+- 🌐 **Portfolio:** [adrix.vercel.app](https://adrix.is-a.dev)
+- 💼 **LinkedIn:** [linkedin.com/in/2b-adrix](https://www.linkedin.com/in/2b-adrix)
+
+## 🎯 Current Focus
+
+- Deepening my understanding of Kotlin, Jetpack Compose, and Android architecture.
+- Building maintainable Android applications with clear separation of concerns.
+- Learning backend API development with Spring Boot.
+- Practising Data Structures and Algorithms in Java.
+- Improving system design, testing, debugging, and engineering documentation.
+
+
+
+## 🛠 Tech Stack
+## 📱 Android 
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="40"/>
+  <img align="right" src="new.svg" width="280" height ="200" />
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" width="40"/>
+</p>
+
+### 🌐 Web Development
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
+</p>
+
+### ⚙ Backend & Cloud
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="40"/>
+<img src="https://avatars.githubusercontent.com/u/54469796?s=200&v=4" width="40"/>
+</p>
+
+### 🐧 Systems & Tools
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40"/>
+</p>
+
+## 📚 Android Technologies
+
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Android-green)
+![MVVM](https://img.shields.io/badge/MVVM-Architecture-blue)
+![Room](https://img.shields.io/badge/Room-Database-orange)
+![REST API](https://img.shields.io/badge/REST-API-red)
+![Firebase Auth](https://img.shields.io/badge/Firebase-Auth-yellow)
+
+## 🔗 Connect with Me
+<p align="left">
+<a href="https://twitter.com/@adityamishrasu1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@adityamishrasu1" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/2b-adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="2b-adrix" height="30" width="40" /></a>
+<a href="https://instagram.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="2b_adrix" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/2b_adrix" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="2b_adrix" height="30" width="40" /></a>
+<a href="https://fb.com/https://www.facebook.com/me/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/me/" height="30" width="40" /></a>
+<a href="mailto:vadityamishra777@gmail.com">
+<img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" height="30" width="40"/></a>
+</p>
+
+## 📊 GitHub Statistics
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=2b-adrix&theme=github_dark"
+        alt="GitHub Statistics"
+        width="100%"
+      />
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="https://streak-stats.demolab.com?user=2b-adrix&hide_border=true&theme=github-dark-blue&ring=00e7ff&fire=00e7ff&currStreakNum=ffffff&currStreakLabel=00e7ff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff"
+        alt="GitHub Contribution Streak"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+
+
+![](https://github-readme-stats.shion.dev/api?username=2b-adrix&theme=github_dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
+
+
+## 📈 Developer Dashboard
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/languages.svg" width="49%" alt="Language composition" />
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/commit-clock.svg" width="49%" alt="Commit cadence" />
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/contributions.svg" width="98.5%" alt="90-day contribution timeline" />
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/trophies.svg" width="98.5%" alt="Achievement tiers" />
+  <img
+    width="95%"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"
+    alt="GitHub profile summary"
+  />
 </p>
 
-## `05` · Live Activity Feed
-
-<!--START_SECTION:activity-->
-| When | | What |
-| :-- | :-: | :-- |
-| `Nov 22` | ⬆️ | Pushed to `main` in [2b-adrix/register](https://github.com/2b-adrix/register) |
-| `Nov 22` | 🔀 | Opened PR [#62420](https://github.com/is-a-dev/register/pull/62420) in [is-a-dev/register](https://github.com/is-a-dev/register) |
-| `Nov 22` | 🔀 | Opened PR [#1](https://github.com/2b-adrix/register/pull/1) in [2b-adrix/register](https://github.com/2b-adrix/register) |
-| `Nov 07` | ⬆️ | Pushed to `master` in [2b-adrix/Phantom-Lens](https://github.com/2b-adrix/Phantom-Lens) |
-| `Nov 07` | 🔀 | Opened PR [#1](https://github.com/2b-adrix/Phantom-Lens/pull/1) in [2b-adrix/Phantom-Lens](https://github.com/2b-adrix/Phantom-Lens) |
-| `Nov 05` | ⬆️ | Pushed to `main` in [2b-adrix/arogyagrid-backend](https://github.com/2b-adrix/arogyagrid-backend) |
-| `Nov 05` | ⬆️ | Pushed to `main` in [2b-adrix/Arogyagrid](https://github.com/2b-adrix/Arogyagrid) |
-| `Nov 03` | 🚀 | Released [v1.0.0](https://github.com/2b-adrix/Arogyagrid/releases/tag/v1.0.0) in [2b-adrix/Arogyagrid](https://github.com/2b-adrix/Arogyagrid) |
-<!--END_SECTION:activity-->
-
-## `06` · Contribution Matrix
+## 📊 Developer Dashboard
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg" alt="Contribution snake" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=2b-adrix&theme=github_dark"/>
+</p>
+ 
+## 💻 Development Metrics
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=2b-adrix&theme=github_dark"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=2b-adrix&theme=github_dark"/>
 </p>
 
-<details>
-<summary><b>More Profiles & Competitive Coding</b></summary>
-<br />
+## 🐍 Snake Eating My Contributions
 
-<a href="https://instagram.com/2b_adrix"><img src="./assets/static/badges/instagram.svg" alt="Instagram" /></a>
-<a href="https://www.leetcode.com/2b_adrix"><img src="./assets/static/badges/leetcode.svg" alt="LeetCode" /></a>
-
-</details>
-
-<br />
-
-<img src="./assets/static/footer.svg" width="100%" alt="Designed for @2b-adrix · Pure Python SVG engine" />
+<p align="center">
+<img src="https://raw.githubusercontent.com/2b-adrix/2b-adrix/output/github-snake-dark.svg"/>
+</p>
