@@ -1,4 +1,4 @@
-"""SVG primitives for @2b-adrix's executive Monochrome Obsidian + Android Emerald theme."""
+"""SVG primitives for @2b-adrix's original Material HUD / Android Blueprint theme."""
 
 from __future__ import annotations
 
@@ -6,37 +6,39 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 THEME = {
-    "bg": "#090c10",       # deep obsidian canvas
-    "chrome": "#0e131b",   # subtle header strip
-    "surface": "#121822",  # card surface
-    "border": "#1f2937",   # clean hairline border
-    "grid": "#18202c",     # subtle graph grid
-    "text": "#f8fafc",     # crisp primary text
-    "muted": "#94a3b8",    # secondary text
-    "dim": "#64748b",      # muted metadata
-    "accent": "#3ddc84",   # Android emerald
-    "sky": "#38bdf8",      # subtle cool slate-blue
-    "amber": "#f59e0b",    # warm amber
-    "violet": "#a78bfa",   # Kotlin accent
+    "bg": "#0c0e12",       # warm carbon graphite
+    "chrome": "#12161f",   # elevated panel header
+    "surface": "#181d29",  # Material card surface
+    "border": "#262d3d",   # crisp slate hairline
+    "grid": "#1c2230",     # subtle blueprint grid
+    "text": "#f8fafc",
+    "muted": "#94a3b8",
+    "dim": "#64748b",
+    "mint": "#3ddc84",     # official Android green
+    "coral": "#ff8a4c",    # Kotlin / warm amber-coral
+    "sky": "#38bdf8",      # electric sky
+    "kotlin": "#a97bff",   # Kotlin violet
+    "gold": "#fbbf24",
 }
 
-SANS = "'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
+SANS = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 MONO = "'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace"
 
-HEADER_H = 38
+HEADER_H = 40
 
 BASE_CSS = f"""
 text {{ font-family: {SANS}; fill: {THEME['text']}; }}
 .mono {{ font-family: {MONO}; white-space: pre; }}
 .muted {{ fill: {THEME['muted']}; }}
 .dim {{ fill: {THEME['dim']}; }}
-.accent {{ fill: {THEME['accent']}; }}
+.mint {{ fill: {THEME['mint']}; }}
+.coral {{ fill: {THEME['coral']}; }}
 .sky {{ fill: {THEME['sky']}; }}
-.fade {{ animation: fadeIn .55s ease-out both; }}
-.grow {{ animation: growX .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }}
-.rise {{ animation: growY .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }}
-.pulse {{ animation: pulseDot 2.6s ease-in-out infinite; }}
-@keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(3px); }} to {{ opacity: 1; transform: none; }} }}
+.fade {{ animation: fadeIn .65s ease-out both; }}
+.grow {{ animation: growX .95s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }}
+.rise {{ animation: growY .95s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }}
+.pulse {{ animation: pulseDot 2.4s ease-in-out infinite; }}
+@keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(4px); }} to {{ opacity: 1; transform: none; }} }}
 @keyframes growX {{ from {{ transform: scaleX(0); }} to {{ transform: scaleX(1); }} }}
 @keyframes growY {{ from {{ transform: scaleY(0); }} to {{ transform: scaleY(1); }} }}
 @keyframes pulseDot {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: .35; }} }}
@@ -67,43 +69,58 @@ def fmt_short(n: int | float) -> str:
 def panel(
     width: int,
     height: int,
-    title: str,
+    kicker: str,
     body: str,
     *,
     extra_css: str = "",
     tag: str = "",
     accent: str | None = None,
 ) -> str:
-    """Wrap `body` in a crisp, restrained obsidian engineering panel."""
+    """Wrap `body` in an original Material Dark HUD card (no macOS traffic lights)."""
     t = THEME
-    ac = accent or t["accent"]
-    right_tag = (
-        f'<text x="{width - 20}" y="23" text-anchor="end" class="mono dim" font-size="10">{esc(tag)}</text>'
-        if tag
-        else ""
+    ac = accent or t["mint"]
+    right_tag = ""
+    if tag:
+        tw = len(tag) * 6.8 + 20
+        tx = width - 16 - tw
+        right_tag = (
+            f'<rect x="{tx:.1f}" y="10" width="{tw:.1f}" height="20" rx="10" fill="{t["surface"]}" stroke="{t["border"]}"/>'
+            f'<text x="{tx + tw / 2:.1f}" y="23.5" text-anchor="middle" class="mono dim" font-size="10">{esc(tag)}</text>'
+        )
+
+    # Blueprint corner reticles
+    reticles = (
+        f'<path d="M12 6 h-6 v6 M{width - 12} 6 h6 v6 M12 {height - 6} h-6 v-6 M{width - 12} {height - 6} h6 v-6" '
+        f'fill="none" stroke="{ac}" stroke-opacity=".35" stroke-width="1.2"/>'
     )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{esc(title)}">
-<title>{esc(title)}</title>
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{esc(kicker)}">
+<title>{esc(kicker)}</title>
 <style>{BASE_CSS}{extra_css}</style>
 <defs>
-  <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="{t['accent']}"/><stop offset="1" stop-color="{t['sky']}"/>
+  <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="{t['mint']}"/><stop offset=".55" stop-color="{t['sky']}"/><stop offset="1" stop-color="{t['coral']}"/>
   </linearGradient>
-  <clipPath id="panelClip"><rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14"/></clipPath>
+  <radialGradient id="hudGlow" cx="12%" cy="10%" r="75%">
+    <stop offset="0" stop-color="{ac}" stop-opacity=".08"/>
+    <stop offset="1" stop-color="{ac}" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="panelClip"><rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18"/></clipPath>
 </defs>
 <g clip-path="url(#panelClip)">
   <rect width="{width}" height="{height}" fill="{t['bg']}"/>
+  <rect width="{width}" height="{height}" fill="url(#hudGlow)"/>
   <rect width="{width}" height="{HEADER_H}" fill="{t['chrome']}"/>
   <line x1="0" y1="{HEADER_H}" x2="{width}" y2="{HEADER_H}" stroke="{t['border']}"/>
-  <circle cx="20" cy="19" r="3.5" fill="{ac}"/>
-  <text x="32" y="23" class="mono muted" font-size="11" font-weight="600" letter-spacing="0.8">{esc(title)}</text>
+  <rect x="18" y="16" width="16" height="6" rx="3" fill="{ac}"/>
+  <text x="42" y="23.5" class="mono muted" font-size="11" font-weight="600" letter-spacing="1">{esc(kicker)}</text>
   {right_tag}
   <g transform="translate(0 {HEADER_H})">
 {body}
   </g>
 </g>
-<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" fill="none" stroke="{t['border']}"/>
+{reticles}
+<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18" fill="none" stroke="{t['border']}"/>
 </svg>
 """
 
