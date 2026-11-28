@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="240" viewBox="0 0 500 240" role="img" aria-label="~/github/commit-clock.sh">
+<title>~/github/commit-clock.sh</title>
+<style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #e6edf3; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
+.muted { fill: #8b949e; }
+.dim { fill: #4b5563; }
+.accent { fill: #22d3ee; }
+.accent2 { fill: #a78bfa; }
+.ok { fill: #34d399; }
+.fade { animation: fadeIn .6s ease-out both; }
+.grow { animation: growX .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+.rise { animation: growY .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+</style>
+<defs>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/>
+  </linearGradient>
+  <clipPath id="cardClip"><rect x="0.5" y="0.5" width="499" height="239" rx="12"/></clipPath>
+</defs>
+<g clip-path="url(#cardClip)">
+  <rect width="500" height="240" fill="#0b0f14"/>
+  <rect width="500" height="36" fill="#11161d"/>
+  <line x1="0" y1="36" x2="500" y2="36" stroke="#232b36"/>
+  <circle cx="20" cy="18.0" r="5.5" fill="#ff5f57"/>
+  <circle cx="38" cy="18.0" r="5.5" fill="#febc2e"/>
+  <circle cx="56" cy="18.0" r="5.5" fill="#28c840"/>
+  <text x="76" y="22.0" class="mono muted" font-size="12">~/github/commit-clock.sh</text>
+  <text x="482" y="22.0" text-anchor="end" class="mono dim" font-size="11">when I ship</text>
+  <g transform="translate(0 36)">
+<text x="24" y="30" font-size="13"><tspan class="muted">mostly a</tspan> <tspan font-weight="700" class="accent">daytime</tspan> <tspan class="muted">coder ·</tspan> <tspan font-weight="700" class="accent2">Tuesdays</tspan></text>
+<line x1="24" y1="164.5" x2="300.0" y2="164.5" stroke="#232b36"/>
+<rect class="rise" style="animation-delay:0.00s" x="25.5" y="115.8" width="8" height="48.2" rx="2" fill="#a78bfa" opacity="0.72"/>
+<rect class="rise" style="animation-delay:0.03s" x="37.0" y="155.6" width="8" height="8.4" rx="2" fill="#a78bfa" opacity="0.50"/>
+<rect class="rise" style="animation-delay:0.05s" x="48.5" y="159.2" width="8" height="4.8" rx="2" fill="#a78bfa" opacity="0.48"/>
+<rect class="rise" style="animation-delay:0.08s" x="60.0" y="161.6" width="8" height="2.4" rx="2" fill="#a78bfa" opacity="0.46"/>
+<rect class="rise" style="animation-delay:0.10s" x="71.5" y="162.0" width="8" height="2.0" rx="2" fill="#a78bfa" opacity="0.46"/>
+<rect class="rise" style="animation-delay:0.12s" x="83.0" y="162.0" width="8" height="2.0" rx="2" fill="#a78bfa" opacity="0.45"/>
+<rect class="rise" style="animation-delay:0.15s" x="94.5" y="162.0" width="8" height="2.0" rx="2" fill="#fbbf24" opacity="0.45"/>
+<rect class="rise" style="animation-delay:0.18s" x="106.0" y="162.0" width="8" height="2.0" rx="2" fill="#fbbf24" opacity="0.45"/>
+<rect class="rise" style="animation-delay:0.20s" x="117.5" y="154.4" width="8" height="9.6" rx="2" fill="#fbbf24" opacity="0.50"/>
+<rect class="rise" style="animation-delay:0.23s" x="129.0" y="139.9" width="8" height="24.1" rx="2" fill="#fbbf24" opacity="0.58"/>
+<rect class="rise" style="animation-delay:0.25s" x="140.5" y="147.1" width="8" height="16.9" rx="2" fill="#fbbf24" opacity="0.54"/>
+<rect class="rise" style="animation-delay:0.28s" x="152.0" y="148.3" width="8" height="15.7" rx="2" fill="#fbbf24" opacity="0.54"/>
+<rect class="rise" style="animation-delay:0.30s" x="163.5" y="109.8" width="8" height="54.2" rx="2" fill="#34d399" opacity="0.75"/>
+<rect class="rise" style="animation-delay:0.33s" x="175.0" y="135.1" width="8" height="28.9" rx="2" fill="#34d399" opacity="0.61"/>
+<rect class="rise" style="animation-delay:0.35s" x="186.5" y="130.3" width="8" height="33.7" rx="2" fill="#34d399" opacity="0.64"/>
+<rect class="rise" style="animation-delay:0.38s" x="198.0" y="119.4" width="8" height="44.6" rx="2" fill="#34d399" opacity="0.70"/>
+<rect class="rise" style="animation-delay:0.40s" x="209.5" y="64.0" width="8" height="100.0" rx="2" fill="#34d399" opacity="1.00"/>
+<rect class="rise" style="animation-delay:0.43s" x="221.0" y="132.7" width="8" height="31.3" rx="2" fill="#34d399" opacity="0.62"/>
+<rect class="rise" style="animation-delay:0.45s" x="232.5" y="136.3" width="8" height="27.7" rx="2" fill="#22d3ee" opacity="0.60"/>
+<rect class="rise" style="animation-delay:0.48s" x="244.0" y="144.7" width="8" height="19.3" rx="2" fill="#22d3ee" opacity="0.56"/>
+<rect class="rise" style="animation-delay:0.50s" x="255.5" y="159.2" width="8" height="4.8" rx="2" fill="#22d3ee" opacity="0.48"/>
+<rect class="rise" style="animation-delay:0.53s" x="267.0" y="144.7" width="8" height="19.3" rx="2" fill="#22d3ee" opacity="0.56"/>
+<rect class="rise" style="animation-delay:0.55s" x="278.5" y="144.7" width="8" height="19.3" rx="2" fill="#22d3ee" opacity="0.56"/>
+<rect class="rise" style="animation-delay:0.58s" x="290.0" y="147.1" width="8" height="16.9" rx="2" fill="#22d3ee" opacity="0.54"/>
+<text x="29.5" y="180" font-size="10" class="mono dim" text-anchor="middle">00h</text>
+<text x="98.5" y="180" font-size="10" class="mono dim" text-anchor="middle">06h</text>
+<text x="167.5" y="180" font-size="10" class="mono dim" text-anchor="middle">12h</text>
+<text x="236.5" y="180" font-size="10" class="mono dim" text-anchor="middle">18h</text>
+<text x="294.0" y="180" font-size="10" class="mono dim" text-anchor="middle">23h</text>
+<text x="330" y="66" font-size="10.5" class="mono muted">Mon</text><rect x="362" y="58" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.30s" x="362" y="58" width="59.2" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="66" font-size="10" class="mono dim" text-anchor="end">12%</text>
+<text x="330" y="83" font-size="10.5" class="mono muted">Tue</text><rect x="362" y="75" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.35s" x="362" y="75" width="90.0" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="83" font-size="10" class="mono dim" text-anchor="end">18%</text>
+<text x="330" y="100" font-size="10.5" class="mono muted">Wed</text><rect x="362" y="92" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.40s" x="362" y="92" width="70.6" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="100" font-size="10" class="mono dim" text-anchor="end">14%</text>
+<text x="330" y="117" font-size="10.5" class="mono muted">Thu</text><rect x="362" y="109" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.45s" x="362" y="109" width="67.2" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="117" font-size="10" class="mono dim" text-anchor="end">13%</text>
+<text x="330" y="134" font-size="10.5" class="mono muted">Fri</text><rect x="362" y="126" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.50s" x="362" y="126" width="67.2" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="134" font-size="10" class="mono dim" text-anchor="end">13%</text>
+<text x="330" y="151" font-size="10.5" class="mono muted">Sat</text><rect x="362" y="143" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.55s" x="362" y="143" width="77.5" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="151" font-size="10" class="mono dim" text-anchor="end">15%</text>
+<text x="330" y="168" font-size="10.5" class="mono muted">Sun</text><rect x="362" y="160" width="90" height="9" rx="4.5" fill="#1b222c"/><rect class="grow" style="animation-delay:0.60s" x="362" y="160" width="70.6" height="9" rx="4.5" fill="url(#accentGrad)"/><text x="476" y="168" font-size="10" class="mono dim" text-anchor="end">14%</text>
+<text x="24" y="194" font-size="11" class="mono dim">author-local time · last 441 commits</text>
+  </g>
+</g>
+<rect x="0.5" y="0.5" width="499" height="239" rx="12" fill="none" stroke="#232b36"/>
+</svg>

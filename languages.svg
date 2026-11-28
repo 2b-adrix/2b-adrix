@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="240" viewBox="0 0 500 240" role="img" aria-label="~/github/languages.json">
+<title>~/github/languages.json</title>
+<style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #e6edf3; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
+.muted { fill: #8b949e; }
+.dim { fill: #4b5563; }
+.accent { fill: #22d3ee; }
+.accent2 { fill: #a78bfa; }
+.ok { fill: #34d399; }
+.fade { animation: fadeIn .6s ease-out both; }
+.grow { animation: growX .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+.rise { animation: growY .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+</style>
+<defs>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/>
+  </linearGradient>
+  <clipPath id="cardClip"><rect x="0.5" y="0.5" width="499" height="239" rx="12"/></clipPath>
+</defs>
+<g clip-path="url(#cardClip)">
+  <rect width="500" height="240" fill="#0b0f14"/>
+  <rect width="500" height="36" fill="#11161d"/>
+  <line x1="0" y1="36" x2="500" y2="36" stroke="#232b36"/>
+  <circle cx="20" cy="18.0" r="5.5" fill="#ff5f57"/>
+  <circle cx="38" cy="18.0" r="5.5" fill="#febc2e"/>
+  <circle cx="56" cy="18.0" r="5.5" fill="#28c840"/>
+  <text x="76" y="22.0" class="mono muted" font-size="12">~/github/languages.json</text>
+  <text x="482" y="22.0" text-anchor="end" class="mono dim" font-size="11">top languages</text>
+  <g transform="translate(0 36)">
+<clipPath id="barClip"><rect x="24" y="22" width="452" height="10" rx="5"/></clipPath>
+<g clip-path="url(#barClip)"><g class="grow"><rect x="24.00" y="22" width="353.97" height="10" fill="#A97BFF"/><rect x="377.97" y="22" width="51.77" height="10" fill="#f1e05a"/><rect x="429.74" y="22" width="19.59" height="10" fill="#3178c6"/><rect x="449.33" y="22" width="18.43" height="10" fill="#b07219"/><rect x="467.76" y="22" width="4.68" height="10" fill="#3572A5"/><rect x="472.44" y="22" width="2.18" height="10" fill="#e34c26"/><rect x="474.62" y="22" width="1.24" height="10" fill="#663399"/><rect x="475.86" y="22" width="0.13" height="10" fill="#384d54"/><rect x="475.99" y="22" width="0.01" height="10" fill="#4b5563"/></g></g>
+<g class="fade" style="animation-delay:0.20s"><circle cx="29" cy="62" r="5" fill="#A97BFF"/><text x="42" y="66" font-size="13">Kotlin</text><text x="234" y="66" font-size="12" class="mono muted" text-anchor="end">78.3%</text></g>
+<g class="fade" style="animation-delay:0.26s"><circle cx="29" cy="88" r="5" fill="#f1e05a"/><text x="42" y="92" font-size="13">JavaScript</text><text x="234" y="92" font-size="12" class="mono muted" text-anchor="end">11.5%</text></g>
+<g class="fade" style="animation-delay:0.32s"><circle cx="29" cy="114" r="5" fill="#3178c6"/><text x="42" y="118" font-size="13">TypeScript</text><text x="234" y="118" font-size="12" class="mono muted" text-anchor="end">4.3%</text></g>
+<g class="fade" style="animation-delay:0.38s"><circle cx="29" cy="140" r="5" fill="#b07219"/><text x="42" y="144" font-size="13">Java</text><text x="234" y="144" font-size="12" class="mono muted" text-anchor="end">4.1%</text></g>
+<g class="fade" style="animation-delay:0.44s"><circle cx="29" cy="166" r="5" fill="#3572A5"/><text x="42" y="170" font-size="13">Python</text><text x="234" y="170" font-size="12" class="mono muted" text-anchor="end">1.0%</text></g>
+<g class="fade" style="animation-delay:0.50s"><circle cx="265" cy="62" r="5" fill="#e34c26"/><text x="278" y="66" font-size="13">HTML</text><text x="470" y="66" font-size="12" class="mono muted" text-anchor="end">0.5%</text></g>
+<g class="fade" style="animation-delay:0.56s"><circle cx="265" cy="88" r="5" fill="#663399"/><text x="278" y="92" font-size="13">CSS</text><text x="470" y="92" font-size="12" class="mono muted" text-anchor="end">0.3%</text></g>
+<g class="fade" style="animation-delay:0.62s"><circle cx="265" cy="114" r="5" fill="#384d54"/><text x="278" y="118" font-size="13">Dockerfile</text><text x="470" y="118" font-size="12" class="mono muted" text-anchor="end">0.0%</text></g>
+<g class="fade" style="animation-delay:0.68s"><circle cx="265" cy="140" r="5" fill="#4b5563"/><text x="278" y="144" font-size="13">Other</text><text x="470" y="144" font-size="12" class="mono muted" text-anchor="end">0.0%</text></g>
+<text x="24" y="194" font-size="11" class="mono dim">weighted by last 441 project commits</text>
+  </g>
+</g>
+<rect x="0.5" y="0.5" width="499" height="239" rx="12" fill="none" stroke="#232b36"/>
+</svg>

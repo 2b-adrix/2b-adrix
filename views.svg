@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="149" height="30" viewBox="0 0 149 30" role="img" aria-label="Profile views: 2,223">
+<title>Profile views: 2,223</title>
+<defs><clipPath id="vc"><rect width="149" height="30" rx="15"/></clipPath></defs>
+<g clip-path="url(#vc)">
+  <rect width="149" height="30" fill="#181d29"/>
+  <rect x="82.0" width="67.0" height="30" fill="#12161f"/>
+</g>
+<rect x=".5" y=".5" width="148" height="29" rx="15" fill="none" stroke="#262d3d"/>
+<g transform="translate(11 7)" fill="none" stroke="#3ddc84" stroke-width="1.6">
+  <path d="M1 8s2.8-5 7-5 7 5 7 5-2.8 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2.2" fill="#3ddc84"/>
+</g>
+<text x="34" y="19" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" font-weight="700" letter-spacing="1" fill="#94a3b8" style="white-space:pre">VIEWS</text>
+<text x="115.5" y="19.5" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="12.5" font-weight="800" fill="#3ddc84">2,223</text>
+</svg>

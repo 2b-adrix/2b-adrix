@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="240" viewBox="0 0 500 240" role="img" aria-label="~/github/streak.log">
+<title>~/github/streak.log</title>
+<style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #e6edf3; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
+.muted { fill: #8b949e; }
+.dim { fill: #4b5563; }
+.accent { fill: #22d3ee; }
+.accent2 { fill: #a78bfa; }
+.ok { fill: #34d399; }
+.fade { animation: fadeIn .6s ease-out both; }
+.grow { animation: growX .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+.rise { animation: growY .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+</style>
+<defs>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/>
+  </linearGradient>
+  <clipPath id="cardClip"><rect x="0.5" y="0.5" width="499" height="239" rx="12"/></clipPath>
+</defs>
+<g clip-path="url(#cardClip)">
+  <rect width="500" height="240" fill="#0b0f14"/>
+  <rect width="500" height="36" fill="#11161d"/>
+  <line x1="0" y1="36" x2="500" y2="36" stroke="#232b36"/>
+  <circle cx="20" cy="18.0" r="5.5" fill="#ff5f57"/>
+  <circle cx="38" cy="18.0" r="5.5" fill="#febc2e"/>
+  <circle cx="56" cy="18.0" r="5.5" fill="#28c840"/>
+  <text x="76" y="22.0" class="mono muted" font-size="12">~/github/streak.log</text>
+  <text x="482" y="22.0" text-anchor="end" class="mono dim" font-size="11">since day one</text>
+  <g transform="translate(0 36)">
+<line x1="166" y1="36" x2="166" y2="168" stroke="#232b36"/>
+<line x1="334" y1="36" x2="334" y2="168" stroke="#232b36"/>
+<g class="fade" style="animation-delay:0.10s"><text x="83" y="92" text-anchor="middle" font-size="28" font-weight="700">2.1k</text><text x="83" y="122" text-anchor="middle" font-size="13" class="muted">Total Contributions</text><text x="83" y="146" text-anchor="middle" font-size="11" class="mono dim">since Jan 3, 2005</text></g>
+<circle cx="250" cy="80" r="40" fill="none" stroke="url(#accentGrad)" stroke-width="5"/><g class="fade" style="animation-delay:0.30s"><text x="250" y="90" text-anchor="middle" font-size="28" font-weight="700">2</text><text x="250" y="146" text-anchor="middle" font-size="13" font-weight="600" class="accent">Current Streak</text><text x="250" y="166" text-anchor="middle" font-size="11" class="mono dim">Nov 27 – Today</text></g>
+<g class="fade" style="animation-delay:0.50s"><text x="417" y="92" text-anchor="middle" font-size="28" font-weight="700">36</text><text x="417" y="122" text-anchor="middle" font-size="13" class="muted">Longest Streak</text><text x="417" y="146" text-anchor="middle" font-size="11" class="mono dim">Oct 1 – Nov 5</text></g>
+<text x="250" y="194" text-anchor="middle" font-size="11" class="mono dim">days with ≥1 contribution · UTC</text>
+  </g>
+</g>
+<rect x="0.5" y="0.5" width="499" height="239" rx="12" fill="none" stroke="#232b36"/>
+</svg>

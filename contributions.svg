@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="~/github/contributions.graph">
+<title>~/github/contributions.graph</title>
+<style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #e6edf3; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; white-space: pre; }
+.muted { fill: #8b949e; }
+.dim { fill: #4b5563; }
+.accent { fill: #22d3ee; }
+.accent2 { fill: #a78bfa; }
+.ok { fill: #34d399; }
+.fade { animation: fadeIn .6s ease-out both; }
+.grow { animation: growX .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: left center; }
+.rise { animation: growY .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center bottom; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes draw { from { stroke-dashoffset: 1; } } .draw { stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw 2.2s ease-out both; }</style>
+<defs>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/>
+  </linearGradient>
+  <clipPath id="cardClip"><rect x="0.5" y="0.5" width="999" height="299" rx="12"/></clipPath>
+</defs>
+<g clip-path="url(#cardClip)">
+  <rect width="1000" height="300" fill="#0b0f14"/>
+  <rect width="1000" height="36" fill="#11161d"/>
+  <line x1="0" y1="36" x2="1000" y2="36" stroke="#232b36"/>
+  <circle cx="20" cy="18.0" r="5.5" fill="#ff5f57"/>
+  <circle cx="38" cy="18.0" r="5.5" fill="#febc2e"/>
+  <circle cx="56" cy="18.0" r="5.5" fill="#28c840"/>
+  <text x="76" y="22.0" class="mono muted" font-size="12">~/github/contributions.graph</text>
+  <text x="982" y="22.0" text-anchor="end" class="mono dim" font-size="11">last 90 days</text>
+  <g transform="translate(0 36)">
+<line x1="56" y1="214.0" x2="976" y2="214.0" stroke="#1b222c" stroke-dasharray="0"/>
+<text x="46" y="218.0" font-size="10.5" class="mono dim" text-anchor="end">0</text>
+<line x1="56" y1="169.0" x2="976" y2="169.0" stroke="#1b222c" stroke-dasharray="3 5"/>
+<text x="46" y="173.0" font-size="10.5" class="mono dim" text-anchor="end">12</text>
+<line x1="56" y1="124.0" x2="976" y2="124.0" stroke="#1b222c" stroke-dasharray="3 5"/>
+<text x="46" y="128.0" font-size="10.5" class="mono dim" text-anchor="end">24</text>
+<line x1="56" y1="79.0" x2="976" y2="79.0" stroke="#1b222c" stroke-dasharray="3 5"/>
+<text x="46" y="83.0" font-size="10.5" class="mono dim" text-anchor="end">36</text>
+<line x1="56" y1="34.0" x2="976" y2="34.0" stroke="#1b222c" stroke-dasharray="3 5"/>
+<text x="46" y="38.0" font-size="10.5" class="mono dim" text-anchor="end">48</text>
+<text x="56.0" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Aug 31</text>
+<text x="200.7" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Sep 14</text>
+<text x="345.4" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Sep 28</text>
+<text x="490.2" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Oct 12</text>
+<text x="634.9" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Oct 26</text>
+<text x="779.6" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Nov 9</text>
+<text x="924.3" y="236" font-size="10.5" class="mono dim" text-anchor="middle">Nov 23</text>
+<defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity=".35"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient></defs><path class="fade" style="animation-delay:0.80s" d="M56.0,214.0 L66.3,199.0 L76.7,214.0 L87.0,214.0 L97.3,214.0 L107.7,206.5 L118.0,214.0 L128.4,214.0 L138.7,214.0 L149.0,214.0 L159.4,214.0 L169.7,214.0 L180.0,214.0 L190.4,214.0 L200.7,210.2 L211.1,206.5 L221.4,214.0 L231.7,210.2 L242.1,202.8 L252.4,214.0 L262.7,214.0 L273.1,214.0 L283.4,214.0 L293.8,202.8 L304.1,214.0 L314.4,214.0 L324.8,169.0 L335.1,214.0 L345.4,210.2 L355.8,214.0 L366.1,214.0 L376.4,202.8 L386.8,210.2 L397.1,202.8 L407.5,210.2 L417.8,210.2 L428.1,165.2 L438.5,210.2 L448.8,210.2 L459.1,210.2 L469.5,210.2 L479.8,210.2 L490.2,210.2 L500.5,210.2 L510.8,210.2 L521.2,210.2 L531.5,210.2 L541.8,210.2 L552.2,210.2 L562.5,210.2 L572.9,210.2 L583.2,210.2 L593.5,210.2 L603.9,202.8 L614.2,202.8 L624.5,210.2 L634.9,210.2 L645.2,172.8 L655.6,210.2 L665.9,210.2 L676.2,202.8 L686.6,142.8 L696.9,206.5 L707.2,169.0 L717.6,172.8 L727.9,206.5 L738.2,199.0 L748.6,214.0 L758.9,191.5 L769.3,214.0 L779.6,45.2 L789.9,214.0 L800.3,214.0 L810.6,214.0 L820.9,214.0 L831.3,214.0 L841.6,214.0 L852.0,214.0 L862.3,206.5 L872.6,214.0 L883.0,214.0 L893.3,214.0 L903.6,214.0 L914.0,172.8 L924.3,206.5 L934.7,210.2 L945.0,214.0 L955.3,214.0 L965.7,191.5 L976.0,157.8 L976.0,214 L56.0,214 Z" fill="url(#areaGrad)"/><path class="draw" pathLength="1" d="M56.0,214.0 L66.3,199.0 L76.7,214.0 L87.0,214.0 L97.3,214.0 L107.7,206.5 L118.0,214.0 L128.4,214.0 L138.7,214.0 L149.0,214.0 L159.4,214.0 L169.7,214.0 L180.0,214.0 L190.4,214.0 L200.7,210.2 L211.1,206.5 L221.4,214.0 L231.7,210.2 L242.1,202.8 L252.4,214.0 L262.7,214.0 L273.1,214.0 L283.4,214.0 L293.8,202.8 L304.1,214.0 L314.4,214.0 L324.8,169.0 L335.1,214.0 L345.4,210.2 L355.8,214.0 L366.1,214.0 L376.4,202.8 L386.8,210.2 L397.1,202.8 L407.5,210.2 L417.8,210.2 L428.1,165.2 L438.5,210.2 L448.8,210.2 L459.1,210.2 L469.5,210.2 L479.8,210.2 L490.2,210.2 L500.5,210.2 L510.8,210.2 L521.2,210.2 L531.5,210.2 L541.8,210.2 L552.2,210.2 L562.5,210.2 L572.9,210.2 L583.2,210.2 L593.5,210.2 L603.9,202.8 L614.2,202.8 L624.5,210.2 L634.9,210.2 L645.2,172.8 L655.6,210.2 L665.9,210.2 L676.2,202.8 L686.6,142.8 L696.9,206.5 L707.2,169.0 L717.6,172.8 L727.9,206.5 L738.2,199.0 L748.6,214.0 L758.9,191.5 L769.3,214.0 L779.6,45.2 L789.9,214.0 L800.3,214.0 L810.6,214.0 L820.9,214.0 L831.3,214.0 L841.6,214.0 L852.0,214.0 L862.3,206.5 L872.6,214.0 L883.0,214.0 L893.3,214.0 L903.6,214.0 L914.0,172.8 L924.3,206.5 L934.7,210.2 L945.0,214.0 L955.3,214.0 L965.7,191.5 L976.0,157.8" fill="none" stroke="url(#accentGrad)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="fade" style="animation-delay:1.80s"><circle cx="779.6" cy="45.2" r="4.5" fill="#0b0f14" stroke="#a78bfa" stroke-width="2"/><text x="789.6" y="49.2" font-size="11" class="mono accent2" text-anchor="start">peak 45</text></g>
+<text x="56" y="20" font-size="12" class="mono"><tspan class="accent">$</tspan> git log --since="90 days ago" <tspan class="muted">| wc -l</tspan>  <tspan font-weight="700">229</tspan> <tspan class="muted">contributions</tspan></text>
+  </g>
+</g>
+<rect x="0.5" y="0.5" width="999" height="299" rx="12" fill="none" stroke="#232b36"/>
+</svg>
